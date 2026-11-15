@@ -103,9 +103,11 @@ data/e2e_uploads/
 # LOGS
 # ============================================================
 
-# Ignore generated logs globally
+# Ignore generated log files
 *.log
-logs/
+
+# Ignore only the root-level generated logs directory
+/logs/
 
 # Allow curated sample logs
 !data/sample_logs/
