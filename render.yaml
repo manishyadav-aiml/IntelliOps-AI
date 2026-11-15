@@ -1,37 +1,114 @@
-# Render blueprint (Blueprints -> New Blueprint Instance). NOT deployed or tested by the author.
-# Lightweight demo mode: lexical embeddings and exact NumPy search so the service fits a small instance.
-# Free-tier notes: instances sleep when idle, the free Postgres plan expires, and the container disk is
-# ephemeral (uploads, models, indexes and reports are lost on redeploy unless you attach a persistent disk).
+# ============================================================
+# INTELLIOPS-AI — RENDER DEPLOYMENT BLUEPRINT
+# ============================================================
+#
+# Services:
+#   1. FastAPI Backend (Docker)
+#   2. React + Vite Frontend (Static Site)
+#   3. PostgreSQL Database
+#
+# Region: Singapore
+# Plan: Free tier
+#
+# IMPORTANT:
+# - Free backend services may sleep when inactive.
+# - Free PostgreSQL expires after 30 days.
+# - Container filesystem is ephemeral.
+# - Uploaded files, models, indexes and reports are not persistent.
+#
+# ============================================================
+
+
+# ============================================================
+# DATABASE
+# ============================================================
+
 databases:
   - name: intelliops-db
     plan: free
+    region: singapore
     databaseName: intelliops
     user: intelliops
 
+
+# ============================================================
+# SERVICES
+# ============================================================
+
 services:
+
+  # ----------------------------------------------------------
+  # BACKEND — FASTAPI + DOCKER
+  # ----------------------------------------------------------
+
   - type: web
     name: intelliops-api
     runtime: docker
+
+    plan: free
+    region: singapore
+
     dockerfilePath: ./backend/Dockerfile
     dockerContext: ./backend
+
     healthCheckPath: /api/v1/health
+
     envVars:
-      - { key: APP_ENV, value: production }
-      - { key: DEBUG, value: "false" }
-      - { key: JWT_SECRET, generateValue: true }
-      - { key: DATABASE_URL, fromDatabase: { name: intelliops-db, property: connectionString } }
-      - { key: CORS_ORIGINS, sync: false }        # set to your frontend URL, e.g. https://intelliops-web.onrender.com
-      - { key: EMBEDDING_MODEL, value: hashing }
-      - { key: MATCHER, value: numpy }
-      - { key: GEMINI_API_KEY, sync: false }       # optional; AI features stay off without it
+
+      # Application configuration
+      - key: APP_ENV
+        value: production
+
+      - key: DEBUG
+        value: "false"
+
+      # Security
+      - key: JWT_SECRET
+        generateValue: true
+
+      # PostgreSQL connection
+      - key: DATABASE_URL
+        fromDatabase:
+          name: intelliops-db
+          property: connectionString
+
+      # Frontend CORS configuration
+      - key: CORS_ORIGINS
+        sync: false
+
+      # Lightweight embedding configuration
+      - key: EMBEDDING_MODEL
+        value: hashing
+
+      # Lightweight vector matching
+      - key: MATCHER
+        value: numpy
+
+      # Optional Gemini API key
+      - key: GEMINI_API_KEY
+        sync: false
+
+
+  # ----------------------------------------------------------
+  # FRONTEND — REACT + VITE
+  # ----------------------------------------------------------
 
   - type: web
     name: intelliops-web
     runtime: static
+
     rootDir: frontend
-    buildCommand: npm install && npm run build
+
+    buildCommand: npm ci && npm run build
+
     staticPublishPath: dist
+
     envVars:
-      - { key: VITE_API_BASE_URL, sync: false }    # e.g. https://intelliops-api.onrender.com/api/v1
+      - key: VITE_API_BASE_URL
+        sync: false
+
+    # React Router support
     routes:
-      - { type: rewrite, source: /*, destination: /index.html }
+      - type: rewrite
+        source: /*
+        destination: /index.html
