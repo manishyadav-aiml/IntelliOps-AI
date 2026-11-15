@@ -1,0 +1,63 @@
+# Full local stack: PostgreSQL + backend (migrations run on start) + frontend (nginx).
+#   docker compose up --build        -> UI http://localhost:5173, API http://localhost:8000/docs
+# Background work uses FastAPI BackgroundTasks, so no Redis/Celery service is needed (see docs/KNOWN_LIMITATIONS.md).
+# Set GEMINI_API_KEY in a root .env file to enable the AI assistant; everything else works without it.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: intelliops
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-intelliops}   # local development default; change for anything shared
+      POSTGRES_DB: intelliops
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U intelliops -d intelliops"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  backend:
+    build:
+      context: ./backend
+      args:
+        INSTALL_FULL: ${INSTALL_FULL:-false}   # true = semantic embeddings + FAISS (large image)
+    environment:
+      APP_ENV: development
+      DEBUG: "true"
+      JWT_SECRET: ${JWT_SECRET:-local-dev-only-secret-change-me-0123456789}
+      DATABASE_URL: postgresql+psycopg://intelliops:${POSTGRES_PASSWORD:-intelliops}@db:5432/intelliops
+      CORS_ORIGINS: http://localhost:5173
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-hashing}
+      MATCHER: ${MATCHER:-numpy}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    volumes:
+      - appdata:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/api/v1/health').status == 200 else 1)"]
+      interval: 15s
+      timeout: 5s
+      start_period: 40s
+      retries: 5
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: http://localhost:8000/api/v1
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "5173:80"
+
+volumes:
+  pgdata:
+  appdata:

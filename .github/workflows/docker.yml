@@ -1,0 +1,15 @@
+name: docker
+on:
+  push: { paths: ["backend/**", "frontend/**", "docker-compose.yml", ".github/workflows/docker.yml"] }
+  pull_request: { paths: ["backend/**", "frontend/**", "docker-compose.yml", ".github/workflows/docker.yml"] }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate compose file
+        run: docker compose config -q
+      - name: Build backend image (lightweight mode)
+        run: docker build -t intelliops-backend ./backend
+      - name: Build frontend image
+        run: docker build -t intelliops-frontend ./frontend

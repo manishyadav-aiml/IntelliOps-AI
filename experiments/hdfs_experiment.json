@@ -1,0 +1,9 @@
+{
+  "dataset": "LogHub HDFS_v1 (manual download, see docs/DATASET_GUIDE.md)",
+  "split": {"by": "block_id", "test_size": 0.3, "seed": 42},
+  "features": "log1p(template counts per block); vocabulary and scaler fitted on train split only",
+  "models": ["isolation_forest", "local_outlier_factor"],
+  "threshold": {"rule": "quantile of TRAIN scores", "quantile": 0.95},
+  "metrics": ["precision", "recall", "f1", "pr_auc", "false_positive_rate", "confusion_matrix"],
+  "status": "NOT RUN on LogHub (dataset not downloaded). Only the synthetic pipeline check has been run."
+}

@@ -1,0 +1,18 @@
+name: frontend
+on:
+  push: { paths: ["frontend/**", ".github/workflows/frontend.yml"] }
+  pull_request: { paths: ["frontend/**", ".github/workflows/frontend.yml"] }
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: frontend } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      # `npm ci` needs a committed package-lock.json. Run `npm install` once locally, commit the lockfile,
+      # then switch this step to `npm ci` for reproducible installs.
+      - run: npm install
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build

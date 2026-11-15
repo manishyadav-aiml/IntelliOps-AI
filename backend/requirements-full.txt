@@ -1,0 +1,6 @@
+# Optional heavyweight extras (semantic embeddings + FAISS). Needs roughly 1.5-2 GB of disk and
+# ~1 GB RAM at runtime (PyTorch). Without them the app runs in the documented lightweight mode:
+# EMBEDDING_MODEL=hashing (lexical) and MATCHER=numpy (exact search). Install with:
+#   pip install -r requirements-full.txt
+sentence-transformers==3.3.1
+faiss-cpu==1.9.0.post1

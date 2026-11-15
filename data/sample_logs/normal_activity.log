@@ -1,0 +1,1200 @@
+2026-03-01 09:00:02,098 INFO [api-gateway] GET /api/orders/5506 200 in 46 ms host=app-01
+2026-03-01 09:00:02,947 INFO [api-gateway] GET /api/orders/9935 200 in 26 ms host=app-02
+2026-03-01 09:00:03,526 INFO [api-gateway] GET /api/orders/4811 200 in 79 ms host=app-01
+2026-03-01 09:00:05,429 INFO [auth-service] User 818 logged in from 10.0.4.109
+2026-03-01 09:00:06,481 INFO [auth-service] User 928 logged in from 10.0.0.196
+2026-03-01 09:00:08,995 INFO [auth-service] User 448 logged in from 10.0.2.41
+2026-03-01 09:00:10,033 INFO [auth-service] User 204 logged in from 10.0.0.99
+2026-03-01 09:00:10,775 INFO [payment-service] Payment 99891 authorised amount=140 host=pay-01
+2026-03-01 09:00:13,293 INFO [auth-service] User 649 logged in from 10.0.0.238
+2026-03-01 09:00:14,739 INFO [auth-service] User 949 logged in from 10.0.5.160
+2026-03-01 09:00:17,453 INFO [api-gateway] GET /api/orders/4150 200 in 23 ms host=app-01
+2026-03-01 09:00:19,606 INFO [auth-service] User 181 logged in from 10.0.1.223
+2026-03-01 09:00:20,359 INFO [api-gateway] GET /api/orders/6977 200 in 35 ms host=app-02
+2026-03-01 09:00:21,747 INFO [auth-service] User 818 logged in from 10.0.5.167
+2026-03-01 09:00:22,425 INFO [auth-service] User 646 logged in from 10.0.5.64
+2026-03-01 09:00:23,334 INFO [api-gateway] GET /api/orders/4598 200 in 56 ms host=app-01
+2026-03-01 09:00:24,406 INFO [api-gateway] GET /api/orders/6168 200 in 66 ms host=app-02
+2026-03-01 09:00:25,072 INFO [payment-service] Payment 99292 authorised amount=453 host=pay-01
+2026-03-01 09:00:27,367 INFO [api-gateway] GET /api/orders/9179 200 in 65 ms host=app-02
+2026-03-01 09:00:28,224 INFO [api-gateway] GET /api/orders/9830 200 in 48 ms host=app-02
+2026-03-01 09:00:30,968 INFO [api-gateway] GET /api/orders/4593 200 in 32 ms host=app-02
+2026-03-01 09:00:31,696 INFO [api-gateway] GET /api/orders/2796 200 in 34 ms host=app-01
+2026-03-01 09:00:34,176 INFO [api-gateway] GET /api/orders/2040 200 in 64 ms host=app-02
+2026-03-01 09:00:36,166 INFO [api-gateway] GET /api/orders/5119 200 in 85 ms host=app-01
+2026-03-01 09:00:38,366 INFO [api-gateway] GET /api/orders/9797 200 in 49 ms host=app-02
+2026-03-01 09:00:39,145 INFO [api-gateway] GET /api/orders/8433 200 in 15 ms host=app-02
+2026-03-01 09:00:42,075 INFO [auth-service] User 619 logged in from 10.0.0.224
+2026-03-01 09:00:44,138 INFO [payment-service] Payment 98317 authorised amount=316 host=pay-01
+2026-03-01 09:00:45,135 INFO [api-gateway] GET /api/orders/3646 200 in 84 ms host=app-01
+2026-03-01 09:00:47,133 INFO [api-gateway] GET /api/orders/2832 200 in 61 ms host=app-02
+2026-03-01 09:00:48,231 INFO [api-gateway] GET /api/orders/2290 200 in 25 ms host=app-02
+2026-03-01 09:00:50,772 WARN [db] Slow query took 845 ms host=db-01
+2026-03-01 09:00:53,186 INFO [api-gateway] GET /api/orders/8787 200 in 85 ms host=app-01
+2026-03-01 09:00:54,349 INFO [payment-service] Payment 96932 authorised amount=498 host=pay-01
+2026-03-01 09:00:55,378 INFO [api-gateway] GET /api/orders/4295 200 in 54 ms host=app-02
+2026-03-01 09:00:58,366 INFO [auth-service] User 548 logged in from 10.0.4.117
+2026-03-01 09:00:59,169 INFO [api-gateway] GET /api/orders/6539 200 in 17 ms host=app-01
+2026-03-01 09:01:01,140 INFO [api-gateway] GET /api/orders/1964 200 in 44 ms host=app-01
+2026-03-01 09:01:03,903 INFO [payment-service] Payment 91160 authorised amount=268 host=pay-01
+2026-03-01 09:01:04,998 INFO [auth-service] User 319 logged in from 10.0.4.35
+2026-03-01 09:01:07,307 INFO [payment-service] Payment 99440 authorised amount=247 host=pay-01
+2026-03-01 09:01:08,414 INFO [api-gateway] GET /api/orders/7669 200 in 39 ms host=app-01
+2026-03-01 09:01:09,157 INFO [api-gateway] GET /api/orders/7939 200 in 67 ms host=app-02
+2026-03-01 09:01:11,816 INFO [api-gateway] GET /api/orders/2612 200 in 22 ms host=app-02
+2026-03-01 09:01:14,137 INFO [payment-service] Payment 91790 authorised amount=132 host=pay-01
+2026-03-01 09:01:15,116 INFO [api-gateway] GET /api/orders/3296 200 in 69 ms host=app-01
+2026-03-01 09:01:16,312 INFO [api-gateway] GET /api/orders/2235 200 in 71 ms host=app-01
+2026-03-01 09:01:16,938 WARN [db] Slow query took 315 ms host=db-01
+2026-03-01 09:01:19,861 INFO [payment-service] Payment 93872 authorised amount=90 host=pay-01
+2026-03-01 09:01:21,377 INFO [api-gateway] GET /api/orders/7570 200 in 22 ms host=app-01
+2026-03-01 09:01:22,824 WARN [db] Slow query took 571 ms host=db-01
+2026-03-01 09:01:25,641 INFO [auth-service] User 392 logged in from 10.0.3.180
+2026-03-01 09:01:28,534 WARN [db] Slow query took 869 ms host=db-01
+2026-03-01 09:01:30,689 INFO [api-gateway] GET /api/orders/4111 200 in 52 ms host=app-01
+2026-03-01 09:01:33,610 INFO [auth-service] User 655 logged in from 10.0.0.193
+2026-03-01 09:01:34,894 INFO [api-gateway] GET /api/orders/8811 200 in 79 ms host=app-01
+2026-03-01 09:01:35,537 INFO [api-gateway] GET /api/orders/4044 200 in 23 ms host=app-01
+2026-03-01 09:01:37,725 INFO [api-gateway] GET /api/orders/2964 200 in 87 ms host=app-01
+2026-03-01 09:01:39,672 INFO [api-gateway] GET /api/orders/2343 200 in 68 ms host=app-02
+2026-03-01 09:01:42,509 INFO [api-gateway] GET /api/orders/6147 200 in 45 ms host=app-02
+2026-03-01 09:01:43,998 INFO [auth-service] User 407 logged in from 10.0.3.82
+2026-03-01 09:01:46,821 INFO [payment-service] Payment 90152 authorised amount=239 host=pay-01
+2026-03-01 09:01:48,874 INFO [auth-service] User 202 logged in from 10.0.0.139
+2026-03-01 09:01:49,907 INFO [api-gateway] GET /api/orders/6718 200 in 23 ms host=app-01
+2026-03-01 09:01:51,330 INFO [api-gateway] GET /api/orders/9900 200 in 53 ms host=app-01
+2026-03-01 09:01:53,500 INFO [auth-service] User 779 logged in from 10.0.0.242
+2026-03-01 09:01:56,195 INFO [api-gateway] GET /api/orders/2753 200 in 85 ms host=app-01
+2026-03-01 09:01:57,376 INFO [auth-service] User 834 logged in from 10.0.2.54
+2026-03-01 09:01:59,595 INFO [payment-service] Payment 98280 authorised amount=255 host=pay-01
+2026-03-01 09:02:00,723 INFO [payment-service] Payment 90832 authorised amount=52 host=pay-01
+2026-03-01 09:02:02,808 INFO [payment-service] Payment 90722 authorised amount=6 host=pay-01
+2026-03-01 09:02:04,142 INFO [api-gateway] GET /api/orders/5291 200 in 35 ms host=app-02
+2026-03-01 09:02:06,022 INFO [api-gateway] GET /api/orders/1158 200 in 29 ms host=app-01
+2026-03-01 09:02:08,884 INFO [auth-service] User 252 logged in from 10.0.4.11
+2026-03-01 09:02:11,471 INFO [auth-service] User 251 logged in from 10.0.3.34
+2026-03-01 09:02:12,075 INFO [api-gateway] GET /api/orders/1653 200 in 60 ms host=app-01
+2026-03-01 09:02:14,280 INFO [auth-service] User 462 logged in from 10.0.4.228
+2026-03-01 09:02:16,967 WARN [db] Slow query took 458 ms host=db-01
+2026-03-01 09:02:19,782 INFO [api-gateway] GET /api/orders/3662 200 in 37 ms host=app-02
+2026-03-01 09:02:20,344 INFO [auth-service] User 440 logged in from 10.0.3.207
+2026-03-01 09:02:22,518 INFO [auth-service] User 354 logged in from 10.0.2.42
+2026-03-01 09:02:24,987 INFO [api-gateway] GET /api/orders/1634 200 in 75 ms host=app-01
+2026-03-01 09:02:25,986 INFO [payment-service] Payment 95728 authorised amount=161 host=pay-01
+2026-03-01 09:02:28,537 INFO [payment-service] Payment 93652 authorised amount=17 host=pay-01
+2026-03-01 09:02:30,687 INFO [api-gateway] GET /api/orders/5564 200 in 23 ms host=app-02
+2026-03-01 09:02:32,065 INFO [api-gateway] GET /api/orders/9785 200 in 57 ms host=app-01
+2026-03-01 09:02:32,853 WARN [db] Slow query took 482 ms host=db-01
+2026-03-01 09:02:34,805 WARN [db] Slow query took 339 ms host=db-01
+2026-03-01 09:02:35,576 INFO [api-gateway] GET /api/orders/6139 200 in 70 ms host=app-01
+2026-03-01 09:02:37,039 INFO [auth-service] User 360 logged in from 10.0.0.183
+2026-03-01 09:02:38,629 INFO [api-gateway] GET /api/orders/9821 200 in 40 ms host=app-02
+2026-03-01 09:02:40,207 INFO [payment-service] Payment 95409 authorised amount=324 host=pay-01
+2026-03-01 09:02:41,492 INFO [payment-service] Payment 94920 authorised amount=264 host=pay-01
+2026-03-01 09:02:42,765 INFO [api-gateway] GET /api/orders/7592 200 in 52 ms host=app-01
+2026-03-01 09:02:43,745 INFO [auth-service] User 488 logged in from 10.0.5.193
+2026-03-01 09:02:46,502 INFO [auth-service] User 408 logged in from 10.0.3.142
+2026-03-01 09:02:49,086 INFO [api-gateway] GET /api/orders/4443 200 in 70 ms host=app-02
+2026-03-01 09:02:50,749 INFO [api-gateway] GET /api/orders/4501 200 in 80 ms host=app-02
+2026-03-01 09:02:53,233 WARN [db] Slow query took 473 ms host=db-01
+2026-03-01 09:02:55,380 INFO [api-gateway] GET /api/orders/6491 200 in 26 ms host=app-01
+2026-03-01 09:02:57,562 INFO [api-gateway] GET /api/orders/4262 200 in 33 ms host=app-01
+2026-03-01 09:02:58,178 WARN [db] Slow query took 374 ms host=db-01
+2026-03-01 09:02:59,816 INFO [payment-service] Payment 99431 authorised amount=104 host=pay-01
+2026-03-01 09:03:02,112 INFO [api-gateway] GET /api/orders/7547 200 in 46 ms host=app-01
+2026-03-01 09:03:04,252 INFO [api-gateway] GET /api/orders/2746 200 in 69 ms host=app-01
+2026-03-01 09:03:05,192 WARN [db] Slow query took 830 ms host=db-01
+2026-03-01 09:03:06,853 INFO [auth-service] User 968 logged in from 10.0.0.118
+2026-03-01 09:03:07,687 INFO [api-gateway] GET /api/orders/9702 200 in 86 ms host=app-02
+2026-03-01 09:03:10,562 INFO [payment-service] Payment 98270 authorised amount=223 host=pay-01
+2026-03-01 09:03:13,138 INFO [api-gateway] GET /api/orders/3607 200 in 75 ms host=app-02
+2026-03-01 09:03:14,286 INFO [api-gateway] GET /api/orders/5543 200 in 81 ms host=app-02
+2026-03-01 09:03:16,353 INFO [api-gateway] GET /api/orders/2269 200 in 51 ms host=app-01
+2026-03-01 09:03:17,532 INFO [api-gateway] GET /api/orders/9849 200 in 25 ms host=app-01
+2026-03-01 09:03:18,409 INFO [api-gateway] GET /api/orders/3503 200 in 42 ms host=app-01
+2026-03-01 09:03:19,946 INFO [api-gateway] GET /api/orders/8633 200 in 68 ms host=app-01
+2026-03-01 09:03:20,964 INFO [api-gateway] GET /api/orders/1320 200 in 88 ms host=app-02
+2026-03-01 09:03:22,656 INFO [payment-service] Payment 94892 authorised amount=390 host=pay-01
+2026-03-01 09:03:24,131 INFO [payment-service] Payment 96865 authorised amount=280 host=pay-01
+2026-03-01 09:03:26,500 INFO [api-gateway] GET /api/orders/4613 200 in 77 ms host=app-01
+2026-03-01 09:03:27,682 INFO [api-gateway] GET /api/orders/7371 200 in 58 ms host=app-02
+2026-03-01 09:03:29,993 INFO [payment-service] Payment 92091 authorised amount=323 host=pay-01
+2026-03-01 09:03:31,828 INFO [payment-service] Payment 99697 authorised amount=293 host=pay-01
+2026-03-01 09:03:33,985 INFO [api-gateway] GET /api/orders/8022 200 in 32 ms host=app-02
+2026-03-01 09:03:34,940 INFO [api-gateway] GET /api/orders/6363 200 in 42 ms host=app-02
+2026-03-01 09:03:36,257 INFO [auth-service] User 488 logged in from 10.0.2.194
+2026-03-01 09:03:39,135 INFO [api-gateway] GET /api/orders/2341 200 in 75 ms host=app-01
+2026-03-01 09:03:41,507 INFO [api-gateway] GET /api/orders/6733 200 in 43 ms host=app-01
+2026-03-01 09:03:43,960 INFO [auth-service] User 872 logged in from 10.0.0.245
+2026-03-01 09:03:45,079 INFO [payment-service] Payment 92496 authorised amount=127 host=pay-01
+2026-03-01 09:03:45,894 INFO [auth-service] User 677 logged in from 10.0.1.121
+2026-03-01 09:03:48,143 INFO [auth-service] User 271 logged in from 10.0.4.157
+2026-03-01 09:03:51,052 INFO [auth-service] User 896 logged in from 10.0.1.248
+2026-03-01 09:03:52,330 INFO [auth-service] User 419 logged in from 10.0.4.175
+2026-03-01 09:03:55,100 INFO [api-gateway] GET /api/orders/4249 200 in 24 ms host=app-01
+2026-03-01 09:03:55,855 INFO [auth-service] User 970 logged in from 10.0.5.155
+2026-03-01 09:03:58,368 INFO [auth-service] User 679 logged in from 10.0.0.90
+2026-03-01 09:04:00,200 INFO [auth-service] User 170 logged in from 10.0.4.167
+2026-03-01 09:04:01,553 INFO [payment-service] Payment 98031 authorised amount=59 host=pay-01
+2026-03-01 09:04:03,137 INFO [api-gateway] GET /api/orders/8532 200 in 34 ms host=app-02
+2026-03-01 09:04:04,078 INFO [api-gateway] GET /api/orders/5425 200 in 83 ms host=app-02
+2026-03-01 09:04:05,740 INFO [payment-service] Payment 99707 authorised amount=142 host=pay-01
+2026-03-01 09:04:07,045 INFO [api-gateway] GET /api/orders/2419 200 in 50 ms host=app-02
+2026-03-01 09:04:08,155 INFO [api-gateway] GET /api/orders/7209 200 in 58 ms host=app-01
+2026-03-01 09:04:09,891 INFO [api-gateway] GET /api/orders/8988 200 in 42 ms host=app-02
+2026-03-01 09:04:12,386 INFO [api-gateway] GET /api/orders/5526 200 in 86 ms host=app-01
+2026-03-01 09:04:14,177 INFO [api-gateway] GET /api/orders/4954 200 in 67 ms host=app-02
+2026-03-01 09:04:16,065 INFO [api-gateway] GET /api/orders/8800 200 in 77 ms host=app-02
+2026-03-01 09:04:18,547 INFO [api-gateway] GET /api/orders/4630 200 in 66 ms host=app-01
+2026-03-01 09:04:19,813 INFO [auth-service] User 584 logged in from 10.0.4.137
+2026-03-01 09:04:21,172 WARN [db] Slow query took 863 ms host=db-01
+2026-03-01 09:04:22,499 INFO [auth-service] User 377 logged in from 10.0.2.66
+2026-03-01 09:04:23,576 INFO [auth-service] User 423 logged in from 10.0.0.192
+2026-03-01 09:04:25,415 INFO [auth-service] User 289 logged in from 10.0.1.57
+2026-03-01 09:04:27,762 INFO [api-gateway] GET /api/orders/9595 200 in 51 ms host=app-01
+2026-03-01 09:04:30,343 INFO [api-gateway] GET /api/orders/6912 200 in 37 ms host=app-02
+2026-03-01 09:04:30,879 INFO [api-gateway] GET /api/orders/5494 200 in 20 ms host=app-01
+2026-03-01 09:04:32,762 INFO [auth-service] User 229 logged in from 10.0.5.224
+2026-03-01 09:04:35,144 INFO [api-gateway] GET /api/orders/1200 200 in 88 ms host=app-02
+2026-03-01 09:04:36,818 INFO [api-gateway] GET /api/orders/4020 200 in 21 ms host=app-02
+2026-03-01 09:04:39,670 INFO [api-gateway] GET /api/orders/2070 200 in 66 ms host=app-02
+2026-03-01 09:04:40,355 INFO [auth-service] User 154 logged in from 10.0.1.40
+2026-03-01 09:04:42,883 INFO [payment-service] Payment 91395 authorised amount=132 host=pay-01
+2026-03-01 09:04:43,679 INFO [auth-service] User 720 logged in from 10.0.4.204
+2026-03-01 09:04:45,725 INFO [auth-service] User 489 logged in from 10.0.3.234
+2026-03-01 09:04:47,332 INFO [payment-service] Payment 97025 authorised amount=161 host=pay-01
+2026-03-01 09:04:49,254 INFO [api-gateway] GET /api/orders/2625 200 in 41 ms host=app-01
+2026-03-01 09:04:50,415 INFO [api-gateway] GET /api/orders/4929 200 in 37 ms host=app-01
+2026-03-01 09:04:51,307 INFO [api-gateway] GET /api/orders/8699 200 in 52 ms host=app-01
+2026-03-01 09:04:52,385 INFO [auth-service] User 819 logged in from 10.0.3.20
+2026-03-01 09:04:54,604 INFO [payment-service] Payment 99663 authorised amount=343 host=pay-01
+2026-03-01 09:04:57,114 INFO [api-gateway] GET /api/orders/2880 200 in 84 ms host=app-01
+2026-03-01 09:04:59,233 INFO [payment-service] Payment 92330 authorised amount=41 host=pay-01
+2026-03-01 09:04:59,882 INFO [auth-service] User 709 logged in from 10.0.5.213
+2026-03-01 09:05:01,805 INFO [api-gateway] GET /api/orders/3037 200 in 74 ms host=app-02
+2026-03-01 09:05:04,054 INFO [payment-service] Payment 98199 authorised amount=281 host=pay-01
+2026-03-01 09:05:05,789 INFO [api-gateway] GET /api/orders/1653 200 in 70 ms host=app-02
+2026-03-01 09:05:07,798 INFO [api-gateway] GET /api/orders/4750 200 in 88 ms host=app-01
+2026-03-01 09:05:10,797 INFO [auth-service] User 375 logged in from 10.0.4.12
+2026-03-01 09:05:13,205 INFO [api-gateway] GET /api/orders/9502 200 in 71 ms host=app-02
+2026-03-01 09:05:14,158 INFO [auth-service] User 750 logged in from 10.0.3.250
+2026-03-01 09:05:14,887 INFO [api-gateway] GET /api/orders/6460 200 in 56 ms host=app-01
+2026-03-01 09:05:17,531 INFO [api-gateway] GET /api/orders/9117 200 in 51 ms host=app-02
+2026-03-01 09:05:20,065 INFO [auth-service] User 565 logged in from 10.0.0.82
+2026-03-01 09:05:21,196 INFO [api-gateway] GET /api/orders/7622 200 in 80 ms host=app-01
+2026-03-01 09:05:23,340 INFO [api-gateway] GET /api/orders/7770 200 in 21 ms host=app-01
+2026-03-01 09:05:25,136 INFO [auth-service] User 610 logged in from 10.0.5.115
+2026-03-01 09:05:27,536 INFO [api-gateway] GET /api/orders/9998 200 in 31 ms host=app-02
+2026-03-01 09:05:29,131 INFO [auth-service] User 224 logged in from 10.0.0.163
+2026-03-01 09:05:31,153 INFO [api-gateway] GET /api/orders/3594 200 in 54 ms host=app-01
+2026-03-01 09:05:33,034 INFO [api-gateway] GET /api/orders/2858 200 in 74 ms host=app-01
+2026-03-01 09:05:35,153 INFO [api-gateway] GET /api/orders/5781 200 in 80 ms host=app-02
+2026-03-01 09:05:36,692 INFO [api-gateway] GET /api/orders/8736 200 in 46 ms host=app-02
+2026-03-01 09:05:38,570 INFO [api-gateway] GET /api/orders/9327 200 in 32 ms host=app-01
+2026-03-01 09:05:39,761 INFO [auth-service] User 524 logged in from 10.0.2.241
+2026-03-01 09:05:42,230 INFO [api-gateway] GET /api/orders/1042 200 in 51 ms host=app-02
+2026-03-01 09:05:44,824 INFO [auth-service] User 775 logged in from 10.0.3.223
+2026-03-01 09:05:45,695 INFO [api-gateway] GET /api/orders/6654 200 in 57 ms host=app-02
+2026-03-01 09:05:47,334 INFO [api-gateway] GET /api/orders/4090 200 in 45 ms host=app-02
+2026-03-01 09:05:48,418 INFO [auth-service] User 144 logged in from 10.0.2.192
+2026-03-01 09:05:50,100 INFO [payment-service] Payment 96246 authorised amount=202 host=pay-01
+2026-03-01 09:05:53,071 INFO [auth-service] User 767 logged in from 10.0.1.128
+2026-03-01 09:05:55,983 INFO [api-gateway] GET /api/orders/6439 200 in 27 ms host=app-02
+2026-03-01 09:05:56,732 INFO [payment-service] Payment 90251 authorised amount=374 host=pay-01
+2026-03-01 09:05:57,593 INFO [payment-service] Payment 92529 authorised amount=43 host=pay-01
+2026-03-01 09:05:59,267 WARN [db] Slow query took 646 ms host=db-01
+2026-03-01 09:06:01,325 INFO [api-gateway] GET /api/orders/2315 200 in 57 ms host=app-02
+2026-03-01 09:06:04,210 INFO [auth-service] User 877 logged in from 10.0.3.225
+2026-03-01 09:06:06,063 INFO [auth-service] User 340 logged in from 10.0.5.177
+2026-03-01 09:06:08,865 WARN [db] Slow query took 392 ms host=db-01
+2026-03-01 09:06:10,450 INFO [api-gateway] GET /api/orders/2646 200 in 71 ms host=app-01
+2026-03-01 09:06:12,685 INFO [payment-service] Payment 90753 authorised amount=171 host=pay-01
+2026-03-01 09:06:15,175 INFO [api-gateway] GET /api/orders/7141 200 in 70 ms host=app-01
+2026-03-01 09:06:16,286 INFO [api-gateway] GET /api/orders/3950 200 in 36 ms host=app-01
+2026-03-01 09:06:16,983 INFO [payment-service] Payment 93945 authorised amount=259 host=pay-01
+2026-03-01 09:06:19,765 INFO [api-gateway] GET /api/orders/8555 200 in 47 ms host=app-02
+2026-03-01 09:06:20,904 INFO [api-gateway] GET /api/orders/8622 200 in 51 ms host=app-01
+2026-03-01 09:06:21,588 INFO [payment-service] Payment 99626 authorised amount=158 host=pay-01
+2026-03-01 09:06:23,686 INFO [api-gateway] GET /api/orders/5097 200 in 73 ms host=app-02
+2026-03-01 09:06:24,684 INFO [api-gateway] GET /api/orders/8916 200 in 28 ms host=app-01
+2026-03-01 09:06:26,137 INFO [api-gateway] GET /api/orders/5847 200 in 52 ms host=app-01
+2026-03-01 09:06:29,082 INFO [auth-service] User 381 logged in from 10.0.0.146
+2026-03-01 09:06:31,744 INFO [auth-service] User 150 logged in from 10.0.4.192
+2026-03-01 09:06:33,486 INFO [payment-service] Payment 94689 authorised amount=402 host=pay-01
+2026-03-01 09:06:35,983 INFO [auth-service] User 460 logged in from 10.0.1.164
+2026-03-01 09:06:36,959 INFO [api-gateway] GET /api/orders/3240 200 in 27 ms host=app-01
+2026-03-01 09:06:38,231 INFO [api-gateway] GET /api/orders/6977 200 in 31 ms host=app-01
+2026-03-01 09:06:41,005 INFO [api-gateway] GET /api/orders/7807 200 in 37 ms host=app-01
+2026-03-01 09:06:41,836 INFO [api-gateway] GET /api/orders/6994 200 in 82 ms host=app-02
+2026-03-01 09:06:44,412 INFO [api-gateway] GET /api/orders/8894 200 in 52 ms host=app-02
+2026-03-01 09:06:46,922 INFO [api-gateway] GET /api/orders/2233 200 in 33 ms host=app-01
+2026-03-01 09:06:49,573 INFO [auth-service] User 506 logged in from 10.0.4.95
+2026-03-01 09:06:50,298 INFO [api-gateway] GET /api/orders/5332 200 in 83 ms host=app-01
+2026-03-01 09:06:51,935 INFO [auth-service] User 788 logged in from 10.0.2.151
+2026-03-01 09:06:53,388 INFO [auth-service] User 480 logged in from 10.0.0.174
+2026-03-01 09:06:54,473 INFO [api-gateway] GET /api/orders/6374 200 in 43 ms host=app-01
+2026-03-01 09:06:56,561 INFO [api-gateway] GET /api/orders/5951 200 in 67 ms host=app-01
+2026-03-01 09:06:57,411 INFO [payment-service] Payment 94986 authorised amount=257 host=pay-01
+2026-03-01 09:06:58,201 INFO [api-gateway] GET /api/orders/9807 200 in 32 ms host=app-02
+2026-03-01 09:06:59,835 INFO [auth-service] User 860 logged in from 10.0.5.244
+2026-03-01 09:07:01,685 INFO [auth-service] User 844 logged in from 10.0.1.228
+2026-03-01 09:07:03,223 INFO [api-gateway] GET /api/orders/9017 200 in 67 ms host=app-02
+2026-03-01 09:07:03,804 INFO [api-gateway] GET /api/orders/8264 200 in 71 ms host=app-01
+2026-03-01 09:07:06,443 INFO [api-gateway] GET /api/orders/7018 200 in 84 ms host=app-02
+2026-03-01 09:07:07,094 INFO [api-gateway] GET /api/orders/3001 200 in 73 ms host=app-01
+2026-03-01 09:07:09,251 INFO [auth-service] User 711 logged in from 10.0.0.14
+2026-03-01 09:07:11,718 INFO [api-gateway] GET /api/orders/3063 200 in 87 ms host=app-01
+2026-03-01 09:07:12,390 INFO [auth-service] User 312 logged in from 10.0.4.57
+2026-03-01 09:07:14,922 INFO [api-gateway] GET /api/orders/3417 200 in 15 ms host=app-02
+2026-03-01 09:07:17,568 INFO [api-gateway] GET /api/orders/3129 200 in 84 ms host=app-02
+2026-03-01 09:07:20,065 INFO [api-gateway] GET /api/orders/1422 200 in 31 ms host=app-01
+2026-03-01 09:07:21,460 INFO [auth-service] User 702 logged in from 10.0.2.6
+2026-03-01 09:07:22,396 INFO [api-gateway] GET /api/orders/7897 200 in 82 ms host=app-01
+2026-03-01 09:07:24,760 INFO [api-gateway] GET /api/orders/6931 200 in 80 ms host=app-01
+2026-03-01 09:07:26,390 INFO [api-gateway] GET /api/orders/1710 200 in 81 ms host=app-02
+2026-03-01 09:07:28,035 WARN [db] Slow query took 362 ms host=db-01
+2026-03-01 09:07:31,032 INFO [payment-service] Payment 96984 authorised amount=356 host=pay-01
+2026-03-01 09:07:31,802 INFO [auth-service] User 554 logged in from 10.0.0.232
+2026-03-01 09:07:32,504 INFO [auth-service] User 167 logged in from 10.0.1.72
+2026-03-01 09:07:34,564 INFO [auth-service] User 829 logged in from 10.0.2.99
+2026-03-01 09:07:37,551 INFO [api-gateway] GET /api/orders/8433 200 in 79 ms host=app-02
+2026-03-01 09:07:38,299 INFO [auth-service] User 973 logged in from 10.0.5.168
+2026-03-01 09:07:40,993 INFO [auth-service] User 986 logged in from 10.0.1.112
+2026-03-01 09:07:42,622 INFO [api-gateway] GET /api/orders/6553 200 in 73 ms host=app-02
+2026-03-01 09:07:44,162 INFO [api-gateway] GET /api/orders/7992 200 in 55 ms host=app-02
+2026-03-01 09:07:45,598 INFO [api-gateway] GET /api/orders/8770 200 in 23 ms host=app-01
+2026-03-01 09:07:48,177 INFO [api-gateway] GET /api/orders/2582 200 in 62 ms host=app-01
+2026-03-01 09:07:50,068 INFO [auth-service] User 675 logged in from 10.0.4.86
+2026-03-01 09:07:52,243 INFO [api-gateway] GET /api/orders/7929 200 in 21 ms host=app-02
+2026-03-01 09:07:54,244 INFO [api-gateway] GET /api/orders/9313 200 in 42 ms host=app-01
+2026-03-01 09:07:56,386 INFO [api-gateway] GET /api/orders/2773 200 in 59 ms host=app-02
+2026-03-01 09:07:57,173 INFO [api-gateway] GET /api/orders/4705 200 in 69 ms host=app-01
+2026-03-01 09:07:59,196 INFO [auth-service] User 810 logged in from 10.0.2.9
+2026-03-01 09:08:00,147 INFO [auth-service] User 416 logged in from 10.0.2.91
+2026-03-01 09:08:00,662 INFO [payment-service] Payment 99278 authorised amount=341 host=pay-01
+2026-03-01 09:08:02,164 INFO [api-gateway] GET /api/orders/1502 200 in 26 ms host=app-01
+2026-03-01 09:08:03,605 INFO [api-gateway] GET /api/orders/3578 200 in 62 ms host=app-02
+2026-03-01 09:08:05,909 INFO [auth-service] User 681 logged in from 10.0.4.23
+2026-03-01 09:08:08,617 INFO [api-gateway] GET /api/orders/1815 200 in 25 ms host=app-02
+2026-03-01 09:08:10,225 INFO [api-gateway] GET /api/orders/8242 200 in 68 ms host=app-02
+2026-03-01 09:08:11,264 INFO [api-gateway] GET /api/orders/6655 200 in 70 ms host=app-01
+2026-03-01 09:08:12,472 INFO [auth-service] User 598 logged in from 10.0.4.172
+2026-03-01 09:08:13,743 INFO [api-gateway] GET /api/orders/1897 200 in 15 ms host=app-01
+2026-03-01 09:08:14,996 INFO [api-gateway] GET /api/orders/3248 200 in 47 ms host=app-02
+2026-03-01 09:08:16,317 INFO [api-gateway] GET /api/orders/8055 200 in 37 ms host=app-01
+2026-03-01 09:08:17,767 INFO [auth-service] User 612 logged in from 10.0.4.215
+2026-03-01 09:08:19,937 INFO [api-gateway] GET /api/orders/7505 200 in 20 ms host=app-02
+2026-03-01 09:08:20,484 INFO [payment-service] Payment 95129 authorised amount=299 host=pay-01
+2026-03-01 09:08:22,057 INFO [api-gateway] GET /api/orders/7843 200 in 52 ms host=app-01
+2026-03-01 09:08:23,570 WARN [db] Slow query took 475 ms host=db-01
+2026-03-01 09:08:26,073 INFO [auth-service] User 951 logged in from 10.0.5.237
+2026-03-01 09:08:27,478 INFO [api-gateway] GET /api/orders/2734 200 in 46 ms host=app-02
+2026-03-01 09:08:29,450 INFO [api-gateway] GET /api/orders/7484 200 in 54 ms host=app-02
+2026-03-01 09:08:30,504 INFO [auth-service] User 178 logged in from 10.0.4.164
+2026-03-01 09:08:31,289 INFO [api-gateway] GET /api/orders/6724 200 in 59 ms host=app-01
+2026-03-01 09:08:32,380 INFO [api-gateway] GET /api/orders/4232 200 in 37 ms host=app-01
+2026-03-01 09:08:34,780 INFO [auth-service] User 281 logged in from 10.0.5.128
+2026-03-01 09:08:36,440 INFO [auth-service] User 693 logged in from 10.0.3.176
+2026-03-01 09:08:39,250 INFO [auth-service] User 750 logged in from 10.0.4.84
+2026-03-01 09:08:41,911 INFO [auth-service] User 254 logged in from 10.0.3.19
+2026-03-01 09:08:43,583 INFO [auth-service] User 915 logged in from 10.0.2.153
+2026-03-01 09:08:44,224 INFO [api-gateway] GET /api/orders/6085 200 in 74 ms host=app-02
+2026-03-01 09:08:44,818 INFO [api-gateway] GET /api/orders/5703 200 in 24 ms host=app-01
+2026-03-01 09:08:46,855 INFO [api-gateway] GET /api/orders/8581 200 in 89 ms host=app-01
+2026-03-01 09:08:48,480 INFO [payment-service] Payment 93084 authorised amount=169 host=pay-01
+2026-03-01 09:08:50,492 INFO [api-gateway] GET /api/orders/2013 200 in 72 ms host=app-01
+2026-03-01 09:08:53,020 INFO [payment-service] Payment 91381 authorised amount=263 host=pay-01
+2026-03-01 09:08:55,135 INFO [api-gateway] GET /api/orders/8172 200 in 71 ms host=app-01
+2026-03-01 09:08:56,545 INFO [payment-service] Payment 96347 authorised amount=214 host=pay-01
+2026-03-01 09:08:58,981 INFO [auth-service] User 153 logged in from 10.0.5.167
+2026-03-01 09:09:00,317 INFO [api-gateway] GET /api/orders/7333 200 in 51 ms host=app-02
+2026-03-01 09:09:02,627 INFO [auth-service] User 717 logged in from 10.0.1.87
+2026-03-01 09:09:03,331 INFO [auth-service] User 458 logged in from 10.0.2.249
+2026-03-01 09:09:05,471 INFO [auth-service] User 232 logged in from 10.0.4.183
+2026-03-01 09:09:08,316 INFO [api-gateway] GET /api/orders/7171 200 in 57 ms host=app-01
+2026-03-01 09:09:10,491 INFO [payment-service] Payment 98624 authorised amount=52 host=pay-01
+2026-03-01 09:09:12,606 INFO [api-gateway] GET /api/orders/6928 200 in 17 ms host=app-02
+2026-03-01 09:09:13,878 WARN [db] Slow query took 649 ms host=db-01
+2026-03-01 09:09:16,747 INFO [api-gateway] GET /api/orders/4711 200 in 32 ms host=app-01
+2026-03-01 09:09:17,440 INFO [payment-service] Payment 91657 authorised amount=264 host=pay-01
+2026-03-01 09:09:19,867 INFO [payment-service] Payment 98626 authorised amount=24 host=pay-01
+2026-03-01 09:09:22,022 INFO [payment-service] Payment 92147 authorised amount=310 host=pay-01
+2026-03-01 09:09:23,464 INFO [api-gateway] GET /api/orders/3712 200 in 71 ms host=app-01
+2026-03-01 09:09:24,991 INFO [auth-service] User 343 logged in from 10.0.3.158
+2026-03-01 09:09:26,204 INFO [auth-service] User 559 logged in from 10.0.1.138
+2026-03-01 09:09:27,301 WARN [db] Slow query took 780 ms host=db-01
+2026-03-01 09:09:30,061 INFO [api-gateway] GET /api/orders/8218 200 in 74 ms host=app-02
+2026-03-01 09:09:32,507 INFO [api-gateway] GET /api/orders/7859 200 in 35 ms host=app-01
+2026-03-01 09:09:35,010 INFO [api-gateway] GET /api/orders/5096 200 in 21 ms host=app-02
+2026-03-01 09:09:37,695 INFO [auth-service] User 205 logged in from 10.0.5.218
+2026-03-01 09:09:39,485 INFO [api-gateway] GET /api/orders/2374 200 in 35 ms host=app-02
+2026-03-01 09:09:41,108 INFO [api-gateway] GET /api/orders/8167 200 in 26 ms host=app-01
+2026-03-01 09:09:43,650 INFO [payment-service] Payment 90436 authorised amount=217 host=pay-01
+2026-03-01 09:09:44,283 INFO [api-gateway] GET /api/orders/4862 200 in 64 ms host=app-01
+2026-03-01 09:09:45,720 INFO [api-gateway] GET /api/orders/2623 200 in 57 ms host=app-01
+2026-03-01 09:09:46,564 INFO [api-gateway] GET /api/orders/8740 200 in 32 ms host=app-02
+2026-03-01 09:09:48,186 INFO [api-gateway] GET /api/orders/2298 200 in 17 ms host=app-02
+2026-03-01 09:09:49,225 INFO [api-gateway] GET /api/orders/9647 200 in 69 ms host=app-01
+2026-03-01 09:09:51,666 INFO [api-gateway] GET /api/orders/2996 200 in 21 ms host=app-01
+2026-03-01 09:09:53,215 INFO [auth-service] User 568 logged in from 10.0.0.30
+2026-03-01 09:09:55,807 INFO [api-gateway] GET /api/orders/9782 200 in 17 ms host=app-01
+2026-03-01 09:09:58,103 INFO [api-gateway] GET /api/orders/1025 200 in 60 ms host=app-01
+2026-03-01 09:10:00,030 INFO [api-gateway] GET /api/orders/2402 200 in 82 ms host=app-02
+2026-03-01 09:10:00,699 INFO [api-gateway] GET /api/orders/9312 200 in 79 ms host=app-01
+2026-03-01 09:10:02,175 INFO [api-gateway] GET /api/orders/7338 200 in 62 ms host=app-02
+2026-03-01 09:10:04,543 INFO [api-gateway] GET /api/orders/2106 200 in 59 ms host=app-01
+2026-03-01 09:10:06,876 INFO [auth-service] User 890 logged in from 10.0.4.190
+2026-03-01 09:10:09,267 INFO [api-gateway] GET /api/orders/6772 200 in 84 ms host=app-02
+2026-03-01 09:10:11,801 INFO [api-gateway] GET /api/orders/8612 200 in 76 ms host=app-01
+2026-03-01 09:10:14,330 INFO [api-gateway] GET /api/orders/8498 200 in 19 ms host=app-02
+2026-03-01 09:10:15,334 INFO [auth-service] User 142 logged in from 10.0.2.240
+2026-03-01 09:10:16,609 INFO [api-gateway] GET /api/orders/9897 200 in 75 ms host=app-02
+2026-03-01 09:10:17,201 INFO [auth-service] User 392 logged in from 10.0.2.222
+2026-03-01 09:10:19,653 INFO [payment-service] Payment 95438 authorised amount=144 host=pay-01
+2026-03-01 09:10:20,464 INFO [api-gateway] GET /api/orders/7553 200 in 71 ms host=app-02
+2026-03-01 09:10:21,812 INFO [api-gateway] GET /api/orders/9151 200 in 62 ms host=app-02
+2026-03-01 09:10:24,314 INFO [auth-service] User 180 logged in from 10.0.3.156
+2026-03-01 09:10:27,302 INFO [api-gateway] GET /api/orders/5813 200 in 56 ms host=app-01
+2026-03-01 09:10:28,002 INFO [auth-service] User 413 logged in from 10.0.3.156
+2026-03-01 09:10:30,297 INFO [api-gateway] GET /api/orders/8272 200 in 59 ms host=app-02
+2026-03-01 09:10:30,902 INFO [payment-service] Payment 95776 authorised amount=319 host=pay-01
+2026-03-01 09:10:33,898 INFO [api-gateway] GET /api/orders/1939 200 in 24 ms host=app-02
+2026-03-01 09:10:35,306 INFO [payment-service] Payment 92621 authorised amount=492 host=pay-01
+2026-03-01 09:10:35,884 INFO [payment-service] Payment 97179 authorised amount=22 host=pay-01
+2026-03-01 09:10:36,700 INFO [api-gateway] GET /api/orders/7001 200 in 61 ms host=app-02
+2026-03-01 09:10:39,573 INFO [api-gateway] GET /api/orders/3513 200 in 72 ms host=app-02
+2026-03-01 09:10:41,003 INFO [auth-service] User 687 logged in from 10.0.1.137
+2026-03-01 09:10:42,421 INFO [api-gateway] GET /api/orders/5566 200 in 46 ms host=app-01
+2026-03-01 09:10:42,985 INFO [api-gateway] GET /api/orders/9482 200 in 64 ms host=app-01
+2026-03-01 09:10:44,140 INFO [api-gateway] GET /api/orders/8311 200 in 42 ms host=app-02
+2026-03-01 09:10:46,375 WARN [db] Slow query took 504 ms host=db-01
+2026-03-01 09:10:47,181 INFO [payment-service] Payment 97406 authorised amount=93 host=pay-01
+2026-03-01 09:10:49,928 INFO [api-gateway] GET /api/orders/2438 200 in 55 ms host=app-02
+2026-03-01 09:10:52,202 INFO [api-gateway] GET /api/orders/5757 200 in 53 ms host=app-01
+2026-03-01 09:10:54,481 INFO [payment-service] Payment 92852 authorised amount=411 host=pay-01
+2026-03-01 09:10:55,885 INFO [api-gateway] GET /api/orders/4292 200 in 32 ms host=app-01
+2026-03-01 09:10:58,361 INFO [api-gateway] GET /api/orders/7044 200 in 74 ms host=app-01
+2026-03-01 09:11:00,391 INFO [api-gateway] GET /api/orders/6067 200 in 65 ms host=app-02
+2026-03-01 09:11:02,205 INFO [auth-service] User 943 logged in from 10.0.4.20
+2026-03-01 09:11:03,019 INFO [api-gateway] GET /api/orders/2215 200 in 72 ms host=app-02
+2026-03-01 09:11:05,219 INFO [api-gateway] GET /api/orders/3981 200 in 31 ms host=app-02
+2026-03-01 09:11:06,976 INFO [payment-service] Payment 92034 authorised amount=270 host=pay-01
+2026-03-01 09:11:07,858 INFO [api-gateway] GET /api/orders/6286 200 in 43 ms host=app-02
+2026-03-01 09:11:10,727 INFO [api-gateway] GET /api/orders/5653 200 in 25 ms host=app-02
+2026-03-01 09:11:11,718 WARN [db] Slow query took 581 ms host=db-01
+2026-03-01 09:11:12,531 INFO [api-gateway] GET /api/orders/9740 200 in 26 ms host=app-01
+2026-03-01 09:11:14,510 INFO [auth-service] User 275 logged in from 10.0.5.161
+2026-03-01 09:11:16,812 INFO [auth-service] User 962 logged in from 10.0.4.12
+2026-03-01 09:11:19,375 INFO [api-gateway] GET /api/orders/1744 200 in 88 ms host=app-02
+2026-03-01 09:11:21,503 INFO [auth-service] User 526 logged in from 10.0.4.165
+2026-03-01 09:11:22,079 INFO [payment-service] Payment 98938 authorised amount=153 host=pay-01
+2026-03-01 09:11:24,183 INFO [api-gateway] GET /api/orders/5012 200 in 66 ms host=app-02
+2026-03-01 09:11:25,817 INFO [auth-service] User 261 logged in from 10.0.3.108
+2026-03-01 09:11:27,528 INFO [api-gateway] GET /api/orders/3353 200 in 55 ms host=app-02
+2026-03-01 09:11:29,863 INFO [payment-service] Payment 96532 authorised amount=71 host=pay-01
+2026-03-01 09:11:32,265 INFO [api-gateway] GET /api/orders/2739 200 in 55 ms host=app-01
+2026-03-01 09:11:33,931 INFO [api-gateway] GET /api/orders/5061 200 in 33 ms host=app-01
+2026-03-01 09:11:34,558 INFO [payment-service] Payment 96850 authorised amount=132 host=pay-01
+2026-03-01 09:11:37,464 INFO [payment-service] Payment 95364 authorised amount=483 host=pay-01
+2026-03-01 09:11:39,409 INFO [api-gateway] GET /api/orders/3610 200 in 78 ms host=app-02
+2026-03-01 09:11:41,156 INFO [api-gateway] GET /api/orders/1379 200 in 26 ms host=app-02
+2026-03-01 09:11:42,919 WARN [db] Slow query took 520 ms host=db-01
+2026-03-01 09:11:44,878 INFO [api-gateway] GET /api/orders/5609 200 in 78 ms host=app-02
+2026-03-01 09:11:46,092 INFO [api-gateway] GET /api/orders/2761 200 in 70 ms host=app-01
+2026-03-01 09:11:48,798 INFO [auth-service] User 882 logged in from 10.0.3.95
+2026-03-01 09:11:49,411 INFO [api-gateway] GET /api/orders/4189 200 in 61 ms host=app-02
+2026-03-01 09:11:50,095 INFO [api-gateway] GET /api/orders/5582 200 in 30 ms host=app-01
+2026-03-01 09:11:53,033 INFO [api-gateway] GET /api/orders/6555 200 in 86 ms host=app-02
+2026-03-01 09:11:55,420 INFO [api-gateway] GET /api/orders/9341 200 in 66 ms host=app-01
+2026-03-01 09:11:56,033 INFO [api-gateway] GET /api/orders/6456 200 in 75 ms host=app-02
+2026-03-01 09:11:56,906 INFO [payment-service] Payment 92290 authorised amount=172 host=pay-01
+2026-03-01 09:11:59,734 INFO [api-gateway] GET /api/orders/7438 200 in 53 ms host=app-02
+2026-03-01 09:12:01,502 INFO [api-gateway] GET /api/orders/9025 200 in 87 ms host=app-02
+2026-03-01 09:12:03,190 INFO [api-gateway] GET /api/orders/6427 200 in 29 ms host=app-02
+2026-03-01 09:12:05,149 INFO [auth-service] User 842 logged in from 10.0.5.163
+2026-03-01 09:12:05,716 INFO [api-gateway] GET /api/orders/4728 200 in 21 ms host=app-02
+2026-03-01 09:12:06,642 INFO [auth-service] User 734 logged in from 10.0.3.39
+2026-03-01 09:12:09,196 INFO [api-gateway] GET /api/orders/2800 200 in 39 ms host=app-01
+2026-03-01 09:12:10,799 INFO [api-gateway] GET /api/orders/7765 200 in 41 ms host=app-02
+2026-03-01 09:12:12,553 INFO [auth-service] User 582 logged in from 10.0.5.188
+2026-03-01 09:12:13,209 INFO [api-gateway] GET /api/orders/4397 200 in 86 ms host=app-02
+2026-03-01 09:12:16,204 INFO [api-gateway] GET /api/orders/7173 200 in 55 ms host=app-01
+2026-03-01 09:12:17,853 INFO [api-gateway] GET /api/orders/9950 200 in 60 ms host=app-02
+2026-03-01 09:12:19,878 INFO [api-gateway] GET /api/orders/5038 200 in 50 ms host=app-02
+2026-03-01 09:12:20,941 WARN [db] Slow query took 604 ms host=db-01
+2026-03-01 09:12:23,369 INFO [auth-service] User 806 logged in from 10.0.5.127
+2026-03-01 09:12:24,661 INFO [api-gateway] GET /api/orders/5480 200 in 51 ms host=app-01
+2026-03-01 09:12:26,595 INFO [api-gateway] GET /api/orders/7464 200 in 59 ms host=app-01
+2026-03-01 09:12:27,821 INFO [api-gateway] GET /api/orders/2294 200 in 59 ms host=app-02
+2026-03-01 09:12:29,961 INFO [auth-service] User 319 logged in from 10.0.1.213
+2026-03-01 09:12:31,807 INFO [payment-service] Payment 94450 authorised amount=75 host=pay-01
+2026-03-01 09:12:32,580 INFO [auth-service] User 345 logged in from 10.0.1.14
+2026-03-01 09:12:34,755 INFO [api-gateway] GET /api/orders/4814 200 in 21 ms host=app-01
+2026-03-01 09:12:36,288 INFO [auth-service] User 202 logged in from 10.0.5.199
+2026-03-01 09:12:37,132 WARN [db] Slow query took 461 ms host=db-01
+2026-03-01 09:12:38,649 INFO [payment-service] Payment 97793 authorised amount=249 host=pay-01
+2026-03-01 09:12:40,776 INFO [auth-service] User 394 logged in from 10.0.2.75
+2026-03-01 09:12:42,890 INFO [payment-service] Payment 91465 authorised amount=338 host=pay-01
+2026-03-01 09:12:44,826 INFO [api-gateway] GET /api/orders/1611 200 in 37 ms host=app-02
+2026-03-01 09:12:47,531 INFO [api-gateway] GET /api/orders/1595 200 in 65 ms host=app-02
+2026-03-01 09:12:48,497 INFO [auth-service] User 993 logged in from 10.0.2.226
+2026-03-01 09:12:49,091 INFO [api-gateway] GET /api/orders/2758 200 in 57 ms host=app-02
+2026-03-01 09:12:50,727 INFO [auth-service] User 636 logged in from 10.0.3.229
+2026-03-01 09:12:53,573 INFO [payment-service] Payment 97668 authorised amount=144 host=pay-01
+2026-03-01 09:12:54,555 INFO [api-gateway] GET /api/orders/3662 200 in 73 ms host=app-02
+2026-03-01 09:12:56,851 INFO [api-gateway] GET /api/orders/6523 200 in 52 ms host=app-01
+2026-03-01 09:12:57,790 INFO [payment-service] Payment 96643 authorised amount=428 host=pay-01
+2026-03-01 09:12:59,359 INFO [api-gateway] GET /api/orders/7567 200 in 27 ms host=app-01
+2026-03-01 09:13:02,314 INFO [api-gateway] GET /api/orders/5064 200 in 15 ms host=app-02
+2026-03-01 09:13:03,773 INFO [api-gateway] GET /api/orders/5374 200 in 57 ms host=app-02
+2026-03-01 09:13:05,729 INFO [auth-service] User 367 logged in from 10.0.5.94
+2026-03-01 09:13:07,961 INFO [api-gateway] GET /api/orders/2936 200 in 74 ms host=app-02
+2026-03-01 09:13:08,860 INFO [auth-service] User 820 logged in from 10.0.2.178
+2026-03-01 09:13:09,654 INFO [payment-service] Payment 94833 authorised amount=193 host=pay-01
+2026-03-01 09:13:11,690 INFO [api-gateway] GET /api/orders/3188 200 in 76 ms host=app-01
+2026-03-01 09:13:13,328 WARN [db] Slow query took 682 ms host=db-01
+2026-03-01 09:13:14,867 INFO [api-gateway] GET /api/orders/8714 200 in 83 ms host=app-01
+2026-03-01 09:13:17,272 INFO [auth-service] User 710 logged in from 10.0.0.136
+2026-03-01 09:13:18,889 INFO [auth-service] User 179 logged in from 10.0.4.30
+2026-03-01 09:13:19,543 INFO [api-gateway] GET /api/orders/9281 200 in 40 ms host=app-01
+2026-03-01 09:13:20,454 INFO [payment-service] Payment 97239 authorised amount=64 host=pay-01
+2026-03-01 09:13:22,655 INFO [auth-service] User 600 logged in from 10.0.0.232
+2026-03-01 09:13:24,431 INFO [payment-service] Payment 97429 authorised amount=72 host=pay-01
+2026-03-01 09:13:26,214 INFO [api-gateway] GET /api/orders/1945 200 in 86 ms host=app-02
+2026-03-01 09:13:28,396 INFO [api-gateway] GET /api/orders/1356 200 in 65 ms host=app-02
+2026-03-01 09:13:30,937 INFO [auth-service] User 692 logged in from 10.0.0.13
+2026-03-01 09:13:32,496 INFO [auth-service] User 654 logged in from 10.0.0.241
+2026-03-01 09:13:35,232 WARN [db] Slow query took 783 ms host=db-01
+2026-03-01 09:13:35,811 INFO [api-gateway] GET /api/orders/3218 200 in 68 ms host=app-02
+2026-03-01 09:13:38,794 INFO [api-gateway] GET /api/orders/7184 200 in 63 ms host=app-01
+2026-03-01 09:13:41,000 INFO [auth-service] User 652 logged in from 10.0.1.169
+2026-03-01 09:13:43,651 INFO [api-gateway] GET /api/orders/9802 200 in 65 ms host=app-01
+2026-03-01 09:13:45,971 INFO [api-gateway] GET /api/orders/1056 200 in 17 ms host=app-02
+2026-03-01 09:13:47,628 INFO [auth-service] User 534 logged in from 10.0.4.99
+2026-03-01 09:13:50,187 INFO [api-gateway] GET /api/orders/6671 200 in 34 ms host=app-02
+2026-03-01 09:13:51,158 INFO [payment-service] Payment 91848 authorised amount=21 host=pay-01
+2026-03-01 09:13:53,682 INFO [api-gateway] GET /api/orders/1256 200 in 45 ms host=app-01
+2026-03-01 09:13:54,350 INFO [auth-service] User 557 logged in from 10.0.4.174
+2026-03-01 09:13:56,608 INFO [api-gateway] GET /api/orders/1724 200 in 66 ms host=app-02
+2026-03-01 09:13:57,694 INFO [api-gateway] GET /api/orders/1924 200 in 32 ms host=app-02
+2026-03-01 09:13:58,779 INFO [payment-service] Payment 99438 authorised amount=168 host=pay-01
+2026-03-01 09:14:00,723 INFO [auth-service] User 938 logged in from 10.0.2.62
+2026-03-01 09:14:01,977 INFO [api-gateway] GET /api/orders/9540 200 in 43 ms host=app-02
+2026-03-01 09:14:03,229 INFO [api-gateway] GET /api/orders/3869 200 in 69 ms host=app-02
+2026-03-01 09:14:03,846 INFO [api-gateway] GET /api/orders/7244 200 in 82 ms host=app-02
+2026-03-01 09:14:06,087 INFO [api-gateway] GET /api/orders/5913 200 in 63 ms host=app-01
+2026-03-01 09:14:08,473 INFO [api-gateway] GET /api/orders/4692 200 in 53 ms host=app-01
+2026-03-01 09:14:10,987 INFO [payment-service] Payment 99214 authorised amount=216 host=pay-01
+2026-03-01 09:14:13,906 INFO [auth-service] User 237 logged in from 10.0.3.64
+2026-03-01 09:14:15,044 INFO [api-gateway] GET /api/orders/2295 200 in 72 ms host=app-02
+2026-03-01 09:14:15,775 INFO [auth-service] User 295 logged in from 10.0.0.70
+2026-03-01 09:14:17,218 INFO [auth-service] User 140 logged in from 10.0.0.50
+2026-03-01 09:14:19,730 INFO [auth-service] User 787 logged in from 10.0.4.57
+2026-03-01 09:14:21,428 INFO [payment-service] Payment 95455 authorised amount=160 host=pay-01
+2026-03-01 09:14:24,321 INFO [api-gateway] GET /api/orders/4113 200 in 30 ms host=app-02
+2026-03-01 09:14:27,107 INFO [auth-service] User 820 logged in from 10.0.1.103
+2026-03-01 09:14:29,895 INFO [auth-service] User 894 logged in from 10.0.2.99
+2026-03-01 09:14:31,560 INFO [auth-service] User 415 logged in from 10.0.2.94
+2026-03-01 09:14:33,342 INFO [api-gateway] GET /api/orders/2615 200 in 75 ms host=app-02
+2026-03-01 09:14:36,128 INFO [api-gateway] GET /api/orders/7781 200 in 20 ms host=app-01
+2026-03-01 09:14:38,481 INFO [api-gateway] GET /api/orders/7841 200 in 52 ms host=app-01
+2026-03-01 09:14:39,472 INFO [api-gateway] GET /api/orders/5026 200 in 78 ms host=app-02
+2026-03-01 09:14:40,615 INFO [payment-service] Payment 98037 authorised amount=240 host=pay-01
+2026-03-01 09:14:41,536 INFO [auth-service] User 273 logged in from 10.0.1.186
+2026-03-01 09:14:43,402 INFO [api-gateway] GET /api/orders/9882 200 in 22 ms host=app-01
+2026-03-01 09:14:46,000 INFO [api-gateway] GET /api/orders/1794 200 in 15 ms host=app-02
+2026-03-01 09:14:46,843 INFO [auth-service] User 169 logged in from 10.0.5.40
+2026-03-01 09:14:47,366 INFO [api-gateway] GET /api/orders/7114 200 in 22 ms host=app-02
+2026-03-01 09:14:49,514 INFO [api-gateway] GET /api/orders/9719 200 in 85 ms host=app-02
+2026-03-01 09:14:50,044 INFO [api-gateway] GET /api/orders/5501 200 in 83 ms host=app-02
+2026-03-01 09:14:50,587 INFO [payment-service] Payment 97054 authorised amount=417 host=pay-01
+2026-03-01 09:14:53,436 INFO [api-gateway] GET /api/orders/2578 200 in 82 ms host=app-01
+2026-03-01 09:14:54,539 INFO [auth-service] User 358 logged in from 10.0.2.70
+2026-03-01 09:14:57,026 INFO [api-gateway] GET /api/orders/7652 200 in 73 ms host=app-01
+2026-03-01 09:15:00,002 INFO [api-gateway] GET /api/orders/2320 200 in 19 ms host=app-01
+2026-03-01 09:15:01,515 INFO [api-gateway] GET /api/orders/8798 200 in 22 ms host=app-01
+2026-03-01 09:15:03,772 INFO [api-gateway] GET /api/orders/8109 200 in 57 ms host=app-01
+2026-03-01 09:15:06,509 INFO [payment-service] Payment 93764 authorised amount=113 host=pay-01
+2026-03-01 09:15:09,262 INFO [auth-service] User 680 logged in from 10.0.3.71
+2026-03-01 09:15:09,878 INFO [api-gateway] GET /api/orders/5593 200 in 84 ms host=app-01
+2026-03-01 09:15:10,827 INFO [payment-service] Payment 90256 authorised amount=497 host=pay-01
+2026-03-01 09:15:11,845 INFO [api-gateway] GET /api/orders/7525 200 in 24 ms host=app-02
+2026-03-01 09:15:12,751 INFO [api-gateway] GET /api/orders/7375 200 in 84 ms host=app-02
+2026-03-01 09:15:14,210 INFO [auth-service] User 909 logged in from 10.0.5.187
+2026-03-01 09:15:14,907 INFO [auth-service] User 454 logged in from 10.0.0.27
+2026-03-01 09:15:16,499 INFO [payment-service] Payment 95580 authorised amount=314 host=pay-01
+2026-03-01 09:15:18,922 WARN [db] Slow query took 706 ms host=db-01
+2026-03-01 09:15:21,844 INFO [api-gateway] GET /api/orders/5478 200 in 72 ms host=app-02
+2026-03-01 09:15:22,914 INFO [auth-service] User 484 logged in from 10.0.3.49
+2026-03-01 09:15:25,114 INFO [auth-service] User 187 logged in from 10.0.4.77
+2026-03-01 09:15:27,609 INFO [auth-service] User 184 logged in from 10.0.2.41
+2026-03-01 09:15:29,059 INFO [auth-service] User 257 logged in from 10.0.5.101
+2026-03-01 09:15:30,350 INFO [api-gateway] GET /api/orders/1085 200 in 54 ms host=app-02
+2026-03-01 09:15:31,750 INFO [api-gateway] GET /api/orders/3170 200 in 26 ms host=app-01
+2026-03-01 09:15:33,328 INFO [auth-service] User 624 logged in from 10.0.3.28
+2026-03-01 09:15:33,893 INFO [api-gateway] GET /api/orders/2524 200 in 56 ms host=app-02
+2026-03-01 09:15:34,424 INFO [api-gateway] GET /api/orders/2387 200 in 86 ms host=app-01
+2026-03-01 09:15:36,354 INFO [api-gateway] GET /api/orders/7237 200 in 36 ms host=app-01
+2026-03-01 09:15:37,526 INFO [api-gateway] GET /api/orders/3390 200 in 23 ms host=app-01
+2026-03-01 09:15:39,113 INFO [api-gateway] GET /api/orders/8933 200 in 24 ms host=app-02
+2026-03-01 09:15:40,242 INFO [api-gateway] GET /api/orders/9123 200 in 40 ms host=app-02
+2026-03-01 09:15:41,010 INFO [api-gateway] GET /api/orders/7483 200 in 57 ms host=app-02
+2026-03-01 09:15:43,520 INFO [api-gateway] GET /api/orders/6484 200 in 70 ms host=app-01
+2026-03-01 09:15:44,771 INFO [auth-service] User 811 logged in from 10.0.1.124
+2026-03-01 09:15:46,057 WARN [db] Slow query took 626 ms host=db-01
+2026-03-01 09:15:47,285 INFO [auth-service] User 602 logged in from 10.0.4.202
+2026-03-01 09:15:48,391 INFO [api-gateway] GET /api/orders/7437 200 in 61 ms host=app-01
+2026-03-01 09:15:51,221 INFO [api-gateway] GET /api/orders/9939 200 in 38 ms host=app-01
+2026-03-01 09:15:54,104 INFO [api-gateway] GET /api/orders/4434 200 in 71 ms host=app-02
+2026-03-01 09:15:56,682 INFO [api-gateway] GET /api/orders/7703 200 in 78 ms host=app-01
+2026-03-01 09:15:58,765 INFO [api-gateway] GET /api/orders/3525 200 in 69 ms host=app-02
+2026-03-01 09:15:59,450 WARN [db] Slow query took 790 ms host=db-01
+2026-03-01 09:16:01,406 INFO [api-gateway] GET /api/orders/7853 200 in 84 ms host=app-01
+2026-03-01 09:16:03,883 INFO [api-gateway] GET /api/orders/9796 200 in 25 ms host=app-01
+2026-03-01 09:16:06,305 INFO [auth-service] User 463 logged in from 10.0.1.167
+2026-03-01 09:16:08,337 INFO [auth-service] User 760 logged in from 10.0.5.167
+2026-03-01 09:16:09,836 INFO [auth-service] User 915 logged in from 10.0.3.29
+2026-03-01 09:16:10,362 INFO [api-gateway] GET /api/orders/9366 200 in 81 ms host=app-01
+2026-03-01 09:16:11,977 INFO [api-gateway] GET /api/orders/9199 200 in 34 ms host=app-02
+2026-03-01 09:16:14,971 INFO [api-gateway] GET /api/orders/5840 200 in 68 ms host=app-01
+2026-03-01 09:16:15,761 INFO [payment-service] Payment 92321 authorised amount=183 host=pay-01
+2026-03-01 09:16:17,041 INFO [api-gateway] GET /api/orders/4389 200 in 81 ms host=app-02
+2026-03-01 09:16:18,412 INFO [api-gateway] GET /api/orders/8412 200 in 55 ms host=app-01
+2026-03-01 09:16:19,662 INFO [payment-service] Payment 91885 authorised amount=16 host=pay-01
+2026-03-01 09:16:22,285 INFO [auth-service] User 793 logged in from 10.0.1.240
+2026-03-01 09:16:25,245 INFO [api-gateway] GET /api/orders/3858 200 in 85 ms host=app-01
+2026-03-01 09:16:26,572 INFO [api-gateway] GET /api/orders/8570 200 in 44 ms host=app-02
+2026-03-01 09:16:28,647 INFO [api-gateway] GET /api/orders/8080 200 in 65 ms host=app-01
+2026-03-01 09:16:30,990 INFO [payment-service] Payment 97365 authorised amount=308 host=pay-01
+2026-03-01 09:16:32,564 INFO [api-gateway] GET /api/orders/4519 200 in 41 ms host=app-02
+2026-03-01 09:16:34,945 INFO [payment-service] Payment 91025 authorised amount=300 host=pay-01
+2026-03-01 09:16:35,699 INFO [payment-service] Payment 93063 authorised amount=192 host=pay-01
+2026-03-01 09:16:37,014 INFO [api-gateway] GET /api/orders/5298 200 in 77 ms host=app-02
+2026-03-01 09:16:39,007 INFO [auth-service] User 701 logged in from 10.0.0.91
+2026-03-01 09:16:40,387 INFO [api-gateway] GET /api/orders/3826 200 in 53 ms host=app-01
+2026-03-01 09:16:42,567 INFO [api-gateway] GET /api/orders/4908 200 in 54 ms host=app-01
+2026-03-01 09:16:43,525 INFO [auth-service] User 623 logged in from 10.0.3.109
+2026-03-01 09:16:45,516 INFO [auth-service] User 533 logged in from 10.0.1.126
+2026-03-01 09:16:47,604 INFO [auth-service] User 760 logged in from 10.0.1.144
+2026-03-01 09:16:48,522 INFO [api-gateway] GET /api/orders/4065 200 in 55 ms host=app-02
+2026-03-01 09:16:50,570 INFO [payment-service] Payment 90157 authorised amount=253 host=pay-01
+2026-03-01 09:16:51,411 INFO [payment-service] Payment 99200 authorised amount=263 host=pay-01
+2026-03-01 09:16:53,544 INFO [api-gateway] GET /api/orders/9056 200 in 68 ms host=app-02
+2026-03-01 09:16:55,266 INFO [api-gateway] GET /api/orders/1505 200 in 43 ms host=app-02
+2026-03-01 09:16:55,848 INFO [api-gateway] GET /api/orders/5729 200 in 36 ms host=app-02
+2026-03-01 09:16:57,762 INFO [auth-service] User 607 logged in from 10.0.4.132
+2026-03-01 09:16:58,545 INFO [api-gateway] GET /api/orders/9898 200 in 61 ms host=app-01
+2026-03-01 09:17:00,945 INFO [api-gateway] GET /api/orders/4580 200 in 69 ms host=app-01
+2026-03-01 09:17:03,285 INFO [auth-service] User 353 logged in from 10.0.2.225
+2026-03-01 09:17:06,283 INFO [api-gateway] GET /api/orders/6711 200 in 26 ms host=app-02
+2026-03-01 09:17:08,946 INFO [api-gateway] GET /api/orders/4882 200 in 41 ms host=app-02
+2026-03-01 09:17:11,599 INFO [auth-service] User 538 logged in from 10.0.1.159
+2026-03-01 09:17:12,447 INFO [api-gateway] GET /api/orders/4390 200 in 22 ms host=app-02
+2026-03-01 09:17:14,278 INFO [auth-service] User 272 logged in from 10.0.2.182
+2026-03-01 09:17:15,509 INFO [auth-service] User 978 logged in from 10.0.4.232
+2026-03-01 09:17:17,708 INFO [api-gateway] GET /api/orders/7743 200 in 22 ms host=app-02
+2026-03-01 09:17:20,375 INFO [api-gateway] GET /api/orders/3174 200 in 46 ms host=app-01
+2026-03-01 09:17:22,654 INFO [payment-service] Payment 96434 authorised amount=255 host=pay-01
+2026-03-01 09:17:23,509 INFO [auth-service] User 742 logged in from 10.0.3.98
+2026-03-01 09:17:25,139 INFO [auth-service] User 887 logged in from 10.0.0.105
+2026-03-01 09:17:26,928 INFO [api-gateway] GET /api/orders/7046 200 in 73 ms host=app-02
+2026-03-01 09:17:28,246 INFO [api-gateway] GET /api/orders/2526 200 in 73 ms host=app-02
+2026-03-01 09:17:30,872 INFO [auth-service] User 507 logged in from 10.0.1.249
+2026-03-01 09:17:32,446 INFO [api-gateway] GET /api/orders/5399 200 in 56 ms host=app-02
+2026-03-01 09:17:33,790 INFO [auth-service] User 679 logged in from 10.0.3.203
+2026-03-01 09:17:35,149 INFO [auth-service] User 149 logged in from 10.0.0.27
+2026-03-01 09:17:37,215 INFO [payment-service] Payment 90266 authorised amount=68 host=pay-01
+2026-03-01 09:17:40,038 INFO [api-gateway] GET /api/orders/8479 200 in 15 ms host=app-02
+2026-03-01 09:17:41,044 INFO [auth-service] User 235 logged in from 10.0.5.79
+2026-03-01 09:17:41,942 INFO [payment-service] Payment 94489 authorised amount=52 host=pay-01
+2026-03-01 09:17:44,078 INFO [api-gateway] GET /api/orders/7092 200 in 36 ms host=app-01
+2026-03-01 09:17:45,569 INFO [api-gateway] GET /api/orders/4836 200 in 69 ms host=app-01
+2026-03-01 09:17:47,828 INFO [api-gateway] GET /api/orders/8812 200 in 24 ms host=app-01
+2026-03-01 09:17:49,812 INFO [api-gateway] GET /api/orders/8291 200 in 16 ms host=app-01
+2026-03-01 09:17:52,051 INFO [payment-service] Payment 96919 authorised amount=360 host=pay-01
+2026-03-01 09:17:52,882 INFO [api-gateway] GET /api/orders/7276 200 in 26 ms host=app-01
+2026-03-01 09:17:53,640 INFO [api-gateway] GET /api/orders/5902 200 in 32 ms host=app-02
+2026-03-01 09:17:56,074 INFO [auth-service] User 236 logged in from 10.0.5.175
+2026-03-01 09:17:56,931 INFO [api-gateway] GET /api/orders/1138 200 in 36 ms host=app-02
+2026-03-01 09:17:58,309 INFO [api-gateway] GET /api/orders/3480 200 in 67 ms host=app-02
+2026-03-01 09:18:00,959 INFO [api-gateway] GET /api/orders/2646 200 in 32 ms host=app-01
+2026-03-01 09:18:02,932 INFO [api-gateway] GET /api/orders/8035 200 in 55 ms host=app-01
+2026-03-01 09:18:04,052 INFO [auth-service] User 354 logged in from 10.0.4.155
+2026-03-01 09:18:06,052 INFO [auth-service] User 897 logged in from 10.0.5.8
+2026-03-01 09:18:08,672 INFO [auth-service] User 408 logged in from 10.0.1.134
+2026-03-01 09:18:10,689 INFO [api-gateway] GET /api/orders/7418 200 in 52 ms host=app-01
+2026-03-01 09:18:13,149 INFO [auth-service] User 345 logged in from 10.0.3.100
+2026-03-01 09:18:13,930 INFO [api-gateway] GET /api/orders/2163 200 in 82 ms host=app-01
+2026-03-01 09:18:16,898 INFO [payment-service] Payment 92162 authorised amount=203 host=pay-01
+2026-03-01 09:18:19,550 INFO [auth-service] User 474 logged in from 10.0.4.176
+2026-03-01 09:18:20,482 INFO [api-gateway] GET /api/orders/2195 200 in 17 ms host=app-01
+2026-03-01 09:18:21,016 INFO [api-gateway] GET /api/orders/1990 200 in 65 ms host=app-02
+2026-03-01 09:18:23,087 INFO [api-gateway] GET /api/orders/7806 200 in 69 ms host=app-02
+2026-03-01 09:18:23,794 INFO [api-gateway] GET /api/orders/3501 200 in 50 ms host=app-01
+2026-03-01 09:18:25,068 INFO [api-gateway] GET /api/orders/4329 200 in 34 ms host=app-02
+2026-03-01 09:18:26,545 INFO [auth-service] User 954 logged in from 10.0.5.176
+2026-03-01 09:18:28,653 INFO [api-gateway] GET /api/orders/8167 200 in 45 ms host=app-01
+2026-03-01 09:18:29,764 INFO [payment-service] Payment 91900 authorised amount=237 host=pay-01
+2026-03-01 09:18:31,795 INFO [api-gateway] GET /api/orders/3877 200 in 30 ms host=app-01
+2026-03-01 09:18:34,065 INFO [auth-service] User 267 logged in from 10.0.3.245
+2026-03-01 09:18:35,431 INFO [api-gateway] GET /api/orders/5247 200 in 36 ms host=app-02
+2026-03-01 09:18:36,249 INFO [auth-service] User 375 logged in from 10.0.5.228
+2026-03-01 09:18:37,044 INFO [payment-service] Payment 95488 authorised amount=418 host=pay-01
+2026-03-01 09:18:38,617 INFO [api-gateway] GET /api/orders/5308 200 in 88 ms host=app-01
+2026-03-01 09:18:40,358 INFO [api-gateway] GET /api/orders/1908 200 in 78 ms host=app-01
+2026-03-01 09:18:41,777 INFO [api-gateway] GET /api/orders/2685 200 in 88 ms host=app-01
+2026-03-01 09:18:42,848 INFO [api-gateway] GET /api/orders/1721 200 in 16 ms host=app-01
+2026-03-01 09:18:43,463 INFO [api-gateway] GET /api/orders/3458 200 in 37 ms host=app-01
+2026-03-01 09:18:45,345 INFO [payment-service] Payment 96870 authorised amount=119 host=pay-01
+2026-03-01 09:18:46,649 INFO [api-gateway] GET /api/orders/6241 200 in 49 ms host=app-01
+2026-03-01 09:18:48,578 INFO [api-gateway] GET /api/orders/1862 200 in 37 ms host=app-01
+2026-03-01 09:18:51,089 WARN [db] Slow query took 710 ms host=db-01
+2026-03-01 09:18:51,761 INFO [api-gateway] GET /api/orders/5625 200 in 54 ms host=app-02
+2026-03-01 09:18:52,477 INFO [api-gateway] GET /api/orders/7044 200 in 40 ms host=app-02
+2026-03-01 09:18:54,387 INFO [api-gateway] GET /api/orders/4974 200 in 74 ms host=app-02
+2026-03-01 09:18:56,366 INFO [api-gateway] GET /api/orders/4201 200 in 84 ms host=app-01
+2026-03-01 09:18:57,243 INFO [payment-service] Payment 90391 authorised amount=124 host=pay-01
+2026-03-01 09:18:59,096 INFO [auth-service] User 810 logged in from 10.0.0.245
+2026-03-01 09:19:00,434 INFO [auth-service] User 485 logged in from 10.0.5.188
+2026-03-01 09:19:01,703 INFO [api-gateway] GET /api/orders/4902 200 in 68 ms host=app-02
+2026-03-01 09:19:04,606 WARN [db] Slow query took 445 ms host=db-01
+2026-03-01 09:19:06,885 INFO [api-gateway] GET /api/orders/4792 200 in 81 ms host=app-02
+2026-03-01 09:19:09,137 INFO [api-gateway] GET /api/orders/2391 200 in 89 ms host=app-01
+2026-03-01 09:19:10,901 INFO [auth-service] User 503 logged in from 10.0.0.153
+2026-03-01 09:19:12,820 INFO [api-gateway] GET /api/orders/3141 200 in 45 ms host=app-02
+2026-03-01 09:19:13,973 INFO [api-gateway] GET /api/orders/7438 200 in 56 ms host=app-02
+2026-03-01 09:19:15,604 INFO [api-gateway] GET /api/orders/4321 200 in 32 ms host=app-01
+2026-03-01 09:19:16,493 INFO [api-gateway] GET /api/orders/8635 200 in 55 ms host=app-02
+2026-03-01 09:19:17,295 INFO [api-gateway] GET /api/orders/4401 200 in 72 ms host=app-02
+2026-03-01 09:19:18,953 INFO [payment-service] Payment 91481 authorised amount=85 host=pay-01
+2026-03-01 09:19:21,472 INFO [api-gateway] GET /api/orders/1660 200 in 42 ms host=app-02
+2026-03-01 09:19:22,343 INFO [auth-service] User 464 logged in from 10.0.3.133
+2026-03-01 09:19:22,965 INFO [api-gateway] GET /api/orders/3848 200 in 18 ms host=app-02
+2026-03-01 09:19:25,602 INFO [auth-service] User 663 logged in from 10.0.1.26
+2026-03-01 09:19:27,257 INFO [payment-service] Payment 92290 authorised amount=67 host=pay-01
+2026-03-01 09:19:27,787 INFO [payment-service] Payment 93641 authorised amount=71 host=pay-01
+2026-03-01 09:19:28,782 INFO [api-gateway] GET /api/orders/2376 200 in 89 ms host=app-02
+2026-03-01 09:19:31,576 INFO [api-gateway] GET /api/orders/2056 200 in 40 ms host=app-02
+2026-03-01 09:19:34,099 INFO [api-gateway] GET /api/orders/6432 200 in 30 ms host=app-01
+2026-03-01 09:19:36,955 INFO [api-gateway] GET /api/orders/8096 200 in 65 ms host=app-02
+2026-03-01 09:19:37,528 INFO [auth-service] User 276 logged in from 10.0.2.56
+2026-03-01 09:19:40,299 INFO [api-gateway] GET /api/orders/8307 200 in 34 ms host=app-01
+2026-03-01 09:19:42,334 INFO [auth-service] User 762 logged in from 10.0.2.129
+2026-03-01 09:19:43,864 INFO [auth-service] User 162 logged in from 10.0.0.73
+2026-03-01 09:19:45,322 INFO [api-gateway] GET /api/orders/9614 200 in 46 ms host=app-01
+2026-03-01 09:19:48,296 INFO [auth-service] User 467 logged in from 10.0.3.141
+2026-03-01 09:19:50,749 INFO [api-gateway] GET /api/orders/9231 200 in 56 ms host=app-02
+2026-03-01 09:19:51,925 INFO [api-gateway] GET /api/orders/4588 200 in 18 ms host=app-02
+2026-03-01 09:19:52,572 WARN [db] Slow query took 842 ms host=db-01
+2026-03-01 09:19:53,965 INFO [auth-service] User 338 logged in from 10.0.1.27
+2026-03-01 09:19:55,085 INFO [api-gateway] GET /api/orders/9743 200 in 22 ms host=app-01
+2026-03-01 09:19:57,024 WARN [db] Slow query took 697 ms host=db-01
+2026-03-01 09:19:58,411 INFO [payment-service] Payment 92846 authorised amount=95 host=pay-01
+2026-03-01 09:19:59,503 INFO [api-gateway] GET /api/orders/6878 200 in 90 ms host=app-01
+2026-03-01 09:20:01,761 INFO [api-gateway] GET /api/orders/3328 200 in 87 ms host=app-01
+2026-03-01 09:20:04,353 INFO [payment-service] Payment 98064 authorised amount=282 host=pay-01
+2026-03-01 09:20:05,626 INFO [api-gateway] GET /api/orders/2478 200 in 22 ms host=app-01
+2026-03-01 09:20:07,630 INFO [api-gateway] GET /api/orders/8831 200 in 15 ms host=app-02
+2026-03-01 09:20:10,424 INFO [api-gateway] GET /api/orders/3137 200 in 58 ms host=app-01
+2026-03-01 09:20:13,221 INFO [payment-service] Payment 95301 authorised amount=35 host=pay-01
+2026-03-01 09:20:13,776 INFO [auth-service] User 245 logged in from 10.0.0.218
+2026-03-01 09:20:15,592 INFO [api-gateway] GET /api/orders/2188 200 in 62 ms host=app-02
+2026-03-01 09:20:17,557 INFO [api-gateway] GET /api/orders/6285 200 in 32 ms host=app-01
+2026-03-01 09:20:19,888 INFO [api-gateway] GET /api/orders/8982 200 in 55 ms host=app-01
+2026-03-01 09:20:22,156 INFO [auth-service] User 728 logged in from 10.0.2.59
+2026-03-01 09:20:24,320 INFO [payment-service] Payment 96199 authorised amount=162 host=pay-01
+2026-03-01 09:20:26,655 INFO [api-gateway] GET /api/orders/3911 200 in 15 ms host=app-02
+2026-03-01 09:20:29,281 INFO [auth-service] User 681 logged in from 10.0.0.48
+2026-03-01 09:20:31,287 INFO [payment-service] Payment 93619 authorised amount=332 host=pay-01
+2026-03-01 09:20:33,201 INFO [payment-service] Payment 92304 authorised amount=174 host=pay-01
+2026-03-01 09:20:35,565 INFO [api-gateway] GET /api/orders/6234 200 in 36 ms host=app-01
+2026-03-01 09:20:38,119 INFO [auth-service] User 846 logged in from 10.0.2.116
+2026-03-01 09:20:38,647 INFO [api-gateway] GET /api/orders/2110 200 in 59 ms host=app-02
+2026-03-01 09:20:41,115 INFO [auth-service] User 149 logged in from 10.0.3.114
+2026-03-01 09:20:43,446 WARN [db] Slow query took 723 ms host=db-01
+2026-03-01 09:20:45,179 INFO [api-gateway] GET /api/orders/9946 200 in 63 ms host=app-01
+2026-03-01 09:20:47,751 INFO [auth-service] User 691 logged in from 10.0.5.196
+2026-03-01 09:20:49,969 INFO [api-gateway] GET /api/orders/2207 200 in 19 ms host=app-02
+2026-03-01 09:20:50,519 INFO [api-gateway] GET /api/orders/2715 200 in 24 ms host=app-02
+2026-03-01 09:20:51,444 INFO [api-gateway] GET /api/orders/2228 200 in 85 ms host=app-01
+2026-03-01 09:20:52,789 WARN [db] Slow query took 794 ms host=db-01
+2026-03-01 09:20:55,051 INFO [api-gateway] GET /api/orders/3703 200 in 70 ms host=app-01
+2026-03-01 09:20:55,684 INFO [api-gateway] GET /api/orders/4112 200 in 67 ms host=app-02
+2026-03-01 09:20:57,836 INFO [api-gateway] GET /api/orders/2571 200 in 21 ms host=app-02
+2026-03-01 09:20:59,765 INFO [payment-service] Payment 92516 authorised amount=32 host=pay-01
+2026-03-01 09:21:01,167 INFO [api-gateway] GET /api/orders/5825 200 in 76 ms host=app-01
+2026-03-01 09:21:01,910 INFO [api-gateway] GET /api/orders/5781 200 in 25 ms host=app-02
+2026-03-01 09:21:04,519 INFO [api-gateway] GET /api/orders/7512 200 in 75 ms host=app-02
+2026-03-01 09:21:07,257 INFO [api-gateway] GET /api/orders/9914 200 in 64 ms host=app-01
+2026-03-01 09:21:08,684 INFO [api-gateway] GET /api/orders/4056 200 in 72 ms host=app-01
+2026-03-01 09:21:09,842 INFO [api-gateway] GET /api/orders/4706 200 in 49 ms host=app-01
+2026-03-01 09:21:10,720 INFO [auth-service] User 199 logged in from 10.0.0.173
+2026-03-01 09:21:12,080 INFO [api-gateway] GET /api/orders/4727 200 in 85 ms host=app-01
+2026-03-01 09:21:14,682 INFO [payment-service] Payment 96858 authorised amount=499 host=pay-01
+2026-03-01 09:21:16,520 INFO [payment-service] Payment 97779 authorised amount=298 host=pay-01
+2026-03-01 09:21:19,225 INFO [api-gateway] GET /api/orders/2293 200 in 65 ms host=app-01
+2026-03-01 09:21:20,980 INFO [payment-service] Payment 99363 authorised amount=351 host=pay-01
+2026-03-01 09:21:23,937 INFO [api-gateway] GET /api/orders/8357 200 in 37 ms host=app-01
+2026-03-01 09:21:26,867 INFO [payment-service] Payment 92067 authorised amount=26 host=pay-01
+2026-03-01 09:21:28,426 WARN [db] Slow query took 745 ms host=db-01
+2026-03-01 09:21:29,430 INFO [payment-service] Payment 92422 authorised amount=432 host=pay-01
+2026-03-01 09:21:31,418 INFO [api-gateway] GET /api/orders/2097 200 in 26 ms host=app-02
+2026-03-01 09:21:33,309 INFO [auth-service] User 977 logged in from 10.0.2.135
+2026-03-01 09:21:34,954 INFO [payment-service] Payment 99626 authorised amount=272 host=pay-01
+2026-03-01 09:21:37,408 INFO [api-gateway] GET /api/orders/3451 200 in 33 ms host=app-01
+2026-03-01 09:21:40,221 INFO [auth-service] User 203 logged in from 10.0.2.224
+2026-03-01 09:21:42,060 INFO [api-gateway] GET /api/orders/7732 200 in 48 ms host=app-02
+2026-03-01 09:21:44,197 INFO [auth-service] User 584 logged in from 10.0.0.46
+2026-03-01 09:21:45,385 INFO [api-gateway] GET /api/orders/7581 200 in 19 ms host=app-02
+2026-03-01 09:21:48,109 INFO [api-gateway] GET /api/orders/4892 200 in 21 ms host=app-02
+2026-03-01 09:21:50,911 INFO [payment-service] Payment 90331 authorised amount=177 host=pay-01
+2026-03-01 09:21:53,455 INFO [api-gateway] GET /api/orders/5593 200 in 77 ms host=app-01
+2026-03-01 09:21:56,386 INFO [api-gateway] GET /api/orders/5923 200 in 71 ms host=app-02
+2026-03-01 09:21:57,560 INFO [api-gateway] GET /api/orders/2462 200 in 39 ms host=app-02
+2026-03-01 09:21:58,588 INFO [payment-service] Payment 97937 authorised amount=393 host=pay-01
+2026-03-01 09:22:00,379 INFO [api-gateway] GET /api/orders/1920 200 in 80 ms host=app-01
+2026-03-01 09:22:01,043 INFO [auth-service] User 513 logged in from 10.0.1.201
+2026-03-01 09:22:03,672 INFO [payment-service] Payment 90474 authorised amount=93 host=pay-01
+2026-03-01 09:22:04,654 INFO [payment-service] Payment 90944 authorised amount=132 host=pay-01
+2026-03-01 09:22:05,236 INFO [api-gateway] GET /api/orders/6904 200 in 40 ms host=app-02
+2026-03-01 09:22:06,657 INFO [api-gateway] GET /api/orders/7503 200 in 30 ms host=app-01
+2026-03-01 09:22:07,762 INFO [api-gateway] GET /api/orders/8308 200 in 37 ms host=app-02
+2026-03-01 09:22:09,729 INFO [api-gateway] GET /api/orders/3679 200 in 48 ms host=app-01
+2026-03-01 09:22:10,942 INFO [api-gateway] GET /api/orders/3669 200 in 88 ms host=app-01
+2026-03-01 09:22:13,585 INFO [auth-service] User 793 logged in from 10.0.1.70
+2026-03-01 09:22:15,714 INFO [api-gateway] GET /api/orders/1145 200 in 75 ms host=app-01
+2026-03-01 09:22:17,832 INFO [auth-service] User 108 logged in from 10.0.1.66
+2026-03-01 09:22:19,853 INFO [payment-service] Payment 94511 authorised amount=221 host=pay-01
+2026-03-01 09:22:22,592 INFO [payment-service] Payment 97520 authorised amount=134 host=pay-01
+2026-03-01 09:22:23,637 INFO [api-gateway] GET /api/orders/9530 200 in 65 ms host=app-01
+2026-03-01 09:22:24,155 WARN [db] Slow query took 683 ms host=db-01
+2026-03-01 09:22:26,059 INFO [auth-service] User 389 logged in from 10.0.2.177
+2026-03-01 09:22:26,829 INFO [api-gateway] GET /api/orders/5529 200 in 56 ms host=app-02
+2026-03-01 09:22:27,982 INFO [auth-service] User 767 logged in from 10.0.2.50
+2026-03-01 09:22:28,857 INFO [auth-service] User 158 logged in from 10.0.4.105
+2026-03-01 09:22:31,008 INFO [auth-service] User 838 logged in from 10.0.0.169
+2026-03-01 09:22:32,752 INFO [api-gateway] GET /api/orders/7857 200 in 66 ms host=app-02
+2026-03-01 09:22:35,094 INFO [auth-service] User 685 logged in from 10.0.1.89
+2026-03-01 09:22:37,410 INFO [api-gateway] GET /api/orders/9759 200 in 75 ms host=app-02
+2026-03-01 09:22:39,178 INFO [payment-service] Payment 99146 authorised amount=97 host=pay-01
+2026-03-01 09:22:40,413 INFO [api-gateway] GET /api/orders/5237 200 in 86 ms host=app-01
+2026-03-01 09:22:43,280 INFO [payment-service] Payment 91463 authorised amount=118 host=pay-01
+2026-03-01 09:22:44,668 INFO [auth-service] User 414 logged in from 10.0.3.203
+2026-03-01 09:22:47,385 INFO [api-gateway] GET /api/orders/5817 200 in 74 ms host=app-01
+2026-03-01 09:22:49,062 INFO [payment-service] Payment 99561 authorised amount=302 host=pay-01
+2026-03-01 09:22:51,923 INFO [api-gateway] GET /api/orders/4187 200 in 79 ms host=app-01
+2026-03-01 09:22:54,591 INFO [api-gateway] GET /api/orders/5888 200 in 67 ms host=app-01
+2026-03-01 09:22:57,268 INFO [api-gateway] GET /api/orders/4281 200 in 58 ms host=app-02
+2026-03-01 09:23:00,236 INFO [payment-service] Payment 97496 authorised amount=78 host=pay-01
+2026-03-01 09:23:01,527 INFO [auth-service] User 897 logged in from 10.0.0.126
+2026-03-01 09:23:02,859 WARN [db] Slow query took 620 ms host=db-01
+2026-03-01 09:23:04,945 INFO [api-gateway] GET /api/orders/5481 200 in 41 ms host=app-01
+2026-03-01 09:23:06,886 INFO [api-gateway] GET /api/orders/2442 200 in 31 ms host=app-02
+2026-03-01 09:23:08,970 INFO [api-gateway] GET /api/orders/8821 200 in 64 ms host=app-01
+2026-03-01 09:23:09,564 INFO [api-gateway] GET /api/orders/7112 200 in 16 ms host=app-02
+2026-03-01 09:23:11,956 INFO [api-gateway] GET /api/orders/1293 200 in 15 ms host=app-01
+2026-03-01 09:23:13,022 INFO [payment-service] Payment 95113 authorised amount=71 host=pay-01
+2026-03-01 09:23:13,778 INFO [api-gateway] GET /api/orders/6015 200 in 36 ms host=app-01
+2026-03-01 09:23:16,338 INFO [api-gateway] GET /api/orders/5764 200 in 73 ms host=app-02
+2026-03-01 09:23:17,922 INFO [auth-service] User 237 logged in from 10.0.2.232
+2026-03-01 09:23:19,648 INFO [auth-service] User 268 logged in from 10.0.3.6
+2026-03-01 09:23:20,719 INFO [auth-service] User 234 logged in from 10.0.1.189
+2026-03-01 09:23:21,273 INFO [api-gateway] GET /api/orders/3017 200 in 61 ms host=app-01
+2026-03-01 09:23:22,711 INFO [auth-service] User 889 logged in from 10.0.4.161
+2026-03-01 09:23:23,333 WARN [db] Slow query took 410 ms host=db-01
+2026-03-01 09:23:25,467 INFO [api-gateway] GET /api/orders/2897 200 in 68 ms host=app-02
+2026-03-01 09:23:26,917 INFO [api-gateway] GET /api/orders/8772 200 in 34 ms host=app-01
+2026-03-01 09:23:29,155 INFO [auth-service] User 408 logged in from 10.0.3.171
+2026-03-01 09:23:29,908 INFO [api-gateway] GET /api/orders/3247 200 in 68 ms host=app-01
+2026-03-01 09:23:31,687 INFO [auth-service] User 389 logged in from 10.0.0.202
+2026-03-01 09:23:32,453 INFO [api-gateway] GET /api/orders/4272 200 in 48 ms host=app-01
+2026-03-01 09:23:33,847 INFO [api-gateway] GET /api/orders/3627 200 in 20 ms host=app-02
+2026-03-01 09:23:36,623 INFO [auth-service] User 592 logged in from 10.0.2.62
+2026-03-01 09:23:37,130 INFO [auth-service] User 213 logged in from 10.0.4.173
+2026-03-01 09:23:38,865 INFO [payment-service] Payment 98383 authorised amount=43 host=pay-01
+2026-03-01 09:23:41,174 INFO [api-gateway] GET /api/orders/5192 200 in 44 ms host=app-02
+2026-03-01 09:23:44,146 INFO [api-gateway] GET /api/orders/8606 200 in 21 ms host=app-01
+2026-03-01 09:23:46,679 INFO [payment-service] Payment 94760 authorised amount=189 host=pay-01
+2026-03-01 09:23:49,183 INFO [api-gateway] GET /api/orders/2898 200 in 27 ms host=app-01
+2026-03-01 09:23:49,707 INFO [api-gateway] GET /api/orders/3793 200 in 57 ms host=app-02
+2026-03-01 09:23:52,443 WARN [db] Slow query took 574 ms host=db-01
+2026-03-01 09:23:55,140 INFO [api-gateway] GET /api/orders/6615 200 in 38 ms host=app-01
+2026-03-01 09:23:56,641 WARN [db] Slow query took 578 ms host=db-01
+2026-03-01 09:23:59,231 INFO [auth-service] User 589 logged in from 10.0.3.168
+2026-03-01 09:24:01,946 INFO [api-gateway] GET /api/orders/3171 200 in 22 ms host=app-01
+2026-03-01 09:24:02,705 INFO [payment-service] Payment 97908 authorised amount=415 host=pay-01
+2026-03-01 09:24:04,628 INFO [api-gateway] GET /api/orders/7221 200 in 60 ms host=app-01
+2026-03-01 09:24:07,284 INFO [payment-service] Payment 92140 authorised amount=252 host=pay-01
+2026-03-01 09:24:10,085 INFO [api-gateway] GET /api/orders/7738 200 in 71 ms host=app-01
+2026-03-01 09:24:10,743 INFO [auth-service] User 112 logged in from 10.0.5.224
+2026-03-01 09:24:12,938 INFO [auth-service] User 690 logged in from 10.0.5.146
+2026-03-01 09:24:13,998 WARN [db] Slow query took 646 ms host=db-01
+2026-03-01 09:24:15,796 INFO [auth-service] User 733 logged in from 10.0.0.112
+2026-03-01 09:24:17,950 INFO [api-gateway] GET /api/orders/6664 200 in 64 ms host=app-01
+2026-03-01 09:24:20,548 INFO [auth-service] User 727 logged in from 10.0.0.4
+2026-03-01 09:24:22,656 INFO [api-gateway] GET /api/orders/8688 200 in 78 ms host=app-01
+2026-03-01 09:24:23,344 INFO [api-gateway] GET /api/orders/4946 200 in 57 ms host=app-02
+2026-03-01 09:24:23,969 INFO [api-gateway] GET /api/orders/7203 200 in 66 ms host=app-01
+2026-03-01 09:24:24,666 INFO [api-gateway] GET /api/orders/8341 200 in 26 ms host=app-02
+2026-03-01 09:24:26,284 INFO [api-gateway] GET /api/orders/9148 200 in 17 ms host=app-01
+2026-03-01 09:24:27,793 INFO [api-gateway] GET /api/orders/9996 200 in 15 ms host=app-01
+2026-03-01 09:24:30,272 WARN [db] Slow query took 611 ms host=db-01
+2026-03-01 09:24:32,997 INFO [auth-service] User 770 logged in from 10.0.5.118
+2026-03-01 09:24:35,873 INFO [api-gateway] GET /api/orders/1889 200 in 43 ms host=app-02
+2026-03-01 09:24:37,203 INFO [auth-service] User 714 logged in from 10.0.3.185
+2026-03-01 09:24:39,346 INFO [auth-service] User 216 logged in from 10.0.0.196
+2026-03-01 09:24:41,493 INFO [api-gateway] GET /api/orders/6818 200 in 52 ms host=app-02
+2026-03-01 09:24:43,749 INFO [api-gateway] GET /api/orders/3689 200 in 78 ms host=app-01
+2026-03-01 09:24:46,303 INFO [auth-service] User 519 logged in from 10.0.0.67
+2026-03-01 09:24:48,330 INFO [api-gateway] GET /api/orders/7437 200 in 42 ms host=app-02
+2026-03-01 09:24:50,892 INFO [api-gateway] GET /api/orders/6536 200 in 28 ms host=app-02
+2026-03-01 09:24:51,508 INFO [auth-service] User 788 logged in from 10.0.4.33
+2026-03-01 09:24:53,938 INFO [api-gateway] GET /api/orders/9260 200 in 32 ms host=app-02
+2026-03-01 09:24:54,449 INFO [auth-service] User 666 logged in from 10.0.3.216
+2026-03-01 09:24:56,412 INFO [payment-service] Payment 92903 authorised amount=359 host=pay-01
+2026-03-01 09:24:58,358 INFO [auth-service] User 231 logged in from 10.0.0.101
+2026-03-01 09:25:00,502 INFO [auth-service] User 429 logged in from 10.0.4.227
+2026-03-01 09:25:01,964 WARN [db] Slow query took 554 ms host=db-01
+2026-03-01 09:25:03,148 WARN [db] Slow query took 601 ms host=db-01
+2026-03-01 09:25:04,780 INFO [api-gateway] GET /api/orders/7762 200 in 80 ms host=app-02
+2026-03-01 09:25:07,388 INFO [api-gateway] GET /api/orders/6143 200 in 85 ms host=app-01
+2026-03-01 09:25:08,390 INFO [auth-service] User 397 logged in from 10.0.5.90
+2026-03-01 09:25:11,193 INFO [api-gateway] GET /api/orders/3913 200 in 79 ms host=app-02
+2026-03-01 09:25:13,469 INFO [auth-service] User 675 logged in from 10.0.3.151
+2026-03-01 09:25:15,395 INFO [auth-service] User 527 logged in from 10.0.5.193
+2026-03-01 09:25:18,130 INFO [api-gateway] GET /api/orders/7920 200 in 16 ms host=app-01
+2026-03-01 09:25:18,693 INFO [api-gateway] GET /api/orders/1927 200 in 40 ms host=app-02
+2026-03-01 09:25:21,069 INFO [api-gateway] GET /api/orders/5695 200 in 47 ms host=app-01
+2026-03-01 09:25:23,667 INFO [auth-service] User 402 logged in from 10.0.1.194
+2026-03-01 09:25:25,520 INFO [api-gateway] GET /api/orders/8415 200 in 28 ms host=app-01
+2026-03-01 09:25:27,876 INFO [auth-service] User 343 logged in from 10.0.4.202
+2026-03-01 09:25:30,368 INFO [auth-service] User 809 logged in from 10.0.5.14
+2026-03-01 09:25:33,184 INFO [api-gateway] GET /api/orders/6122 200 in 85 ms host=app-01
+2026-03-01 09:25:33,717 INFO [api-gateway] GET /api/orders/8259 200 in 43 ms host=app-02
+2026-03-01 09:25:36,105 INFO [api-gateway] GET /api/orders/4218 200 in 39 ms host=app-02
+2026-03-01 09:25:37,727 WARN [db] Slow query took 376 ms host=db-01
+2026-03-01 09:25:38,694 INFO [api-gateway] GET /api/orders/9418 200 in 30 ms host=app-02
+2026-03-01 09:25:39,296 INFO [api-gateway] GET /api/orders/5329 200 in 31 ms host=app-01
+2026-03-01 09:25:41,256 INFO [api-gateway] GET /api/orders/6415 200 in 74 ms host=app-01
+2026-03-01 09:25:41,855 INFO [payment-service] Payment 99779 authorised amount=31 host=pay-01
+2026-03-01 09:25:44,290 INFO [auth-service] User 963 logged in from 10.0.5.79
+2026-03-01 09:25:46,016 INFO [auth-service] User 466 logged in from 10.0.0.202
+2026-03-01 09:25:48,285 INFO [api-gateway] GET /api/orders/4012 200 in 81 ms host=app-01
+2026-03-01 09:25:50,751 INFO [api-gateway] GET /api/orders/9897 200 in 83 ms host=app-02
+2026-03-01 09:25:51,481 INFO [api-gateway] GET /api/orders/4495 200 in 57 ms host=app-02
+2026-03-01 09:25:52,883 INFO [api-gateway] GET /api/orders/9691 200 in 75 ms host=app-01
+2026-03-01 09:25:53,670 INFO [api-gateway] GET /api/orders/4937 200 in 46 ms host=app-01
+2026-03-01 09:25:55,876 INFO [api-gateway] GET /api/orders/2857 200 in 64 ms host=app-02
+2026-03-01 09:25:57,727 INFO [api-gateway] GET /api/orders/9468 200 in 62 ms host=app-02
+2026-03-01 09:25:59,444 INFO [api-gateway] GET /api/orders/4154 200 in 56 ms host=app-01
+2026-03-01 09:26:02,314 INFO [api-gateway] GET /api/orders/9814 200 in 83 ms host=app-01
+2026-03-01 09:26:04,381 INFO [api-gateway] GET /api/orders/4492 200 in 69 ms host=app-01
+2026-03-01 09:26:05,395 INFO [payment-service] Payment 97130 authorised amount=336 host=pay-01
+2026-03-01 09:26:07,937 INFO [api-gateway] GET /api/orders/3519 200 in 18 ms host=app-02
+2026-03-01 09:26:10,229 INFO [api-gateway] GET /api/orders/2200 200 in 21 ms host=app-01
+2026-03-01 09:26:12,715 INFO [auth-service] User 688 logged in from 10.0.1.235
+2026-03-01 09:26:13,862 INFO [api-gateway] GET /api/orders/7626 200 in 70 ms host=app-02
+2026-03-01 09:26:14,404 INFO [auth-service] User 647 logged in from 10.0.0.166
+2026-03-01 09:26:16,704 INFO [api-gateway] GET /api/orders/1745 200 in 24 ms host=app-02
+2026-03-01 09:26:19,525 INFO [api-gateway] GET /api/orders/5937 200 in 26 ms host=app-02
+2026-03-01 09:26:21,938 INFO [api-gateway] GET /api/orders/7473 200 in 18 ms host=app-02
+2026-03-01 09:26:22,829 INFO [api-gateway] GET /api/orders/7406 200 in 84 ms host=app-02
+2026-03-01 09:26:25,729 INFO [api-gateway] GET /api/orders/7113 200 in 16 ms host=app-01
+2026-03-01 09:26:26,537 INFO [api-gateway] GET /api/orders/7456 200 in 83 ms host=app-01
+2026-03-01 09:26:27,799 INFO [auth-service] User 843 logged in from 10.0.2.56
+2026-03-01 09:26:29,330 INFO [auth-service] User 624 logged in from 10.0.1.43
+2026-03-01 09:26:30,290 INFO [auth-service] User 358 logged in from 10.0.1.31
+2026-03-01 09:26:31,244 INFO [auth-service] User 972 logged in from 10.0.0.219
+2026-03-01 09:26:33,621 WARN [db] Slow query took 862 ms host=db-01
+2026-03-01 09:26:35,275 INFO [api-gateway] GET /api/orders/5762 200 in 23 ms host=app-02
+2026-03-01 09:26:36,020 INFO [auth-service] User 598 logged in from 10.0.2.93
+2026-03-01 09:26:36,841 INFO [auth-service] User 202 logged in from 10.0.2.160
+2026-03-01 09:26:37,515 INFO [api-gateway] GET /api/orders/8960 200 in 72 ms host=app-02
+2026-03-01 09:26:39,556 INFO [api-gateway] GET /api/orders/3496 200 in 87 ms host=app-02
+2026-03-01 09:26:42,075 WARN [db] Slow query took 472 ms host=db-01
+2026-03-01 09:26:42,587 INFO [api-gateway] GET /api/orders/4629 200 in 70 ms host=app-02
+2026-03-01 09:26:45,188 INFO [api-gateway] GET /api/orders/6432 200 in 76 ms host=app-02
+2026-03-01 09:26:46,801 INFO [auth-service] User 598 logged in from 10.0.4.29
+2026-03-01 09:26:47,740 INFO [auth-service] User 961 logged in from 10.0.2.221
+2026-03-01 09:26:50,306 INFO [payment-service] Payment 93218 authorised amount=139 host=pay-01
+2026-03-01 09:26:52,640 INFO [auth-service] User 844 logged in from 10.0.0.230
+2026-03-01 09:26:53,187 INFO [api-gateway] GET /api/orders/1511 200 in 89 ms host=app-02
+2026-03-01 09:26:55,610 INFO [api-gateway] GET /api/orders/1600 200 in 85 ms host=app-02
+2026-03-01 09:26:57,469 WARN [db] Slow query took 783 ms host=db-01
+2026-03-01 09:26:59,603 INFO [api-gateway] GET /api/orders/7430 200 in 43 ms host=app-02
+2026-03-01 09:27:00,438 INFO [api-gateway] GET /api/orders/2483 200 in 65 ms host=app-02
+2026-03-01 09:27:02,193 INFO [auth-service] User 968 logged in from 10.0.4.177
+2026-03-01 09:27:03,108 INFO [api-gateway] GET /api/orders/8310 200 in 35 ms host=app-01
+2026-03-01 09:27:05,024 INFO [auth-service] User 993 logged in from 10.0.1.190
+2026-03-01 09:27:07,354 INFO [payment-service] Payment 90662 authorised amount=117 host=pay-01
+2026-03-01 09:27:09,758 INFO [api-gateway] GET /api/orders/5331 200 in 62 ms host=app-01
+2026-03-01 09:27:10,365 INFO [api-gateway] GET /api/orders/6918 200 in 64 ms host=app-02
+2026-03-01 09:27:13,159 INFO [payment-service] Payment 90653 authorised amount=337 host=pay-01
+2026-03-01 09:27:14,470 INFO [auth-service] User 633 logged in from 10.0.5.214
+2026-03-01 09:27:15,653 INFO [auth-service] User 692 logged in from 10.0.4.147
+2026-03-01 09:27:16,588 INFO [auth-service] User 474 logged in from 10.0.4.169
+2026-03-01 09:27:19,334 INFO [api-gateway] GET /api/orders/5121 200 in 63 ms host=app-01
+2026-03-01 09:27:21,124 INFO [api-gateway] GET /api/orders/6653 200 in 77 ms host=app-02
+2026-03-01 09:27:23,842 INFO [api-gateway] GET /api/orders/3276 200 in 71 ms host=app-01
+2026-03-01 09:27:24,917 INFO [api-gateway] GET /api/orders/5600 200 in 42 ms host=app-01
+2026-03-01 09:27:25,885 INFO [api-gateway] GET /api/orders/2938 200 in 44 ms host=app-02
+2026-03-01 09:27:28,413 INFO [auth-service] User 593 logged in from 10.0.5.124
+2026-03-01 09:27:30,110 INFO [auth-service] User 762 logged in from 10.0.3.7
+2026-03-01 09:27:31,219 INFO [api-gateway] GET /api/orders/3639 200 in 32 ms host=app-01
+2026-03-01 09:27:33,946 INFO [api-gateway] GET /api/orders/3725 200 in 48 ms host=app-01
+2026-03-01 09:27:35,738 INFO [api-gateway] GET /api/orders/1305 200 in 51 ms host=app-01
+2026-03-01 09:27:36,779 INFO [auth-service] User 582 logged in from 10.0.3.45
+2026-03-01 09:27:37,828 INFO [api-gateway] GET /api/orders/3338 200 in 89 ms host=app-01
+2026-03-01 09:27:39,886 INFO [api-gateway] GET /api/orders/3747 200 in 58 ms host=app-02
+2026-03-01 09:27:41,877 INFO [api-gateway] GET /api/orders/7196 200 in 64 ms host=app-01
+2026-03-01 09:27:42,649 INFO [api-gateway] GET /api/orders/9263 200 in 68 ms host=app-01
+2026-03-01 09:27:44,662 INFO [api-gateway] GET /api/orders/1639 200 in 83 ms host=app-01
+2026-03-01 09:27:45,395 INFO [auth-service] User 717 logged in from 10.0.4.213
+2026-03-01 09:27:45,898 INFO [payment-service] Payment 97069 authorised amount=272 host=pay-01
+2026-03-01 09:27:47,450 INFO [payment-service] Payment 98680 authorised amount=224 host=pay-01
+2026-03-01 09:27:48,524 INFO [payment-service] Payment 96246 authorised amount=184 host=pay-01
+2026-03-01 09:27:50,496 INFO [auth-service] User 879 logged in from 10.0.5.149
+2026-03-01 09:27:51,241 INFO [api-gateway] GET /api/orders/8817 200 in 44 ms host=app-01
+2026-03-01 09:27:52,449 INFO [payment-service] Payment 96695 authorised amount=136 host=pay-01
+2026-03-01 09:27:53,421 INFO [auth-service] User 908 logged in from 10.0.0.149
+2026-03-01 09:27:55,228 INFO [api-gateway] GET /api/orders/7144 200 in 41 ms host=app-02
+2026-03-01 09:27:56,750 INFO [api-gateway] GET /api/orders/7980 200 in 89 ms host=app-02
+2026-03-01 09:27:57,903 INFO [api-gateway] GET /api/orders/6990 200 in 50 ms host=app-02
+2026-03-01 09:28:00,291 INFO [api-gateway] GET /api/orders/8904 200 in 37 ms host=app-02
+2026-03-01 09:28:02,188 INFO [api-gateway] GET /api/orders/6024 200 in 88 ms host=app-02
+2026-03-01 09:28:04,624 INFO [api-gateway] GET /api/orders/3262 200 in 30 ms host=app-01
+2026-03-01 09:28:06,240 INFO [auth-service] User 265 logged in from 10.0.0.56
+2026-03-01 09:28:08,011 INFO [auth-service] User 920 logged in from 10.0.4.159
+2026-03-01 09:28:10,254 INFO [auth-service] User 264 logged in from 10.0.3.248
+2026-03-01 09:28:12,343 INFO [payment-service] Payment 92381 authorised amount=246 host=pay-01
+2026-03-01 09:28:15,158 INFO [api-gateway] GET /api/orders/2049 200 in 48 ms host=app-01
+2026-03-01 09:28:16,585 INFO [auth-service] User 841 logged in from 10.0.3.240
+2026-03-01 09:28:19,546 INFO [auth-service] User 633 logged in from 10.0.2.184
+2026-03-01 09:28:22,455 INFO [api-gateway] GET /api/orders/3871 200 in 78 ms host=app-02
+2026-03-01 09:28:22,982 INFO [payment-service] Payment 98489 authorised amount=151 host=pay-01
+2026-03-01 09:28:23,969 INFO [auth-service] User 622 logged in from 10.0.4.180
+2026-03-01 09:28:25,048 INFO [api-gateway] GET /api/orders/1590 200 in 61 ms host=app-01
+2026-03-01 09:28:27,186 WARN [db] Slow query took 388 ms host=db-01
+2026-03-01 09:28:30,178 INFO [auth-service] User 461 logged in from 10.0.5.103
+2026-03-01 09:28:31,691 INFO [api-gateway] GET /api/orders/1251 200 in 23 ms host=app-01
+2026-03-01 09:28:33,565 INFO [auth-service] User 672 logged in from 10.0.4.91
+2026-03-01 09:28:34,934 INFO [payment-service] Payment 93707 authorised amount=315 host=pay-01
+2026-03-01 09:28:37,842 INFO [api-gateway] GET /api/orders/7618 200 in 88 ms host=app-01
+2026-03-01 09:28:38,994 INFO [api-gateway] GET /api/orders/2744 200 in 86 ms host=app-01
+2026-03-01 09:28:40,752 INFO [api-gateway] GET /api/orders/2917 200 in 80 ms host=app-02
+2026-03-01 09:28:43,442 INFO [payment-service] Payment 99419 authorised amount=133 host=pay-01
+2026-03-01 09:28:45,678 WARN [db] Slow query took 876 ms host=db-01
+2026-03-01 09:28:47,387 INFO [api-gateway] GET /api/orders/6565 200 in 73 ms host=app-02
+2026-03-01 09:28:50,128 INFO [payment-service] Payment 97896 authorised amount=64 host=pay-01
+2026-03-01 09:28:51,273 INFO [api-gateway] GET /api/orders/4610 200 in 44 ms host=app-02
+2026-03-01 09:28:52,804 INFO [api-gateway] GET /api/orders/9776 200 in 16 ms host=app-02
+2026-03-01 09:28:53,925 INFO [api-gateway] GET /api/orders/6603 200 in 24 ms host=app-01
+2026-03-01 09:28:55,616 INFO [api-gateway] GET /api/orders/5408 200 in 38 ms host=app-01
+2026-03-01 09:28:57,363 INFO [api-gateway] GET /api/orders/4965 200 in 48 ms host=app-01
+2026-03-01 09:28:58,437 INFO [payment-service] Payment 95833 authorised amount=84 host=pay-01
+2026-03-01 09:29:00,884 INFO [api-gateway] GET /api/orders/2285 200 in 78 ms host=app-01
+2026-03-01 09:29:03,294 INFO [api-gateway] GET /api/orders/1692 200 in 76 ms host=app-02
+2026-03-01 09:29:05,346 INFO [api-gateway] GET /api/orders/5501 200 in 77 ms host=app-01
+2026-03-01 09:29:08,307 INFO [payment-service] Payment 94591 authorised amount=208 host=pay-01
+2026-03-01 09:29:09,362 INFO [auth-service] User 155 logged in from 10.0.4.206
+2026-03-01 09:29:10,920 INFO [payment-service] Payment 90533 authorised amount=262 host=pay-01
+2026-03-01 09:29:12,289 INFO [payment-service] Payment 92863 authorised amount=239 host=pay-01
+2026-03-01 09:29:15,230 INFO [auth-service] User 571 logged in from 10.0.2.178
+2026-03-01 09:29:15,751 INFO [auth-service] User 488 logged in from 10.0.4.27
+2026-03-01 09:29:17,064 INFO [auth-service] User 365 logged in from 10.0.1.142
+2026-03-01 09:29:18,222 INFO [api-gateway] GET /api/orders/6621 200 in 61 ms host=app-01
+2026-03-01 09:29:19,968 INFO [api-gateway] GET /api/orders/7099 200 in 61 ms host=app-02
+2026-03-01 09:29:21,168 INFO [api-gateway] GET /api/orders/3148 200 in 88 ms host=app-01
+2026-03-01 09:29:23,703 INFO [auth-service] User 923 logged in from 10.0.1.144
+2026-03-01 09:29:25,284 INFO [api-gateway] GET /api/orders/3389 200 in 34 ms host=app-02
+2026-03-01 09:29:27,798 INFO [api-gateway] GET /api/orders/9185 200 in 32 ms host=app-02
+2026-03-01 09:29:30,261 INFO [api-gateway] GET /api/orders/1781 200 in 65 ms host=app-01
+2026-03-01 09:29:32,487 INFO [api-gateway] GET /api/orders/5166 200 in 75 ms host=app-01
+2026-03-01 09:29:34,112 INFO [api-gateway] GET /api/orders/6914 200 in 61 ms host=app-02
+2026-03-01 09:29:35,472 INFO [api-gateway] GET /api/orders/6752 200 in 40 ms host=app-01
+2026-03-01 09:29:38,421 INFO [api-gateway] GET /api/orders/6326 200 in 80 ms host=app-02
+2026-03-01 09:29:40,858 INFO [api-gateway] GET /api/orders/2284 200 in 63 ms host=app-02
+2026-03-01 09:29:42,517 WARN [db] Slow query took 471 ms host=db-01
+2026-03-01 09:29:44,619 INFO [payment-service] Payment 96911 authorised amount=328 host=pay-01
+2026-03-01 09:29:46,649 INFO [api-gateway] GET /api/orders/2168 200 in 25 ms host=app-01
+2026-03-01 09:29:48,008 INFO [api-gateway] GET /api/orders/5773 200 in 49 ms host=app-02
+2026-03-01 09:29:49,187 INFO [api-gateway] GET /api/orders/6950 200 in 90 ms host=app-02
+2026-03-01 09:29:50,721 INFO [api-gateway] GET /api/orders/1378 200 in 31 ms host=app-01
+2026-03-01 09:29:52,877 INFO [payment-service] Payment 91311 authorised amount=112 host=pay-01
+2026-03-01 09:29:53,794 INFO [api-gateway] GET /api/orders/2045 200 in 75 ms host=app-01
+2026-03-01 09:29:54,360 INFO [api-gateway] GET /api/orders/2363 200 in 28 ms host=app-02
+2026-03-01 09:29:56,405 INFO [api-gateway] GET /api/orders/7387 200 in 54 ms host=app-01
+2026-03-01 09:29:57,523 INFO [api-gateway] GET /api/orders/3071 200 in 31 ms host=app-01
+2026-03-01 09:29:58,095 INFO [auth-service] User 981 logged in from 10.0.2.223
+2026-03-01 09:29:59,785 WARN [db] Slow query took 853 ms host=db-01
+2026-03-01 09:30:02,622 INFO [api-gateway] GET /api/orders/3213 200 in 84 ms host=app-01
+2026-03-01 09:30:04,600 INFO [api-gateway] GET /api/orders/8126 200 in 82 ms host=app-02
+2026-03-01 09:30:07,372 INFO [api-gateway] GET /api/orders/4721 200 in 26 ms host=app-02
+2026-03-01 09:30:08,641 INFO [api-gateway] GET /api/orders/3551 200 in 53 ms host=app-01
+2026-03-01 09:30:09,142 INFO [payment-service] Payment 92233 authorised amount=181 host=pay-01
+2026-03-01 09:30:10,359 INFO [api-gateway] GET /api/orders/9059 200 in 76 ms host=app-02
+2026-03-01 09:30:10,881 INFO [api-gateway] GET /api/orders/5799 200 in 44 ms host=app-01
+2026-03-01 09:30:12,752 INFO [api-gateway] GET /api/orders/8161 200 in 65 ms host=app-01
+2026-03-01 09:30:13,660 INFO [auth-service] User 499 logged in from 10.0.3.58
+2026-03-01 09:30:14,818 INFO [api-gateway] GET /api/orders/4924 200 in 81 ms host=app-02
+2026-03-01 09:30:16,029 INFO [auth-service] User 928 logged in from 10.0.2.107
+2026-03-01 09:30:16,999 INFO [api-gateway] GET /api/orders/3238 200 in 52 ms host=app-01
+2026-03-01 09:30:19,092 INFO [auth-service] User 378 logged in from 10.0.5.161
+2026-03-01 09:30:20,822 INFO [api-gateway] GET /api/orders/3492 200 in 21 ms host=app-01
+2026-03-01 09:30:21,786 INFO [api-gateway] GET /api/orders/5410 200 in 31 ms host=app-02
+2026-03-01 09:30:24,104 INFO [api-gateway] GET /api/orders/3468 200 in 16 ms host=app-02
+2026-03-01 09:30:25,147 INFO [api-gateway] GET /api/orders/9165 200 in 62 ms host=app-02
+2026-03-01 09:30:27,389 INFO [api-gateway] GET /api/orders/2314 200 in 33 ms host=app-01
+2026-03-01 09:30:28,556 INFO [api-gateway] GET /api/orders/9899 200 in 75 ms host=app-01
+2026-03-01 09:30:29,536 INFO [payment-service] Payment 96251 authorised amount=429 host=pay-01
+2026-03-01 09:30:30,068 WARN [db] Slow query took 554 ms host=db-01
+2026-03-01 09:30:31,530 WARN [db] Slow query took 553 ms host=db-01
+2026-03-01 09:30:33,874 INFO [api-gateway] GET /api/orders/8550 200 in 27 ms host=app-01
+2026-03-01 09:30:35,556 INFO [auth-service] User 419 logged in from 10.0.2.42
+2026-03-01 09:30:37,629 INFO [api-gateway] GET /api/orders/9534 200 in 30 ms host=app-02
+2026-03-01 09:30:39,332 INFO [api-gateway] GET /api/orders/6905 200 in 21 ms host=app-01
+2026-03-01 09:30:42,265 INFO [api-gateway] GET /api/orders/8113 200 in 56 ms host=app-01
+2026-03-01 09:30:43,183 INFO [api-gateway] GET /api/orders/2960 200 in 65 ms host=app-01
+2026-03-01 09:30:43,706 INFO [api-gateway] GET /api/orders/8786 200 in 34 ms host=app-02
+2026-03-01 09:30:46,133 INFO [api-gateway] GET /api/orders/9190 200 in 26 ms host=app-02
+2026-03-01 09:30:48,960 WARN [db] Slow query took 361 ms host=db-01
+2026-03-01 09:30:49,609 INFO [auth-service] User 818 logged in from 10.0.4.204
+2026-03-01 09:30:50,378 INFO [api-gateway] GET /api/orders/6189 200 in 86 ms host=app-02
+2026-03-01 09:30:52,892 INFO [api-gateway] GET /api/orders/4161 200 in 17 ms host=app-02
+2026-03-01 09:30:54,287 INFO [api-gateway] GET /api/orders/1646 200 in 77 ms host=app-02
+2026-03-01 09:30:56,185 INFO [api-gateway] GET /api/orders/9029 200 in 39 ms host=app-01
+2026-03-01 09:30:58,044 INFO [api-gateway] GET /api/orders/8674 200 in 50 ms host=app-01
+2026-03-01 09:30:58,716 INFO [api-gateway] GET /api/orders/5844 200 in 48 ms host=app-02
+2026-03-01 09:31:00,351 INFO [auth-service] User 618 logged in from 10.0.3.189
+2026-03-01 09:31:01,315 INFO [api-gateway] GET /api/orders/6965 200 in 45 ms host=app-02
+2026-03-01 09:31:03,617 INFO [auth-service] User 651 logged in from 10.0.3.50
+2026-03-01 09:31:05,428 INFO [api-gateway] GET /api/orders/3525 200 in 51 ms host=app-02
+2026-03-01 09:31:06,952 INFO [api-gateway] GET /api/orders/2577 200 in 81 ms host=app-01
+2026-03-01 09:31:07,561 INFO [payment-service] Payment 92926 authorised amount=452 host=pay-01
+2026-03-01 09:31:08,140 INFO [api-gateway] GET /api/orders/4139 200 in 27 ms host=app-01
+2026-03-01 09:31:10,067 INFO [payment-service] Payment 98026 authorised amount=274 host=pay-01
+2026-03-01 09:31:12,127 INFO [auth-service] User 150 logged in from 10.0.2.58
+2026-03-01 09:31:14,142 INFO [api-gateway] GET /api/orders/4419 200 in 77 ms host=app-01
+2026-03-01 09:31:15,812 INFO [auth-service] User 469 logged in from 10.0.4.192
+2026-03-01 09:31:18,658 INFO [api-gateway] GET /api/orders/7046 200 in 22 ms host=app-02
+2026-03-01 09:31:20,480 INFO [auth-service] User 954 logged in from 10.0.2.21
+2026-03-01 09:31:23,342 WARN [db] Slow query took 399 ms host=db-01
+2026-03-01 09:31:24,095 INFO [api-gateway] GET /api/orders/7313 200 in 39 ms host=app-01
+2026-03-01 09:31:25,910 INFO [api-gateway] GET /api/orders/3931 200 in 86 ms host=app-02
+2026-03-01 09:31:28,276 INFO [auth-service] User 690 logged in from 10.0.2.174
+2026-03-01 09:31:29,922 INFO [auth-service] User 206 logged in from 10.0.1.204
+2026-03-01 09:31:30,873 INFO [api-gateway] GET /api/orders/6529 200 in 35 ms host=app-02
+2026-03-01 09:31:33,707 INFO [payment-service] Payment 99012 authorised amount=171 host=pay-01
+2026-03-01 09:31:36,319 INFO [api-gateway] GET /api/orders/8054 200 in 56 ms host=app-01
+2026-03-01 09:31:38,227 INFO [api-gateway] GET /api/orders/5162 200 in 61 ms host=app-02
+2026-03-01 09:31:39,846 INFO [api-gateway] GET /api/orders/1567 200 in 51 ms host=app-01
+2026-03-01 09:31:41,640 WARN [db] Slow query took 609 ms host=db-01
+2026-03-01 09:31:42,156 WARN [db] Slow query took 519 ms host=db-01
+2026-03-01 09:31:44,796 INFO [api-gateway] GET /api/orders/5521 200 in 85 ms host=app-01
+2026-03-01 09:31:45,531 INFO [api-gateway] GET /api/orders/3557 200 in 32 ms host=app-02
+2026-03-01 09:31:46,949 INFO [auth-service] User 338 logged in from 10.0.2.209
+2026-03-01 09:31:48,200 INFO [auth-service] User 682 logged in from 10.0.1.189
+2026-03-01 09:31:48,893 INFO [api-gateway] GET /api/orders/8905 200 in 37 ms host=app-02
+2026-03-01 09:31:51,457 INFO [auth-service] User 690 logged in from 10.0.0.154
+2026-03-01 09:31:53,563 INFO [api-gateway] GET /api/orders/7251 200 in 25 ms host=app-01
+2026-03-01 09:31:56,367 INFO [api-gateway] GET /api/orders/8115 200 in 68 ms host=app-01
+2026-03-01 09:31:59,042 INFO [api-gateway] GET /api/orders/1187 200 in 63 ms host=app-01
+2026-03-01 09:32:00,304 INFO [api-gateway] GET /api/orders/9846 200 in 87 ms host=app-01
+2026-03-01 09:32:01,621 INFO [auth-service] User 256 logged in from 10.0.0.174
+2026-03-01 09:32:03,950 INFO [api-gateway] GET /api/orders/8300 200 in 88 ms host=app-01
+2026-03-01 09:32:05,005 INFO [api-gateway] GET /api/orders/7460 200 in 33 ms host=app-01
+2026-03-01 09:32:06,346 INFO [api-gateway] GET /api/orders/1807 200 in 85 ms host=app-02
+2026-03-01 09:32:07,502 INFO [api-gateway] GET /api/orders/8118 200 in 31 ms host=app-01
+2026-03-01 09:32:09,204 INFO [api-gateway] GET /api/orders/7476 200 in 88 ms host=app-01
+2026-03-01 09:32:11,107 WARN [db] Slow query took 836 ms host=db-01
+2026-03-01 09:32:12,223 INFO [api-gateway] GET /api/orders/8046 200 in 56 ms host=app-01
+2026-03-01 09:32:13,004 INFO [api-gateway] GET /api/orders/6984 200 in 59 ms host=app-01
+2026-03-01 09:32:14,306 INFO [auth-service] User 124 logged in from 10.0.2.45
+2026-03-01 09:32:17,275 INFO [auth-service] User 922 logged in from 10.0.3.161
+2026-03-01 09:32:18,140 INFO [api-gateway] GET /api/orders/4825 200 in 40 ms host=app-02
+2026-03-01 09:32:19,030 INFO [auth-service] User 187 logged in from 10.0.0.191
+2026-03-01 09:32:19,666 INFO [payment-service] Payment 92419 authorised amount=449 host=pay-01
+2026-03-01 09:32:22,247 INFO [api-gateway] GET /api/orders/6624 200 in 29 ms host=app-02
+2026-03-01 09:32:23,872 INFO [api-gateway] GET /api/orders/4424 200 in 83 ms host=app-01
+2026-03-01 09:32:24,882 INFO [api-gateway] GET /api/orders/5237 200 in 85 ms host=app-02
+2026-03-01 09:32:26,939 WARN [db] Slow query took 318 ms host=db-01
+2026-03-01 09:32:28,381 INFO [payment-service] Payment 98631 authorised amount=27 host=pay-01
+2026-03-01 09:32:29,519 INFO [api-gateway] GET /api/orders/4288 200 in 49 ms host=app-01
+2026-03-01 09:32:31,182 INFO [payment-service] Payment 91091 authorised amount=203 host=pay-01
+2026-03-01 09:32:33,333 INFO [auth-service] User 775 logged in from 10.0.2.223
+2026-03-01 09:32:34,103 INFO [api-gateway] GET /api/orders/7332 200 in 44 ms host=app-02
+2026-03-01 09:32:35,874 INFO [auth-service] User 423 logged in from 10.0.3.223
+2026-03-01 09:32:37,867 INFO [api-gateway] GET /api/orders/4258 200 in 79 ms host=app-02
+2026-03-01 09:32:39,768 INFO [auth-service] User 140 logged in from 10.0.1.238
+2026-03-01 09:32:41,592 INFO [api-gateway] GET /api/orders/7445 200 in 35 ms host=app-01
+2026-03-01 09:32:42,959 INFO [api-gateway] GET /api/orders/5953 200 in 45 ms host=app-02
+2026-03-01 09:32:45,489 INFO [auth-service] User 999 logged in from 10.0.3.229
+2026-03-01 09:32:48,488 WARN [db] Slow query took 868 ms host=db-01
+2026-03-01 09:32:51,361 INFO [api-gateway] GET /api/orders/6599 200 in 65 ms host=app-01
+2026-03-01 09:32:52,081 INFO [api-gateway] GET /api/orders/4726 200 in 68 ms host=app-01
+2026-03-01 09:32:54,013 INFO [api-gateway] GET /api/orders/6118 200 in 57 ms host=app-02
+2026-03-01 09:32:55,869 INFO [api-gateway] GET /api/orders/3270 200 in 89 ms host=app-01
+2026-03-01 09:32:58,525 INFO [api-gateway] GET /api/orders/9582 200 in 32 ms host=app-02
+2026-03-01 09:33:01,514 WARN [db] Slow query took 448 ms host=db-01
+2026-03-01 09:33:03,655 INFO [auth-service] User 261 logged in from 10.0.2.19
+2026-03-01 09:33:05,548 INFO [payment-service] Payment 91939 authorised amount=99 host=pay-01
+2026-03-01 09:33:06,842 INFO [payment-service] Payment 90483 authorised amount=396 host=pay-01
+2026-03-01 09:33:08,139 WARN [db] Slow query took 721 ms host=db-01
+2026-03-01 09:33:09,397 INFO [auth-service] User 941 logged in from 10.0.5.240
+2026-03-01 09:33:11,743 INFO [api-gateway] GET /api/orders/4079 200 in 28 ms host=app-01
+2026-03-01 09:33:12,705 INFO [auth-service] User 726 logged in from 10.0.4.70
+2026-03-01 09:33:14,719 INFO [auth-service] User 710 logged in from 10.0.1.61
+2026-03-01 09:33:16,937 INFO [api-gateway] GET /api/orders/8808 200 in 32 ms host=app-02
+2026-03-01 09:33:19,218 INFO [api-gateway] GET /api/orders/7348 200 in 77 ms host=app-02
+2026-03-01 09:33:20,061 INFO [api-gateway] GET /api/orders/1528 200 in 67 ms host=app-01
+2026-03-01 09:33:22,875 WARN [db] Slow query took 527 ms host=db-01
+2026-03-01 09:33:25,231 WARN [db] Slow query took 509 ms host=db-01
+2026-03-01 09:33:25,896 INFO [payment-service] Payment 97197 authorised amount=448 host=pay-01
+2026-03-01 09:33:27,939 INFO [auth-service] User 987 logged in from 10.0.3.229
+2026-03-01 09:33:29,056 INFO [api-gateway] GET /api/orders/1685 200 in 63 ms host=app-02
+2026-03-01 09:33:30,541 INFO [payment-service] Payment 99370 authorised amount=309 host=pay-01
+2026-03-01 09:33:32,382 INFO [auth-service] User 821 logged in from 10.0.0.135
+2026-03-01 09:33:33,155 INFO [api-gateway] GET /api/orders/1694 200 in 46 ms host=app-02
+2026-03-01 09:33:36,114 INFO [api-gateway] GET /api/orders/7347 200 in 81 ms host=app-01
+2026-03-01 09:33:37,089 INFO [api-gateway] GET /api/orders/5989 200 in 51 ms host=app-02
+2026-03-01 09:33:38,005 INFO [api-gateway] GET /api/orders/1893 200 in 81 ms host=app-01
+2026-03-01 09:33:39,664 INFO [auth-service] User 192 logged in from 10.0.5.130
+2026-03-01 09:33:40,447 INFO [auth-service] User 812 logged in from 10.0.4.36
+2026-03-01 09:33:41,930 INFO [api-gateway] GET /api/orders/1408 200 in 37 ms host=app-02
+2026-03-01 09:33:43,906 INFO [auth-service] User 306 logged in from 10.0.3.25
+2026-03-01 09:33:45,031 INFO [auth-service] User 828 logged in from 10.0.1.185
+2026-03-01 09:33:47,364 INFO [api-gateway] GET /api/orders/8362 200 in 61 ms host=app-01
+2026-03-01 09:33:49,173 INFO [api-gateway] GET /api/orders/9383 200 in 35 ms host=app-02
+2026-03-01 09:33:51,049 INFO [api-gateway] GET /api/orders/3799 200 in 57 ms host=app-01
+2026-03-01 09:33:51,955 INFO [api-gateway] GET /api/orders/1840 200 in 68 ms host=app-02
+2026-03-01 09:33:53,228 INFO [auth-service] User 556 logged in from 10.0.2.162
+2026-03-01 09:33:54,180 INFO [payment-service] Payment 93323 authorised amount=6 host=pay-01
+2026-03-01 09:33:56,237 INFO [api-gateway] GET /api/orders/8514 200 in 78 ms host=app-02
+2026-03-01 09:33:58,095 INFO [api-gateway] GET /api/orders/9084 200 in 45 ms host=app-01
+2026-03-01 09:34:00,067 INFO [api-gateway] GET /api/orders/7719 200 in 71 ms host=app-01
+2026-03-01 09:34:02,071 INFO [api-gateway] GET /api/orders/9967 200 in 50 ms host=app-01
+2026-03-01 09:34:02,693 INFO [api-gateway] GET /api/orders/6718 200 in 19 ms host=app-01
+2026-03-01 09:34:05,327 INFO [auth-service] User 958 logged in from 10.0.4.78
+2026-03-01 09:34:06,655 INFO [api-gateway] GET /api/orders/2784 200 in 68 ms host=app-01
+2026-03-01 09:34:07,559 INFO [api-gateway] GET /api/orders/3906 200 in 73 ms host=app-02
+2026-03-01 09:34:10,387 INFO [api-gateway] GET /api/orders/5903 200 in 56 ms host=app-02
+2026-03-01 09:34:13,131 INFO [payment-service] Payment 97001 authorised amount=436 host=pay-01
+2026-03-01 09:34:15,007 INFO [api-gateway] GET /api/orders/3204 200 in 30 ms host=app-02
+2026-03-01 09:34:16,330 INFO [api-gateway] GET /api/orders/4438 200 in 41 ms host=app-01
+2026-03-01 09:34:17,103 INFO [auth-service] User 744 logged in from 10.0.4.24
+2026-03-01 09:34:18,813 INFO [auth-service] User 907 logged in from 10.0.5.75
+2026-03-01 09:34:20,380 INFO [payment-service] Payment 94254 authorised amount=274 host=pay-01
+2026-03-01 09:34:22,318 INFO [auth-service] User 232 logged in from 10.0.4.146
+2026-03-01 09:34:24,059 INFO [auth-service] User 609 logged in from 10.0.3.208
+2026-03-01 09:34:25,009 INFO [auth-service] User 825 logged in from 10.0.2.51
+2026-03-01 09:34:25,513 INFO [api-gateway] GET /api/orders/2932 200 in 41 ms host=app-02
+2026-03-01 09:34:27,048 INFO [api-gateway] GET /api/orders/4478 200 in 16 ms host=app-01
+2026-03-01 09:34:29,273 INFO [api-gateway] GET /api/orders/2111 200 in 54 ms host=app-02
+2026-03-01 09:34:31,040 INFO [api-gateway] GET /api/orders/1100 200 in 29 ms host=app-02
+2026-03-01 09:34:32,393 INFO [auth-service] User 730 logged in from 10.0.0.215
+2026-03-01 09:34:33,332 INFO [api-gateway] GET /api/orders/6536 200 in 76 ms host=app-02
+2026-03-01 09:34:35,825 INFO [auth-service] User 593 logged in from 10.0.1.162
+2026-03-01 09:34:37,477 INFO [payment-service] Payment 95490 authorised amount=241 host=pay-01
+2026-03-01 09:34:39,937 INFO [api-gateway] GET /api/orders/1917 200 in 81 ms host=app-02
+2026-03-01 09:34:41,849 INFO [auth-service] User 668 logged in from 10.0.4.6
+2026-03-01 09:34:42,870 INFO [auth-service] User 918 logged in from 10.0.2.18

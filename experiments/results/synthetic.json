@@ -1,0 +1,43 @@
+{
+  "seed": 42,
+  "test_size": 0.3,
+  "threshold_quantile": 0.95,
+  "n_train_blocks": 1400,
+  "n_test_blocks": 600,
+  "test_anomaly_rate": 0.043333333333333335,
+  "models": {
+    "isolation_forest": {
+      "precision": 0.7586206896551724,
+      "recall": 0.8461538461538461,
+      "f1": 0.8,
+      "pr_auc": 0.8228212118157027,
+      "false_positive_rate": 0.012195121951219513,
+      "confusion_matrix": {
+        "tn": 567,
+        "fp": 7,
+        "fn": 4,
+        "tp": 22
+      },
+      "threshold": 0.5225778426302605,
+      "n": 600,
+      "n_positive": 26
+    },
+    "local_outlier_factor": {
+      "precision": 0.4864864864864865,
+      "recall": 0.6923076923076923,
+      "f1": 0.5714285714285714,
+      "pr_auc": 0.729577905698617,
+      "false_positive_rate": 0.033101045296167246,
+      "confusion_matrix": {
+        "tn": 555,
+        "fp": 19,
+        "fn": 8,
+        "tp": 18
+      },
+      "threshold": 1.29706300767576,
+      "n": 600,
+      "n_positive": 26
+    }
+  },
+  "data": "SYNTHETIC data - validates the pipeline only"
+}

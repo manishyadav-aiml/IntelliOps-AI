@@ -1,0 +1,121 @@
+timestamp,level,service,host,message
+"2026-03-01 13:00:03,889",INFO,auth-service,app-01,User 600 logged in
+"2026-03-01 13:00:05,121",INFO,auth-service,app-01,User 183 logged in
+"2026-03-01 13:00:08,368",INFO,auth-service,app-01,User 909 logged in
+"2026-03-01 13:00:11,190",INFO,auth-service,app-01,User 166 logged in
+"2026-03-01 13:00:12,276",INFO,auth-service,app-01,User 497 logged in
+"2026-03-01 13:00:15,405",INFO,auth-service,app-01,User 760 logged in
+"2026-03-01 13:00:18,534",INFO,auth-service,app-01,User 483 logged in
+"2026-03-01 13:00:20,779",INFO,auth-service,app-01,User 575 logged in
+"2026-03-01 13:00:21,906",INFO,auth-service,app-01,User 829 logged in
+"2026-03-01 13:00:23,714",INFO,auth-service,app-01,User 811 logged in
+"2026-03-01 13:00:25,906",INFO,auth-service,app-01,User 606 logged in
+"2026-03-01 13:00:28,064",INFO,auth-service,app-01,User 695 logged in
+"2026-03-01 13:00:29,967",INFO,auth-service,app-01,User 909 logged in
+"2026-03-01 13:00:32,511",INFO,auth-service,app-01,User 137 logged in
+"2026-03-01 13:00:33,737",INFO,auth-service,app-01,User 307 logged in
+"2026-03-01 13:00:35,819",INFO,auth-service,app-01,User 340 logged in
+"2026-03-01 13:00:37,705",INFO,auth-service,app-01,User 413 logged in
+"2026-03-01 13:00:39,692",INFO,auth-service,app-01,User 486 logged in
+"2026-03-01 13:00:42,192",INFO,auth-service,app-01,User 962 logged in
+"2026-03-01 13:00:44,001",INFO,auth-service,app-01,User 663 logged in
+"2026-03-01 13:00:44,798",INFO,auth-service,app-01,User 869 logged in
+"2026-03-01 13:00:45,592",INFO,auth-service,app-01,User 555 logged in
+"2026-03-01 13:00:47,908",INFO,auth-service,app-01,User 335 logged in
+"2026-03-01 13:00:50,452",INFO,auth-service,app-01,User 576 logged in
+"2026-03-01 13:00:52,745",INFO,auth-service,app-01,User 444 logged in
+"2026-03-01 13:00:54,736",INFO,auth-service,app-01,User 578 logged in
+"2026-03-01 13:00:56,750",INFO,auth-service,app-01,User 476 logged in
+"2026-03-01 13:01:00,066",INFO,auth-service,app-01,User 424 logged in
+"2026-03-01 13:01:01,521",INFO,auth-service,app-01,User 125 logged in
+"2026-03-01 13:01:02,650",INFO,auth-service,app-01,User 339 logged in
+"2026-03-01 13:01:04,079",INFO,auth-service,app-01,User 177 logged in
+"2026-03-01 13:01:05,836",INFO,auth-service,app-01,User 184 logged in
+"2026-03-01 13:01:07,367",INFO,auth-service,app-01,User 613 logged in
+"2026-03-01 13:01:09,662",INFO,auth-service,app-01,User 759 logged in
+"2026-03-01 13:01:10,435",INFO,auth-service,app-01,User 383 logged in
+"2026-03-01 13:01:14,178",INFO,auth-service,app-01,User 200 logged in
+"2026-03-01 13:01:15,093",INFO,auth-service,app-01,User 468 logged in
+"2026-03-01 13:01:15,727",INFO,auth-service,app-01,User 305 logged in
+"2026-03-01 13:01:17,396",INFO,auth-service,app-01,User 791 logged in
+"2026-03-01 13:01:19,048",INFO,auth-service,app-01,User 409 logged in
+"2026-03-01 13:01:22,156",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.26
+"2026-03-01 13:01:25,049",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.10
+"2026-03-01 13:01:26,216",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.21
+"2026-03-01 13:01:30,209",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.29
+"2026-03-01 13:01:33,342",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.25
+"2026-03-01 13:01:35,743",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.10
+"2026-03-01 13:01:36,273",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.11
+"2026-03-01 13:01:37,759",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.13
+"2026-03-01 13:01:41,000",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.14
+"2026-03-01 13:01:44,811",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.28
+"2026-03-01 13:01:47,341",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.22
+"2026-03-01 13:01:47,882",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.22
+"2026-03-01 13:01:50,176",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.26
+"2026-03-01 13:01:54,007",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.29
+"2026-03-01 13:01:55,898",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.9
+"2026-03-01 13:01:58,930",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.8
+"2026-03-01 13:02:01,090",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.18
+"2026-03-01 13:02:03,645",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.19
+"2026-03-01 13:02:06,796",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.25
+"2026-03-01 13:02:10,147",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.12
+"2026-03-01 13:02:13,418",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.12
+"2026-03-01 13:02:16,879",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.15
+"2026-03-01 13:02:20,074",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.24
+"2026-03-01 13:02:22,036",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.16
+"2026-03-01 13:02:24,111",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.19
+"2026-03-01 13:02:24,716",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.6
+"2026-03-01 13:02:27,238",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.6
+"2026-03-01 13:02:28,807",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.25
+"2026-03-01 13:02:29,341",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.27
+"2026-03-01 13:02:32,147",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.13
+"2026-03-01 13:02:33,836",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.15
+"2026-03-01 13:02:35,826",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.26
+"2026-03-01 13:02:37,738",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.26
+"2026-03-01 13:02:40,655",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.11
+"2026-03-01 13:02:42,296",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.2
+"2026-03-01 13:02:44,783",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.3
+"2026-03-01 13:02:48,510",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.6
+"2026-03-01 13:02:52,431",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.12
+"2026-03-01 13:02:54,919",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.27
+"2026-03-01 13:02:57,530",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.21
+"2026-03-01 13:03:00,038",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.14
+"2026-03-01 13:03:03,969",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.8
+"2026-03-01 13:03:07,789",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.4
+"2026-03-01 13:03:10,160",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.8
+"2026-03-01 13:03:12,322",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.12
+"2026-03-01 13:03:14,815",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.16
+"2026-03-01 13:03:17,552",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.11
+"2026-03-01 13:03:18,378",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.5
+"2026-03-01 13:03:21,240",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.7
+"2026-03-01 13:03:21,852",ERROR,auth-service,app-01,Authentication failed for user admin from 203.0.113.24
+"2026-03-01 13:03:24,464",INFO,auth-service,app-01,User 127 logged in
+"2026-03-01 13:03:25,618",INFO,auth-service,app-01,User 171 logged in
+"2026-03-01 13:03:29,307",INFO,auth-service,app-01,User 495 logged in
+"2026-03-01 13:03:30,801",INFO,auth-service,app-01,User 338 logged in
+"2026-03-01 13:03:32,319",INFO,auth-service,app-01,User 636 logged in
+"2026-03-01 13:03:33,064",INFO,auth-service,app-01,User 158 logged in
+"2026-03-01 13:03:34,855",INFO,auth-service,app-01,User 111 logged in
+"2026-03-01 13:03:35,956",INFO,auth-service,app-01,User 980 logged in
+"2026-03-01 13:03:39,640",INFO,auth-service,app-01,User 500 logged in
+"2026-03-01 13:03:40,690",INFO,auth-service,app-01,User 213 logged in
+"2026-03-01 13:03:41,642",INFO,auth-service,app-01,User 528 logged in
+"2026-03-01 13:03:43,816",INFO,auth-service,app-01,User 170 logged in
+"2026-03-01 13:03:45,677",INFO,auth-service,app-01,User 986 logged in
+"2026-03-01 13:03:46,900",INFO,auth-service,app-01,User 991 logged in
+"2026-03-01 13:03:48,120",INFO,auth-service,app-01,User 542 logged in
+"2026-03-01 13:03:51,483",INFO,auth-service,app-01,User 780 logged in
+"2026-03-01 13:03:53,644",INFO,auth-service,app-01,User 718 logged in
+"2026-03-01 13:03:56,157",INFO,auth-service,app-01,User 417 logged in
+"2026-03-01 13:03:58,713",INFO,auth-service,app-01,User 614 logged in
+"2026-03-01 13:04:01,722",INFO,auth-service,app-01,User 569 logged in
+"2026-03-01 13:04:03,186",INFO,auth-service,app-01,User 107 logged in
+"2026-03-01 13:04:07,155",INFO,auth-service,app-01,User 556 logged in
+"2026-03-01 13:04:07,879",INFO,auth-service,app-01,User 508 logged in
+"2026-03-01 13:04:10,496",INFO,auth-service,app-01,User 352 logged in
+"2026-03-01 13:04:12,836",INFO,auth-service,app-01,User 682 logged in
+"2026-03-01 13:04:16,414",INFO,auth-service,app-01,User 571 logged in
+"2026-03-01 13:04:18,533",INFO,auth-service,app-01,User 140 logged in
+"2026-03-01 13:04:21,614",INFO,auth-service,app-01,User 394 logged in
+"2026-03-01 13:04:24,376",INFO,auth-service,app-01,User 567 logged in
+"2026-03-01 13:04:26,089",INFO,auth-service,app-01,User 962 logged in
