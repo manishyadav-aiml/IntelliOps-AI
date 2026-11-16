@@ -1,7 +1,18 @@
 import { useMemo, useState } from 'react'
-import { Search } from 'lucide-react'
+import { RotateCcw, Search } from 'lucide-react'
+
+import DataTable from '../components/common/DataTable'
 import StatusBadge from '../components/common/StatusBadge'
 import { demoLogs } from './data'
+
+const LEVELS = [
+  'ALL',
+  'CRITICAL',
+  'ERROR',
+  'WARNING',
+  'INFO',
+  'DEBUG',
+]
 
 export default function DemoLogs() {
   const [search, setSearch] = useState('')
@@ -23,113 +34,129 @@ export default function DemoLogs() {
     })
   }, [search, level])
 
+  const columns = [
+    {
+      header: 'Log ID',
+      cell: (row: typeof demoLogs[number]) => (
+        <span className="font-semibold text-blue-700">{row.id}</span>
+      ),
+    },
+    {
+      header: 'Service',
+      cell: (row: typeof demoLogs[number]) => (
+        <span className="font-mono text-xs text-slate-600">
+          {row.service}
+        </span>
+      ),
+    },
+    {
+      header: 'Severity',
+      cell: (row: typeof demoLogs[number]) => (
+        <StatusBadge value={row.level} />
+      ),
+    },
+    {
+      header: 'Message',
+      cell: (row: typeof demoLogs[number]) => (
+        <span className="text-slate-700">{row.message}</span>
+      ),
+    },
+    {
+      header: 'Timestamp',
+      cell: (row: typeof demoLogs[number]) => (
+        <span className="whitespace-nowrap text-xs text-slate-500">
+          {row.time}
+        </span>
+      ),
+    },
+  ]
+
+  const hasFilters = search.trim() !== '' || level !== 'ALL'
+
   return (
     <div className="space-y-6">
       <section>
-        <h1 className="text-2xl font-bold text-slate-900">Log Explorer</h1>
-        <p className="mt-1 text-sm text-slate-500">
-          Explore and filter illustrative application log records.
+        <p className="text-sm leading-6 text-slate-500">
+          Search, inspect, and filter application events across services.
         </p>
       </section>
 
-      <section className="rounded-lg border bg-white p-4 shadow-sm">
-        <div className="flex flex-col gap-3 md:flex-row">
-          <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+      {/* Search and filters */}
+      <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+        <div className="flex flex-col gap-3 lg:flex-row">
+          <div className="relative min-w-0 flex-1">
+            <Search
+              className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
+              aria-hidden="true"
+            />
+
             <input
               type="search"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
-              placeholder="Search log ID, service, or message..."
+              placeholder="Search by log ID, service, or message..."
               aria-label="Search logs"
-              className="w-full rounded-md border py-2 pl-9 pr-3 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+              className="w-full rounded-lg border border-slate-200 bg-white py-2.5 pl-10 pr-4 text-sm text-slate-700 outline-none transition placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
             />
           </div>
 
           <select
             value={level}
             onChange={(event) => setLevel(event.target.value)}
-            aria-label="Filter by severity"
-            className="rounded-md border px-3 py-2 text-sm outline-none focus:border-blue-500"
+            aria-label="Filter logs by severity"
+            className="rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-700 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100 lg:w-52"
           >
-            <option value="ALL">All severity levels</option>
-            <option value="CRITICAL">Critical</option>
-            <option value="ERROR">Error</option>
-            <option value="WARNING">Warning</option>
-            <option value="INFO">Info</option>
-            <option value="DEBUG">Debug</option>
+            {LEVELS.map((item) => (
+              <option key={item} value={item}>
+                {item === 'ALL'
+                  ? 'All severity levels'
+                  : item.charAt(0) + item.slice(1).toLowerCase()}
+              </option>
+            ))}
           </select>
         </div>
 
-        <div className="mt-4 flex items-center justify-between text-xs text-slate-500">
-          <span>{filteredLogs.length} matching sample records</span>
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-4">
+          <p className="text-xs text-slate-500" aria-live="polite">
+            Showing{' '}
+            <span className="font-semibold text-slate-800">
+              {filteredLogs.length}
+            </span>{' '}
+            of {demoLogs.length} records
+          </p>
+
           <button
             type="button"
             onClick={() => {
               setSearch('')
               setLevel('ALL')
             }}
-            className="font-medium text-blue-700 hover:underline"
+            disabled={!hasFilters}
+            className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-xs font-semibold text-blue-700 transition hover:bg-blue-50 disabled:cursor-not-allowed disabled:text-slate-300 disabled:hover:bg-transparent"
           >
+            <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
             Clear filters
           </button>
         </div>
       </section>
 
-      <section className="overflow-hidden rounded-lg border bg-white shadow-sm">
-        <div className="border-b px-4 py-3">
-          <h2 className="font-semibold text-slate-800">Application Logs</h2>
-          <p className="mt-1 text-xs text-slate-500">
-            Static demonstration records. No live log ingestion is active.
+      {/* Logs table */}
+      <section className="space-y-3">
+        <div>
+          <h2 className="text-base font-semibold tracking-tight text-slate-900">
+            Application Logs
+          </h2>
+          <p className="mt-1 text-sm text-slate-500">
+            Event records organized by service, severity, and timestamp.
           </p>
         </div>
 
-        {filteredLogs.length > 0 ? (
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-slate-50 text-xs uppercase text-slate-500">
-                <tr>
-                  <th className="px-4 py-3">Log ID</th>
-                  <th className="px-4 py-3">Service</th>
-                  <th className="px-4 py-3">Severity</th>
-                  <th className="px-4 py-3">Message</th>
-                  <th className="px-4 py-3">Timestamp</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredLogs.map((log) => (
-                  <tr key={log.id} className="border-t hover:bg-slate-50">
-                    <td className="whitespace-nowrap px-4 py-3 font-medium text-blue-700">
-                      {log.id}
-                    </td>
-                    <td className="whitespace-nowrap px-4 py-3 font-mono text-xs">
-                      {log.service}
-                    </td>
-                    <td className="px-4 py-3">
-                      <StatusBadge value={log.level} />
-                    </td>
-                    <td className="min-w-56 px-4 py-3">{log.message}</td>
-                    <td className="whitespace-nowrap px-4 py-3 text-xs text-slate-500">
-                      {log.time}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        ) : (
-          <div className="p-10 text-center">
-            <p className="font-medium text-slate-700">No matching logs found</p>
-            <p className="mt-1 text-sm text-slate-500">
-              Try changing your search or severity filter.
-            </p>
-          </div>
-        )}
+        <DataTable
+          columns={columns}
+          rows={filteredLogs}
+          rowKey={(row) => row.id}
+        />
       </section>
-
-      <p className="text-xs text-slate-500">
-        Demo limitation: uploading, deleting, and reprocessing logs are not available.
-      </p>
     </div>
   )
 }

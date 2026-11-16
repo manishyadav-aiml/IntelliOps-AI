@@ -1,8 +1,22 @@
 import { useMemo, useState } from 'react'
-import { Search } from 'lucide-react'
+import { RotateCcw, Search } from 'lucide-react'
+
+import MetricCard from '../components/common/MetricCard'
+import DataTable from '../components/common/DataTable'
 import SeverityBadge from '../components/common/SeverityBadge'
 import StatusBadge from '../components/common/StatusBadge'
+
 import { demoIncidents } from './data'
+
+const SEVERITIES = ['ALL', 'P1', 'P2', 'P3', 'P4']
+
+const STATUSES = [
+  'ALL',
+  'OPEN',
+  'INVESTIGATING',
+  'MITIGATED',
+  'RESOLVED',
+]
 
 export default function DemoIncidents() {
   const [search, setSearch] = useState('')
@@ -30,7 +44,9 @@ export default function DemoIncidents() {
   }, [search, severity, status])
 
   const openCount = demoIncidents.filter(
-    (incident) => incident.status === 'OPEN' || incident.status === 'INVESTIGATING',
+    (incident) =>
+      incident.status === 'OPEN' ||
+      incident.status === 'INVESTIGATING',
   ).length
 
   const resolvedCount = demoIncidents.filter(
@@ -41,74 +57,142 @@ export default function DemoIncidents() {
     (incident) => incident.severity === 'P1',
   ).length
 
+  const columns = [
+    {
+      header: 'Incident ID',
+      cell: (row: typeof demoIncidents[number]) => (
+        <span className="font-semibold text-blue-700">{row.id}</span>
+      ),
+    },
+    {
+      header: 'Incident',
+      cell: (row: typeof demoIncidents[number]) => (
+        <span className="font-medium text-slate-800">{row.title}</span>
+      ),
+    },
+    {
+      header: 'Service',
+      cell: (row: typeof demoIncidents[number]) => (
+        <span className="font-mono text-xs text-slate-600">
+          {row.service}
+        </span>
+      ),
+    },
+    {
+      header: 'Severity',
+      cell: (row: typeof demoIncidents[number]) => (
+        <SeverityBadge value={row.severity} />
+      ),
+    },
+    {
+      header: 'Status',
+      cell: (row: typeof demoIncidents[number]) => (
+        <StatusBadge value={row.status} />
+      ),
+    },
+    {
+      header: 'Reported',
+      cell: (row: typeof demoIncidents[number]) => (
+        <span className="whitespace-nowrap text-xs text-slate-500">
+          {row.time}
+        </span>
+      ),
+    },
+  ]
+
+  const hasFilters =
+    search.trim() !== '' ||
+    severity !== 'ALL' ||
+    status !== 'ALL'
+
   return (
     <div className="space-y-6">
-      <section>
-        <h1 className="text-2xl font-bold text-slate-900">Incident Management</h1>
-        <p className="mt-1 text-sm text-slate-500">
-          Review and filter illustrative operational incidents.
-        </p>
-      </section>
-
+      {/* Incident metrics */}
       <section className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-        <div className="rounded-lg border bg-white p-4 shadow-sm">
-          <p className="text-sm text-slate-500">Total sample incidents</p>
-          <p className="mt-1 text-2xl font-semibold">{demoIncidents.length}</p>
-        </div>
-        <div className="rounded-lg border bg-white p-4 shadow-sm">
-          <p className="text-sm text-slate-500">Open / investigating</p>
-          <p className="mt-1 text-2xl font-semibold text-amber-600">{openCount}</p>
-        </div>
-        <div className="rounded-lg border bg-white p-4 shadow-sm">
-          <p className="text-sm text-slate-500">Critical incidents</p>
-          <p className="mt-1 text-2xl font-semibold text-red-600">{criticalCount}</p>
-          <p className="mt-1 text-xs text-slate-500">{resolvedCount} resolved</p>
-        </div>
+        <MetricCard
+          label="Total incidents"
+          value={demoIncidents.length}
+          hint="Recorded incident entries"
+        />
+
+        <MetricCard
+          label="Open / investigating"
+          value={openCount}
+          hint="Requiring attention"
+        />
+
+        <MetricCard
+          label="Critical incidents"
+          value={criticalCount}
+          hint={`${resolvedCount} resolved incident`}
+        />
       </section>
 
-      <section className="rounded-lg border bg-white p-4 shadow-sm">
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+      {/* Search and filters */}
+      <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-3">
+          <div className="relative min-w-0">
+            <Search
+              className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
+              aria-hidden="true"
+            />
+
             <input
               type="search"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
               placeholder="Search incidents..."
               aria-label="Search incidents"
-              className="w-full rounded-md border py-2 pl-9 pr-3 text-sm outline-none focus:border-blue-500"
+              className="w-full rounded-lg border border-slate-200 bg-white py-2.5 pl-10 pr-4 text-sm text-slate-700 outline-none transition placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
             />
           </div>
 
           <select
             value={severity}
             onChange={(event) => setSeverity(event.target.value)}
-            aria-label="Filter by incident severity"
-            className="rounded-md border px-3 py-2 text-sm outline-none focus:border-blue-500"
+            aria-label="Filter incidents by severity"
+            className="rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-700 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
           >
-            <option value="ALL">All severities</option>
-            <option value="P1">Critical (P1)</option>
-            <option value="P2">High (P2)</option>
-            <option value="P3">Medium (P3)</option>
-            <option value="P4">Low (P4)</option>
+            {SEVERITIES.map((item) => (
+              <option key={item} value={item}>
+                {item === 'ALL'
+                  ? 'All severities'
+                  : item === 'P1'
+                    ? 'Critical (P1)'
+                    : item === 'P2'
+                      ? 'High (P2)'
+                      : item === 'P3'
+                        ? 'Medium (P3)'
+                        : 'Low (P4)'}
+              </option>
+            ))}
           </select>
 
           <select
             value={status}
             onChange={(event) => setStatus(event.target.value)}
-            aria-label="Filter by incident status"
-            className="rounded-md border px-3 py-2 text-sm outline-none focus:border-blue-500"
+            aria-label="Filter incidents by status"
+            className="rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-700 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
           >
-            <option value="ALL">All statuses</option>
-            <option value="OPEN">Open</option>
-            <option value="INVESTIGATING">Investigating</option>
-            <option value="MITIGATED">Mitigated</option>
-            <option value="RESOLVED">Resolved</option>
+            {STATUSES.map((item) => (
+              <option key={item} value={item}>
+                {item === 'ALL'
+                  ? 'All statuses'
+                  : item.charAt(0) + item.slice(1).toLowerCase()}
+              </option>
+            ))}
           </select>
         </div>
 
-        <div className="mt-3 flex justify-between text-xs text-slate-500">
-          <span>{filteredIncidents.length} matching sample records</span>
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-4">
+          <p className="text-xs text-slate-500" aria-live="polite">
+            Showing{' '}
+            <span className="font-semibold text-slate-800">
+              {filteredIncidents.length}
+            </span>{' '}
+            of {demoIncidents.length} records
+          </p>
+
           <button
             type="button"
             onClick={() => {
@@ -116,70 +200,37 @@ export default function DemoIncidents() {
               setSeverity('ALL')
               setStatus('ALL')
             }}
-            className="font-medium text-blue-700 hover:underline"
+            disabled={!hasFilters}
+            className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-xs font-semibold text-blue-700 transition hover:bg-blue-50 disabled:cursor-not-allowed disabled:text-slate-300 disabled:hover:bg-transparent"
           >
+            <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
             Clear filters
           </button>
         </div>
       </section>
 
-      <section className="overflow-hidden rounded-lg border bg-white shadow-sm">
-        <div className="border-b px-4 py-3">
-          <h2 className="font-semibold text-slate-800">Incident Register</h2>
-          <p className="mt-1 text-xs text-slate-500">
-            Sample records only. No live incident management system is connected.
+      {/* Incident register */}
+      <section className="space-y-3">
+        <div>
+          <h2 className="text-base font-semibold tracking-tight text-slate-900">
+            Incident Register
+          </h2>
+          <p className="mt-1 text-sm text-slate-500">
+            Review incidents by service, priority, and response status.
           </p>
         </div>
 
-        {filteredIncidents.length > 0 ? (
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-slate-50 text-xs uppercase text-slate-500">
-                <tr>
-                  <th className="px-4 py-3">Incident ID</th>
-                  <th className="px-4 py-3">Title</th>
-                  <th className="px-4 py-3">Service</th>
-                  <th className="px-4 py-3">Severity</th>
-                  <th className="px-4 py-3">Status</th>
-                  <th className="px-4 py-3">Reported</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredIncidents.map((incident) => (
-                  <tr key={incident.id} className="border-t hover:bg-slate-50">
-                    <td className="whitespace-nowrap px-4 py-3 font-medium text-blue-700">
-                      {incident.id}
-                    </td>
-                    <td className="min-w-52 px-4 py-3 font-medium text-slate-800">
-                      {incident.title}
-                    </td>
-                    <td className="whitespace-nowrap px-4 py-3 font-mono text-xs">
-                      {incident.service}
-                    </td>
-                    <td className="px-4 py-3">
-                      <SeverityBadge value={incident.severity} />
-                    </td>
-                    <td className="px-4 py-3">
-                      <StatusBadge value={incident.status} />
-                    </td>
-                    <td className="whitespace-nowrap px-4 py-3 text-xs text-slate-500">
-                      {incident.time}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        ) : (
-          <div className="p-10 text-center text-sm text-slate-500">
-            No matching incidents found. Try changing your filters.
-          </div>
-        )}
-      </section>
+        <DataTable
+          columns={columns}
+          rows={filteredIncidents}
+          rowKey={(row) => row.id}
+        />
 
-      <p className="text-xs text-slate-500">
-        Demo limitation: creating, assigning, updating, and resolving incidents are disabled.
-      </p>
+        <p className="text-xs leading-5 text-slate-400">
+          These are illustrative records. Creating, assigning, updating,
+          and resolving incidents is not available in this workspace.
+        </p>
+      </section>
     </div>
   )
 }

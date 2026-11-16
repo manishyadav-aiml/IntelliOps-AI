@@ -12,6 +12,8 @@ const STYLES: Record<string, string> = {
   INVESTIGATING: 'bg-blue-100 text-blue-700',
   MITIGATED: 'bg-amber-100 text-amber-800',
   RESOLVED: 'bg-green-100 text-green-700',
+  LISTED: 'bg-slate-100 text-slate-700',
+  SAMPLE: 'bg-blue-100 text-blue-700',
   UNKNOWN: 'bg-slate-100 text-slate-500',
 }
 

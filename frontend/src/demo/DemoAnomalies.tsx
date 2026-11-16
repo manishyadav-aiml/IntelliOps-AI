@@ -1,7 +1,13 @@
 import { useMemo, useState } from 'react'
-import { Search } from 'lucide-react'
+import { RotateCcw, Search } from 'lucide-react'
+
+import MetricCard from '../components/common/MetricCard'
+import DataTable from '../components/common/DataTable'
 import SeverityBadge from '../components/common/SeverityBadge'
+
 import { demoAnomalies } from './data'
+
+const SEVERITIES = ['ALL', 'P1', 'P2', 'P3', 'P4']
 
 export default function DemoAnomalies() {
   const [search, setSearch] = useState('')
@@ -24,45 +30,92 @@ export default function DemoAnomalies() {
     })
   }, [search, severity])
 
+  const criticalCount = demoAnomalies.filter(
+    (item) => item.severity === 'P1',
+  ).length
+
+  const affectedServices = new Set(
+    demoAnomalies.map((item) => item.service),
+  ).size
+
+  const columns = [
+    {
+      header: 'Anomaly ID',
+      cell: (row: typeof demoAnomalies[number]) => (
+        <span className="font-semibold text-blue-700">{row.id}</span>
+      ),
+    },
+    {
+      header: 'Service',
+      cell: (row: typeof demoAnomalies[number]) => (
+        <span className="font-mono text-xs text-slate-600">
+          {row.service}
+        </span>
+      ),
+    },
+    {
+      header: 'Description',
+      cell: (row: typeof demoAnomalies[number]) => (
+        <span className="text-slate-700">{row.description}</span>
+      ),
+    },
+    {
+      header: 'Example score',
+      cell: (row: typeof demoAnomalies[number]) => (
+        <span className="font-semibold tabular-nums text-slate-800">
+          {row.score}
+        </span>
+      ),
+    },
+    {
+      header: 'Severity',
+      cell: (row: typeof demoAnomalies[number]) => (
+        <SeverityBadge value={row.severity} />
+      ),
+    },
+  ]
+
+  const hasFilters = search.trim() !== '' || severity !== 'ALL'
+
   return (
     <div className="space-y-6">
-      <section>
-        <h1 className="text-2xl font-bold text-slate-900">Anomaly Detection</h1>
-        <p className="mt-1 text-sm text-slate-500">
-          Review illustrative anomaly records and their example confidence scores.
-        </p>
-      </section>
-
+      {/* Summary metrics */}
       <section className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-        <div className="rounded-lg border bg-white p-4 shadow-sm">
-          <p className="text-sm text-slate-500">Sample anomalies</p>
-          <p className="mt-1 text-2xl font-semibold">{demoAnomalies.length}</p>
-        </div>
-        <div className="rounded-lg border bg-white p-4 shadow-sm">
-          <p className="text-sm text-slate-500">Critical severity</p>
-          <p className="mt-1 text-2xl font-semibold text-red-600">
-            {demoAnomalies.filter((item) => item.severity === 'P1').length}
-          </p>
-        </div>
-        <div className="rounded-lg border bg-white p-4 shadow-sm">
-          <p className="text-sm text-slate-500">Affected services</p>
-          <p className="mt-1 text-2xl font-semibold">
-            {new Set(demoAnomalies.map((item) => item.service)).size}
-          </p>
-        </div>
+        <MetricCard
+          label="Total anomalies"
+          value={demoAnomalies.length}
+          hint="Recorded anomaly entries"
+        />
+
+        <MetricCard
+          label="Critical anomalies"
+          value={criticalCount}
+          hint="Priority P1 records"
+        />
+
+        <MetricCard
+          label="Affected services"
+          value={affectedServices}
+          hint="Distinct services represented"
+        />
       </section>
 
-      <section className="rounded-lg border bg-white p-4 shadow-sm">
-        <div className="flex flex-col gap-3 md:flex-row">
-          <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+      {/* Search and filters */}
+      <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+        <div className="flex flex-col gap-3 lg:flex-row">
+          <div className="relative min-w-0 flex-1">
+            <Search
+              className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
+              aria-hidden="true"
+            />
+
             <input
               type="search"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
-              placeholder="Search anomaly ID, service, or description..."
+              placeholder="Search by anomaly ID, service, or description..."
               aria-label="Search anomalies"
-              className="w-full rounded-md border py-2 pl-9 pr-3 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+              className="w-full rounded-lg border border-slate-200 bg-white py-2.5 pl-10 pr-4 text-sm text-slate-700 outline-none transition placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
             />
           </div>
 
@@ -70,82 +123,70 @@ export default function DemoAnomalies() {
             value={severity}
             onChange={(event) => setSeverity(event.target.value)}
             aria-label="Filter anomalies by severity"
-            className="rounded-md border px-3 py-2 text-sm outline-none focus:border-blue-500"
+            className="rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-700 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100 lg:w-52"
           >
-            <option value="ALL">All severities</option>
-            <option value="P1">Critical</option>
-            <option value="P2">High</option>
-            <option value="P3">Medium</option>
-            <option value="P4">Low</option>
+            {SEVERITIES.map((item) => (
+              <option key={item} value={item}>
+                {item === 'ALL'
+                  ? 'All severities'
+                  : item === 'P1'
+                    ? 'Critical (P1)'
+                    : item === 'P2'
+                      ? 'High (P2)'
+                      : item === 'P3'
+                        ? 'Medium (P3)'
+                        : 'Low (P4)'}
+              </option>
+            ))}
           </select>
         </div>
 
-        <div className="mt-3 flex justify-between text-xs text-slate-500">
-          <span>{filteredAnomalies.length} matching sample records</span>
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-4">
+          <p className="text-xs text-slate-500" aria-live="polite">
+            Showing{' '}
+            <span className="font-semibold text-slate-800">
+              {filteredAnomalies.length}
+            </span>{' '}
+            of {demoAnomalies.length} records
+          </p>
+
           <button
             type="button"
             onClick={() => {
               setSearch('')
               setSeverity('ALL')
             }}
-            className="font-medium text-blue-700 hover:underline"
+            disabled={!hasFilters}
+            className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-xs font-semibold text-blue-700 transition hover:bg-blue-50 disabled:cursor-not-allowed disabled:text-slate-300 disabled:hover:bg-transparent"
           >
+            <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
             Clear filters
           </button>
         </div>
       </section>
 
-      <section className="overflow-hidden rounded-lg border bg-white shadow-sm">
-        <div className="border-b px-4 py-3">
-          <h2 className="font-semibold text-slate-800">Detected Anomalies</h2>
-          <p className="mt-1 text-xs text-slate-500">
-            Illustrative records only. These scores were not generated by a live ML model.
+      {/* Anomaly records */}
+      <section className="space-y-3">
+        <div>
+          <h2 className="text-base font-semibold tracking-tight text-slate-900">
+            Detected Anomalies
+          </h2>
+          <p className="mt-1 text-sm text-slate-500">
+            Review anomaly records by affected service, score, and severity.
           </p>
         </div>
 
-        {filteredAnomalies.length > 0 ? (
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-slate-50 text-xs uppercase text-slate-500">
-                <tr>
-                  <th className="px-4 py-3">Anomaly ID</th>
-                  <th className="px-4 py-3">Service</th>
-                  <th className="px-4 py-3">Description</th>
-                  <th className="px-4 py-3">Example score</th>
-                  <th className="px-4 py-3">Severity</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredAnomalies.map((anomaly) => (
-                  <tr key={anomaly.id} className="border-t hover:bg-slate-50">
-                    <td className="whitespace-nowrap px-4 py-3 font-medium text-blue-700">
-                      {anomaly.id}
-                    </td>
-                    <td className="whitespace-nowrap px-4 py-3 font-mono text-xs">
-                      {anomaly.service}
-                    </td>
-                    <td className="min-w-56 px-4 py-3">{anomaly.description}</td>
-                    <td className="whitespace-nowrap px-4 py-3 font-semibold">
-                      {anomaly.score}
-                    </td>
-                    <td className="px-4 py-3">
-                      <SeverityBadge value={anomaly.severity} />
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        ) : (
-          <div className="p-10 text-center text-sm text-slate-500">
-            No matching anomalies found. Try changing your filters.
-          </div>
-        )}
-      </section>
+        <DataTable
+          columns={columns}
+          rows={filteredAnomalies}
+          rowKey={(row) => row.id}
+        />
 
-      <p className="text-xs text-slate-500">
-        Demo limitation: live anomaly detection, model execution, and log analysis are unavailable.
-      </p>
+        <p className="text-xs leading-5 text-slate-400">
+          Scores are illustrative values and were not generated by a live
+          machine learning model.
+        </p>
+      </section>
     </div>
   )
 }
