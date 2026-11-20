@@ -4,166 +4,181 @@
 
 ### AI-Powered Log Analysis and Incident Investigation Platform
 
-**Transform raw application logs into structured, explainable incident investigations.**
+**Turn raw application logs into structured, explainable incident investigations.**
 
-An intelligent incident-triage platform combining Machine Learning, Root-Cause Evidence Analysis, RAG, and AI-powered investigation.
+Machine Learning · Root-Cause Evidence · RAG Runbook Assistant · Optional AI Investigation
 
 <br>
 
-![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-TypeScript-61DAFB?logo=react&logoColor=black)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-scikit--learn-F7931E)
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![Backend Tests](https://img.shields.io/badge/Backend-275%20Passed-brightgreen)
-![Frontend Tests](https://img.shields.io/badge/Frontend-36%20Passed-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-TypeScript-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Scikit-learn](https://img.shields.io/badge/ML-scikit--learn-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 
-[Features](#-key-features) ·
-[Architecture](#-system-architecture) ·
-[Tech Stack](#-technology-stack) ·
-[Quick Start](#-getting-started) ·
-[Testing](#-testing) ·
-[Security](#-security)
+[![Backend Tests](https://img.shields.io/badge/Backend_Tests-275_Passed-brightgreen)](#verification-and-evidence)
+[![Frontend Tests](https://img.shields.io/badge/Frontend_Tests-36_Passed-brightgreen)](#verification-and-evidence)
+[![E2E Tests](https://img.shields.io/badge/Playwright_E2E-2_Passed-brightgreen)](#verification-and-evidence)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+<br>
+
+[🌐 Portfolio Preview](https://manishyadav-aiml.github.io/IntelliOps-AI/)
+· [📸 Screenshots](#screenshots)
+· [🏗️ Architecture](#system-architecture)
+· [🚀 Quick Start](#getting-started)
+· [🧪 Testing](#verification-and-evidence)
+· [🔐 Security](#security)
 
 </div>
 
 ---
 
-## 📌 Project Overview
+## 📌 Overview
 
-**IntelliOps AI** is an AI-powered log analysis and incident investigation platform designed to help engineers identify abnormal system behaviour and investigate potential causes of application failures.
+During a production failure, engineers often need to investigate thousands of application log lines to identify unusual patterns, determine incident severity, locate affected services, compare historical incidents, and search technical documentation.
 
-During a system failure, engineers often need to examine thousands of log entries, identify unusual patterns, determine incident severity, investigate affected services, and search technical documentation.
+This process can be time-consuming and difficult to manage manually.
 
-IntelliOps AI simplifies this process by combining:
+**IntelliOps AI** is an AI-powered log analysis and incident investigation platform designed to streamline this workflow.
 
-- Automated log parsing and template extraction.
-- Machine-learning-based anomaly detection.
-- Intelligent incident grouping and severity classification.
-- Evidence-based root-cause investigation.
-- Similar incident retrieval.
-- Retrieval-Augmented Generation (RAG).
-- Optional AI-powered investigation.
-- Automated incident report generation.
+It combines log processing, machine learning, incident management, explainable root-cause evidence, similar-incident retrieval, and Retrieval-Augmented Generation (RAG) into one application.
 
-**The main objective is to reduce manual log investigation effort and provide engineers with structured evidence for troubleshooting.**
+### What IntelliOps AI does
 
-> Important: The platform identifies anomalies and potential root causes. An AI-generated suggestion is not automatically considered a confirmed root cause.
+- Automatically parses application logs and extracts recurring templates.
+- Detects anomalous log patterns using unsupervised machine learning.
+- Groups anomalous time windows into structured incidents.
+- Assigns explainable P1–P4 incident severity levels.
+- Identifies potential root-cause evidence across affected services.
+- Retrieves similar historical incidents.
+- Answers operational questions using uploaded runbooks and technical documents.
+- Generates incident reports in PDF, CSV, and JSON formats.
+- Provides optional AI-assisted incident investigation.
+
+> **Important:** IntelliOps AI identifies anomalies and potential root causes. An AI-generated suggestion is never considered a confirmed root cause. Human engineers remain responsible for reviewing and confirming findings.
+
+### 🚀 Demo Status
+
+| Component | Status |
+|---|---|
+| GitHub Pages Preview | Available |
+| Full-Stack Application | Runs Locally |
+| FastAPI Backend | Available Locally |
+| React Frontend | Available Locally |
+| PostgreSQL Integration | Available Locally |
+| Machine Learning Pipeline | Implemented |
+| RAG Runbook Assistant | Implemented |
+| Optional Gemini Integration | Implemented; live provider integration not independently verified |
+| Public Full-Stack Deployment | Not Available |
+| Video Demonstration | To Be Added |
+
+**Important distinction:**
+
+The [GitHub Pages preview](https://manishyadav-aiml.github.io/IntelliOps-AI/) is a static frontend portfolio demonstration containing illustrative sample data.
+
+It is not connected to the FastAPI backend, PostgreSQL database, authentication system, or live AI/ML services.
+
+Screenshots and dashboard figures such as 24,850 log events and 98.2% are illustrative examples, not measured production results.
+
+The full-stack application can be executed locally using the instructions in this README.
+
+---
+
+## 📸 Screenshots
+
+> Screenshots captured from the static portfolio preview on 16 November 2026. All displayed metrics are illustrative.
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="docs/screenshots/dashboard.png" alt="IntelliOps AI overview dashboard" width="100%">
+      <br>
+      <sub><b>Overview Dashboard</b> — Application metrics, log volume, and anomaly trends.</sub>
+    </td>
+    <td width="50%">
+      <img src="docs/screenshots/logs.png" alt="Log management interface" width="100%">
+      <br>
+      <sub><b>Log Management</b> — Search and filter events by service and severity.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="docs/screenshots/anomalies.png" alt="Anomaly detection interface" width="100%">
+      <br>
+      <sub><b>Anomaly Detection</b> — Scored anomaly records with P1–P4 severity.</sub>
+    </td>
+    <td width="50%">
+      <img src="docs/screenshots/incidents.png" alt="Incident management interface" width="100%">
+      <br>
+      <sub><b>Incident Management</b> — Incident register with severity and lifecycle status.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="docs/screenshots/documents.png" alt="Document library interface" width="100%">
+      <br>
+      <sub><b>Document Library</b> — Runbooks and technical documentation.</sub>
+    </td>
+    <td width="50%">
+      <img src="docs/screenshots/assistant.png" alt="AI assistant interface" width="100%">
+      <br>
+      <sub><b>AI Assistant</b> — Suggested operational investigation scenarios.</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## 🎯 Problem Statement
 
-Traditional log investigation can be time-consuming because engineers must:
+Application failures generate large volumes of logs, making incident investigation difficult and time-consuming.
 
-- Search through large volumes of application logs.
-- Identify abnormal patterns manually.
-- Find the earliest affected service.
-- Determine incident severity.
-- Compare current incidents with historical incidents.
-- Search technical documentation for solutions.
-- Prepare incident investigation reports.
+Engineers typically need to:
 
-IntelliOps AI brings these activities together in a single platform.
+1. Search through large volumes of application logs.
+2. Identify unusual patterns and recurring errors.
+3. Determine which services are affected.
+4. Understand when an error first appeared.
+5. Assign an appropriate incident severity.
+6. Investigate possible root causes.
+7. Compare the current incident with historical incidents.
+8. Search technical documentation and operational runbooks.
+9. Prepare incident investigation reports.
+
+Performing these activities manually can delay incident resolution.
+
+**IntelliOps AI addresses this problem by combining automated log analysis, anomaly detection, incident investigation, and evidence-based documentation retrieval in one platform.**
 
 ---
 
 ## ✨ Key Features
 
-### 1. Log Management and Parsing
-
-- Upload application log files.
-- Validate uploaded files.
-- Parse multiple log formats.
-- Extract timestamps, log levels, services, and messages.
-- Identify recurring log patterns using Drain3.
-- Use regex-based parsing as a fallback.
-- Support background log processing.
-
-### 2. Machine Learning Anomaly Detection
-
-- Detect unusual log activity across time windows.
-- Extract statistical and service-level features.
-- Use Isolation Forest for anomaly detection.
-- Use Local Outlier Factor as a comparison model.
-- Provide a statistical baseline when trained models are unavailable.
-- Display anomaly scores and contributing information.
-
-### 3. Intelligent Incident Management
-
-- Group related anomalous windows into incidents.
-- Generate stable incident fingerprints.
-- Prevent duplicate incident creation during re-analysis.
-- Track incident status and lifecycle.
-- Maintain incident timelines.
-- Add investigation notes.
-- Retrieve related historical incidents.
-
-### 4. Explainable Severity Classification
-
-Classify incidents into four severity levels:
-
-| Severity | Description |
+| Feature Area | Capabilities |
 |---|---|
-| P1 | Critical |
-| P2 | High |
-| P3 | Medium |
-| P4 | Low |
-
-Severity decisions include rule-based explanations rather than relying only on an unexplained priority score.
-
-### 5. Root-Cause Evidence Analysis
-
-The platform identifies potential investigation leads using:
-
-- Earliest-failing service.
-- Newly appearing error patterns.
-- Changes in error frequency.
-- Missing or disappeared log templates.
-- Abnormal service activity.
-
-These signals help engineers investigate incidents but do not independently prove causation.
-
-### 6. Similar Incident Retrieval
-
-- Retrieve similar historical incidents.
-- Compare shared services and log patterns.
-- Use embeddings and vector-based retrieval.
-- Support FAISS or exact NumPy-based retrieval.
-
-### 7. AI-Powered Investigation
-
-- Optional Gemini integration.
-- Evidence-grounded investigation summaries.
-- Structured AI-generated findings.
-- Evidence reference validation.
-- AI provider error handling.
-- Human review of investigation conclusions.
-
-### 8. RAG-Based Runbook Assistant
-
-- Upload PDF, TXT, and Markdown documents.
-- Extract and divide document content into chunks.
-- Generate embeddings for retrieval.
-- Search relevant documentation.
-- Generate answers using retrieved context.
-- Provide document, page, and chunk citations.
-- Handle questions when sufficient documentation is unavailable.
-
-### 9. Reports and Audit Logging
-
-- Generate PDF reports.
-- Export CSV reports.
-- Generate JSON reports.
-- Maintain incident investigation records.
-- Record important user activities.
-- Track incident status and severity changes.
+| **Log Management** | Log upload, validation, parsing, filtering, and processing |
+| **Log Parsing** | ISO, HDFS, syslog, bracketed, CSV, and custom-regex formats |
+| **Template Extraction** | Drain3 template mining with regex fallback |
+| **Anomaly Detection** | Isolation Forest, Local Outlier Factor, and statistical baseline |
+| **Incident Grouping** | Automatic incident creation and duplicate prevention |
+| **Severity Classification** | Explainable P1 Critical, P2 High, P3 Medium, and P4 Low |
+| **Root-Cause Evidence** | Earliest failing service, new error templates, error-rate changes |
+| **Similar Incident Retrieval** | Embedding-based retrieval using FAISS or exact NumPy search |
+| **AI Investigation** | Optional Gemini-powered evidence-grounded investigation |
+| **RAG Assistant** | Document retrieval, contextual answers, and source citations |
+| **Incident Lifecycle** | OPEN → INVESTIGATING → MITIGATED → RESOLVED |
+| **Reporting** | PDF, CSV, and JSON incident reports |
+| **Audit Logging** | Tracking important application activities |
+| **Authentication** | JWT-based authentication and per-user data isolation |
 
 ---
 
 ## 🏗️ System Architecture
+
+IntelliOps AI follows a modular full-stack architecture.
+
+### High-Level Architecture
 
 ```mermaid
 flowchart TD
@@ -175,9 +190,11 @@ flowchart TD
 
     AUTH --> LOGS["Log Ingestion"]
     LOGS --> PARSE["Log Parsing"]
+
     PARSE --> DRAIN["Drain3 Template Mining"]
 
     DRAIN --> ML["Feature Engineering"]
+
     ML --> ANOM["Anomaly Detection"]
 
     ANOM --> INC["Incident Management"]
@@ -188,7 +205,7 @@ flowchart TD
 
     AUTH --> RAG["RAG Document Retrieval"]
 
-    RCA --> AI["AI Investigation"]
+    RCA --> AI["Optional AI Investigation"]
     RAG --> AI
 
     LOGS --> DB[("PostgreSQL")]
@@ -198,74 +215,82 @@ flowchart TD
     INC --> REP["Report Generation"]
 ```
 
-### Application Workflow
+### Processing Workflow
 
 ```text
-       Application Logs
-              |
-              v
-         Log Upload
-              |
-              v
-         Log Parsing
-              |
-              v
-       Template Mining
-              |
-              v
-      Feature Engineering
-              |
-              v
-      Anomaly Detection
-              |
-              v
-      Incident Grouping
-              |
-              v
-    Severity Classification
-              |
-              v
-    Root-Cause Evidence
-              |
-              v
-      AI Investigation
-              |
-              v
-       Report Generation
+Log Upload
+    ↓
+Input Validation
+    ↓
+Log Parsing
+    ↓
+Template Mining
+    ↓
+Feature Engineering
+    ↓
+Anomaly Detection
+    ↓
+Incident Grouping
+    ↓
+Severity Classification
+    ↓
+Root-Cause Evidence
+    ↓
+Optional AI Investigation
+    ↓
+Incident Report Generation
 ```
 
-For more information, see [System Architecture](docs/SYSTEM_ARCHITECTURE.md).
+### Architecture Principles
+
+- Modular backend architecture.
+- Separation of API, business logic, and machine learning components.
+- Authenticated API requests.
+- Per-user data isolation.
+- Evidence-based investigation.
+- Optional AI integration.
+- Database-backed application persistence.
+- Independently testable algorithm modules.
+
+Algorithms are organized into dependency-light modules such as `parsers/`, `ml/`, `rag/`, and `ai/`.
+
+For additional details, see [System Architecture](docs/SYSTEM_ARCHITECTURE.md).
 
 ---
 
-## 🧠 Machine Learning
+## 🧠 Machine Learning Pipeline
 
-IntelliOps AI uses unsupervised machine learning techniques to identify unusual patterns in application logs.
+The machine learning pipeline analyzes application log patterns and identifies unusual behavior.
 
-### Feature Engineering
+### 1. Feature Engineering
 
-The system extracts features from time-based log windows, including:
+Log events are aggregated into time windows and converted into numerical features.
 
-- Log-level counts and ratios.
-- Service-level log volume.
-- Unique and repeated log templates.
+Features include:
+
+- Total log events.
+- Error-level counts.
+- Warning-level counts.
+- Log-level ratios.
+- Service-level event volume.
+- Number of unique templates.
+- Repeated template frequency.
 - Changes in error frequency.
-- Time between errors.
-- Abnormal activity across services.
+- Time intervals between errors.
 
-The feature pipeline also includes tests to check temporal causality.
+A temporal causality test verifies that future information does not influence earlier feature rows.
 
-### Algorithms
+### 2. Anomaly Detection Algorithms
 
 | Algorithm | Purpose |
 |---|---|
-| Robust Statistical Baseline | Fallback anomaly detection |
-| Isolation Forest | Primary unsupervised anomaly detector |
+| Robust Statistical Baseline | Fallback detector when no trained model is available |
+| **Isolation Forest** | Primary unsupervised anomaly detection model |
 | Local Outlier Factor | Comparison anomaly detection model |
 
-### Model Evaluation
+### 3. Model Evaluation
 
-The evaluation pipeline supports:
+The evaluation pipeline measures:
 
 - Precision
 - Recall
@@ -274,74 +299,127 @@ The evaluation pipeline supports:
 - False-positive rate
 - Confusion matrix
 
+A leakage-aware evaluation split is used. For the HDFS dataset, the intended split strategy groups records by block ID.
+
 ### Synthetic Evaluation Results
+
+The following results were obtained from generated synthetic data.
 
 | Metric | Isolation Forest | Local Outlier Factor |
 |---|---:|---:|
 | Precision | 0.759 | 0.486 |
 | Recall | 0.846 | 0.692 |
 | F1-score | 0.800 | 0.571 |
-| False-positive rate | 0.012 | 0.033 |
+| False-Positive Rate | 0.012 | 0.033 |
 | PR-AUC | 0.823 | 0.730 |
 
-**Evaluation note:** These results were obtained using generated synthetic data. They validate the evaluation pipeline but do not establish real-world model accuracy.
+**Evaluation command:**
 
-Evaluation using the LogHub/HDFS dataset remains outstanding.
+```bash
+python scripts/evaluate_models.py --mode synthetic
+```
 
-See [ML Methodology](docs/ML_METHODOLOGY.md).
+**Evaluation disclaimer:**
+
+These results validate the evaluation pipeline using generated synthetic data.
+
+They do not establish real-world detection accuracy or production performance.
+
+Evaluation on the LogHub/HDFS dataset remains outstanding.
+
+### Documented Model Limitation
+
+A limitation identified through testing is that Isolation Forest cannot assign a window an anomaly score beyond the most extreme behavior represented by its trained model.
+
+This limitation has been regression-tested and mitigated using a statistical baseline safeguard.
+
+For additional details, see [ML Methodology](docs/ML_METHODOLOGY.md).
 
 ---
 
-## 🤖 AI and RAG Integration
+## 🤖 AI Investigation and RAG Integration
 
-IntelliOps AI combines traditional machine learning with Generative AI.
+IntelliOps AI combines traditional machine learning with optional generative AI capabilities.
 
-### AI Investigation
+### 1. AI-Assisted Incident Investigation
 
-The optional Gemini integration can analyze available incident evidence and generate structured investigation summaries.
+The optional Gemini integration analyzes available incident evidence and generates structured investigation findings.
 
-The system validates investigation output against available evidence and treats AI-generated conclusions as unconfirmed suggestions.
+Capabilities include:
 
-### RAG Assistant
+- Incident evidence analysis.
+- Potential root-cause suggestions.
+- Investigation recommendations.
+- Structured findings.
+- Evidence-reference validation.
+- Provider-error handling.
 
-The RAG pipeline allows engineers to ask questions about uploaded technical documentation.
+### AI Output Validation
 
-**Workflow:**
+AI-generated findings are validated against available incident evidence.
+
+Validation includes:
+
+- Removing invented evidence references.
+- Stripping unsupported execution claims.
+- Downgrading unverified confirmed findings to suspected findings.
+- Separating AI suggestions from human-confirmed findings.
+
+AI-generated findings are always treated as suggestions requiring human review.
+
+**The core application does not require a Gemini API key to perform its non-AI analysis workflows.**
+
+### 2. RAG Runbook Assistant
+
+The Retrieval-Augmented Generation system allows users to upload operational documents and ask questions about their contents.
+
+Supported document formats:
+
+- PDF
+- TXT
+- Markdown
+
+### RAG Processing Workflow
 
 ```text
 Document Upload
-      |
-      v
-Document Validation
-      |
-      v
+      ↓
+File Validation
+      ↓
 Text Extraction
-      |
-      v
-Text Chunking
-      |
-      v
+      ↓
+Document Chunking
+      ↓
 Embedding Generation
-      |
-      v
+      ↓
 Vector Retrieval
-      |
-      v
-Relevant Context
-      |
-      v
+      ↓
+Relevant Context Selection
+      ↓
 AI Answer Generation
-      |
-      v
+      ↓
 Citation Validation
-      |
-      v
+      ↓
 Answer with Sources
 ```
 
-The assistant can return relevant document excerpts when an AI provider is unavailable. It also handles questions that cannot be answered using the available documentation.
+### RAG Capabilities
 
-See [RAG Architecture](docs/RAG_ARCHITECTURE.md).
+- Document ingestion.
+- Text extraction.
+- Context-aware chunking.
+- Embedding generation.
+- Similarity-based retrieval.
+- Context-grounded answer generation.
+- Document, page, and chunk citations.
+- Citation validation.
+- Handling of questions unsupported by uploaded documents.
+
+If an AI provider is unavailable, the assistant can return relevant retrieved excerpts.
+
+If the uploaded documents do not contain sufficient information, the assistant is designed to acknowledge that limitation instead of inventing an answer.
+
+For more information, see [RAG Architecture](docs/RAG_ARCHITECTURE.md).
 
 ---
 
@@ -349,55 +427,54 @@ See [RAG Architecture](docs/RAG_ARCHITECTURE.md).
 
 | Category | Technologies |
 |---|---|
-| Programming Language | Python, TypeScript, JavaScript |
-| Backend | FastAPI, Pydantic |
-| Frontend | React, TypeScript, Vite |
-| Styling | Tailwind CSS |
-| Database | PostgreSQL, SQLAlchemy |
+| Programming Languages | Python, TypeScript, JavaScript |
+| Backend Framework | FastAPI |
+| Backend Validation | Pydantic |
+| ORM | SQLAlchemy |
 | Database Migrations | Alembic |
-| Machine Learning | NumPy, pandas, scikit-learn |
-| Log Processing | Drain3, Regex |
-| Anomaly Detection | Isolation Forest, Local Outlier Factor |
-| Embeddings & Retrieval | Sentence Transformers, FAISS, NumPy |
-| Generative AI | Google Gemini API |
-| RAG | Document Chunking, Embeddings, Vector Retrieval |
+| Frontend Framework | React |
+| Frontend Language | TypeScript |
+| Frontend Build Tool | Vite |
+| UI Styling | Tailwind CSS |
 | Data Visualization | Recharts |
-| Authentication | JWT, bcrypt |
-| Testing | pytest, HTTPX, Vitest, React Testing Library, Playwright |
-| DevOps | Docker, Docker Compose, GitHub Actions |
+| Database | PostgreSQL |
+| Testing Database | SQLite |
+| Data Processing | NumPy, pandas |
+| Machine Learning | scikit-learn |
+| Log Processing | Drain3, Regex |
+| Embeddings | Sentence Transformers |
+| Vector Retrieval | FAISS, NumPy |
+| Generative AI | Google Gemini API |
+| Authentication | JWT |
+| Password Security | bcrypt |
+| Backend Testing | pytest, HTTPX |
+| Frontend Testing | Vitest, React Testing Library |
+| End-to-End Testing | Playwright |
+| Containerization | Docker, Docker Compose |
+| CI/CD | GitHub Actions |
+| Version Control | Git, GitHub |
 
 ---
 
-## 🧪 Testing and Verification
+## 🧪 Verification and Evidence
 
-The following checks have been successfully executed on the current project version.
+The project includes backend, frontend, and end-to-end testing.
 
-| Testing Layer | Result |
-|---|---:|
-| Backend Tests | **275 Passed** |
-| Frontend Tests | **36 Passed** |
-| Playwright E2E Tests | **2 Passed** |
-| Frontend Lint | **Passed** |
-| Frontend Production Build | **Passed** |
+### Test Results
 
-### End-to-End Test Coverage
+**Author-reported local test results — 16 November 2026**
 
-The Playwright workflow covers:
+| Verification | Result | Status |
+|---|---:|---|
+| Backend Tests | 275 Passed | ✅ Passed |
+| Frontend Tests | 36 Passed | ✅ Passed |
+| Playwright E2E Tests | 2 Passed | ✅ Passed |
+| Frontend Lint | Passed | ✅ Passed |
+| Frontend Production Build | Passed | ✅ Passed |
 
-1. User registration and login.
-2. Dashboard access.
-3. Log upload and analysis.
-4. Incident creation.
-5. Mocked AI investigation.
-6. Document upload.
-7. RAG queries.
-8. Report generation and download.
-9. Incident resolution.
-10. Logout and protected-page access.
+These counts represent the reported local test run and should be revalidated after code changes.
 
-The AI provider is mocked during end-to-end testing. Live Gemini API integration has not yet been verified.
-
-### Run Tests Locally
+### Re-running the Tests
 
 **Backend:**
 
@@ -412,28 +489,97 @@ pytest -v
 cd frontend
 
 npm run lint
-npm run test
+npm test
 npm run build
 npm run e2e
 ```
+
+### End-to-End Workflow Coverage
+
+The Playwright workflow covers:
+
+1. User registration.
+2. User login.
+3. Dashboard access.
+4. Log upload.
+5. Log analysis.
+6. Incident creation.
+7. Mocked AI investigation.
+8. Document upload.
+9. RAG queries.
+10. Incident report generation.
+11. Report download.
+12. Incident resolution.
+13. User logout.
+14. Protected-page access verification.
+
+**Note:** The AI investigation in the automated workflow is mocked. This does not independently verify live Gemini integration.
+
+### Claim-to-Evidence Mapping
+
+The following table maps important functionality to its corresponding implementation and test files.
+
+| Functionality | Repository Evidence |
+|---|---|
+| Multi-format log parsing | `backend/tests/test_regex_parser.py` |
+| Drain3 template extraction | `backend/tests/test_template_extraction.py` |
+| Log parser validation | `backend/tests/test_log_parser.py` |
+| Safe file uploads | `backend/tests/test_log_upload.py` |
+| Log API validation | `backend/tests/test_logs_api.py` |
+| Temporal feature causality | `backend/tests/test_feature_engineering.py` |
+| Anomaly detection algorithms | `backend/tests/test_anomaly_detection.py` |
+| Severity classification | `backend/tests/test_severity.py` |
+| Incident grouping and lifecycle | `backend/tests/test_incident_logic.py` |
+| Incident API | `backend/tests/test_incidents_api.py` |
+| Root-cause evidence | `backend/tests/test_root_cause.py` |
+| Embeddings and retrieval | `backend/tests/test_embeddings_and_store.py` |
+| AI output validation | `backend/tests/test_ai.py` |
+| AI and RAG API | `backend/tests/test_ai_rag_reports_api.py` |
+| RAG document retrieval | `backend/tests/test_rag.py` |
+| Report generation | `backend/tests/test_reports_and_dashboard.py` |
+| Authentication and security | `backend/tests/test_security.py` |
+| Authentication API | `backend/tests/test_auth_api.py` |
+| Complete user workflow | `frontend/e2e/full-workflow.spec.ts` |
+| Synthetic ML evaluation | `experiments/results/synthetic.json` |
+| Model evaluation script | `scripts/evaluate_models.py` |
+| Environment diagnostics | `scripts/doctor.py` |
+| Application smoke testing | `scripts/smoke_test.py` |
+
+### Not Yet Independently Verified
+
+The following areas still require additional validation:
+
+- Live Gemini API integration.
+- Evaluation on LogHub/HDFS.
+- Real-world anomaly detection accuracy.
+- Public full-stack deployment.
+- Code coverage percentage.
+- Independent security audit.
+
+For the complete project review, see [Final Audit Report](docs/FINAL_AUDIT_REPORT.md).
 
 ---
 
 ## 🚀 Getting Started
 
+Follow these instructions to run IntelliOps AI locally.
+
 ### Prerequisites
 
-Make sure you have installed:
+Install the following software:
 
-- Python 3.12
-- Node.js
-- npm
-- PostgreSQL
-- Git
+| Software | Requirement |
+|---|---|
+| Python | 3.11+ |
+| Node.js | Compatible with the frontend dependencies |
+| npm | Included with Node.js |
+| PostgreSQL | Required for the full-stack configuration |
+| Git | Required |
+| Docker | Optional |
 
-Docker and Docker Compose are also available for container-based setup.
+The project was developed and tested using Python 3.12.
 
-### Step 1: Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/manishyadav-aiml/IntelliOps-AI.git
@@ -441,7 +587,7 @@ git clone https://github.com/manishyadav-aiml/IntelliOps-AI.git
 cd IntelliOps-AI
 ```
 
-### Step 2: Backend Setup
+### 2. Backend Setup
 
 Navigate to the backend directory:
 
@@ -449,7 +595,7 @@ Navigate to the backend directory:
 cd backend
 ```
 
-Create a Python virtual environment:
+Create a virtual environment:
 
 ```bash
 python -m venv .venv
@@ -460,28 +606,36 @@ Activate the environment.
 **Windows PowerShell:**
 
 ```powershell
-.venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 ```
 
-**Linux / macOS:**
+**Linux/macOS:**
 
 ```bash
 source .venv/bin/activate
 ```
 
-Install dependencies:
+Install the development dependencies:
 
 ```bash
 pip install -r requirements-dev.txt
 ```
 
-Create the environment configuration file:
+Create the environment configuration file.
+
+**Windows PowerShell:**
+
+```powershell
+Copy-Item .env.example .env
+```
+
+**Linux/macOS:**
 
 ```bash
 cp .env.example .env
 ```
 
-Configure the required database and application settings in `.env`.
+Configure the required environment variables in `.env`, including the PostgreSQL database connection.
 
 Run database migrations:
 
@@ -489,27 +643,29 @@ Run database migrations:
 alembic upgrade head
 ```
 
-Start the backend server:
+Start the FastAPI development server:
 
 ```bash
 uvicorn app.main:app --reload --port 8000
 ```
 
-Backend URL:
+Backend API:
 
 ```text
 http://localhost:8000
 ```
 
-API documentation:
+Interactive API documentation:
 
 ```text
 http://localhost:8000/docs
 ```
 
-### Step 3: Frontend Setup
+### 3. Frontend Setup
 
-Open another terminal and navigate to the frontend directory:
+Open a new terminal.
+
+Navigate to the frontend directory:
 
 ```bash
 cd frontend
@@ -521,35 +677,73 @@ Install dependencies:
 npm install
 ```
 
-Create the frontend environment file:
+Create the environment configuration file.
+
+**Windows PowerShell:**
+
+```powershell
+Copy-Item .env.example .env
+```
+
+**Linux/macOS:**
 
 ```bash
 cp .env.example .env
 ```
 
-Configure the backend API URL according to the frontend environment settings.
+Configure the frontend API URL:
 
-Start the frontend:
+```env
+VITE_API_BASE_URL=http://localhost:8000/api/v1
+```
+
+Start the frontend development server:
 
 ```bash
 npm run dev
 ```
 
-Open the local URL displayed by Vite.
+Frontend:
 
-### Step 4: Optional Gemini Configuration
+```text
+http://localhost:5173
+```
 
-To enable AI-powered investigation, configure the Gemini API key in the backend environment:
+### 4. Docker Setup (Alternative)
+
+Docker Compose provides an alternative way to start the application stack.
+
+From the repository root:
+
+```bash
+docker compose up --build
+```
+
+Expected local endpoints:
+
+| Service | URL |
+|---|---|
+| Frontend | http://localhost:5173 |
+| Backend API | http://localhost:8000 |
+| API Documentation | http://localhost:8000/docs |
+
+Ensure required environment configuration is available before starting the containers.
+
+### 5. Optional Gemini Integration
+
+To enable AI-assisted investigation, configure the Gemini API key in the backend `.env` file:
 
 ```env
 GEMINI_API_KEY=your_api_key
 ```
 
-The API key must remain on the backend. Never commit secrets or `.env` files to GitHub.
+The API key must remain on the backend.
 
-### Step 5: Try Sample Data
+**Never commit `.env` files or expose API keys in frontend code.**
 
-Sample logs and documents are available in:
+### 6. Sample Data
+
+The repository includes synthetic sample data.
 
 ```text
 data/
@@ -557,33 +751,80 @@ data/
 └── sample_documents/
 ```
 
+These files can be used to explore the log analysis and document retrieval workflows.
+
+### 7. Verify Your Environment
+
+Run the environment diagnostic script:
+
+```bash
+python scripts/doctor.py
+```
+
+Run the application smoke tests:
+
+```bash
+python scripts/smoke_test.py http://localhost:8000
+```
+
+The smoke test performs approximately 30 PASS/FAIL checks against the running backend.
+
 ---
 
 ## 🔐 Security
 
-The application includes the following security controls:
+Security is an important part of the IntelliOps AI architecture.
+
+### Implemented Security Controls
 
 - JWT-based authentication.
-- Password hashing using bcrypt.
+- bcrypt password hashing.
 - Per-user data isolation.
+- Authenticated API access.
 - Pydantic request validation.
-- Rate limiting on sensitive operations.
-- File upload validation and size restrictions.
+- Sensitive-operation rate limiting.
+- File-upload validation.
+- File-size restrictions.
 - Server-generated filenames.
-- Audit logging.
-- Server-side AI API key configuration.
-- Validation of AI investigation output and retrieved-document citations.
+- Protection against path traversal.
+- Audit logging of important activities.
+- Server-side API key management.
+- AI output validation.
+- Retrieved citation validation.
+- Production configuration checks.
+
+### Data Isolation
+
+Application queries are scoped to the authenticated user.
+
+Access to another user's resources through foreign resource identifiers returns a 404 response.
+
+### Production Configuration Safeguards
+
+Production startup rejects configurations containing:
+
+- `DEBUG=true`.
+- Weak JWT secrets.
+- Non-PostgreSQL databases.
+- Wildcard CORS configuration.
 
 ### Known Security Limitations
 
-- JWT logout does not revoke already-issued tokens.
-- Frontend tokens are stored in `localStorage`.
-- Rate limiting is process-local.
-- Uploaded files are not encrypted at rest.
-- Prompt-injection protections are mitigations, not guarantees.
-- Independent security auditing has not been completed.
+The project also documents security limitations:
 
-See [SECURITY.md](SECURITY.md).
+| Area | Current Limitation |
+|---|---|
+| Token Revocation | Logout does not revoke already-issued tokens |
+| Token Storage | Frontend tokens are stored in localStorage |
+| Rate Limiting | Rate limiting is process-local |
+| File Storage | Uploaded files are not encrypted at rest |
+| Prompt Injection | Protections are mitigations, not guarantees |
+| Role Management | Admin-only features are not implemented |
+| Security Audit | Independent security audit has not been completed |
+
+These limitations should be addressed before production deployment.
+
+For more details, see [Security Documentation](SECURITY.md).
 
 ---
 
@@ -593,6 +834,7 @@ See [SECURITY.md](SECURITY.md).
 IntelliOps-AI/
 │
 ├── backend/
+│   │
 │   ├── app/
 │   │   ├── api/
 │   │   ├── services/
@@ -603,24 +845,52 @@ IntelliOps-AI/
 │   │   └── ai/
 │   │
 │   ├── alembic/
+│   │   └── Database migrations
+│   │
 │   └── tests/
+│       └── Backend test suite
 │
 ├── frontend/
+│   │
 │   ├── src/
 │   │   ├── components/
 │   │   ├── pages/
 │   │   ├── routes/
-│   │   └── tests/
+│   │   └── services/
+│   │
+│   ├── tests/
+│   │   └── Vitest tests
 │   │
 │   └── e2e/
+│       └── Playwright tests
 │
 ├── data/
 │   ├── sample_logs/
 │   └── sample_documents/
 │
 ├── scripts/
+│   ├── doctor.py
+│   ├── smoke_test.py
+│   ├── evaluate_models.py
+│   └── Training and evaluation utilities
+│
+├── experiments/
+│   └── results/
+│       └── synthetic.json
+│
 ├── docs/
+│   ├── screenshots/
+│   ├── SYSTEM_ARCHITECTURE.md
+│   ├── API_DOCUMENTATION.md
+│   ├── DATABASE_SCHEMA.md
+│   ├── ML_METHODOLOGY.md
+│   ├── RAG_ARCHITECTURE.md
+│   ├── TESTING_STRATEGY.md
+│   ├── KNOWN_LIMITATIONS.md
+│   └── FINAL_AUDIT_REPORT.md
+│
 ├── .github/
+│   └── workflows/
 │
 ├── docker-compose.yml
 ├── render.yaml
@@ -633,54 +903,83 @@ IntelliOps-AI/
 
 ## ⚠️ Current Limitations
 
-- Real-world evaluation using LogHub/HDFS has not yet been completed.
-- Synthetic evaluation metrics do not establish production accuracy.
-- AI investigation findings require human review.
-- Background processing is not yet designed for durable multi-instance execution.
-- Rate limiting is process-local.
-- Team-based access control is not implemented.
-- Independent security review and production deployment validation remain outstanding.
+Although IntelliOps AI provides a complete local full-stack workflow, some areas require further development.
+
+1. **Real-World ML Evaluation:** Evaluation on LogHub/HDFS has not been completed. Synthetic metrics do not establish production accuracy.
+
+2. **AI Verification:** Live Gemini integration has not been independently verified.
+
+3. **Public Deployment:** The full-stack application is not publicly deployed. Only the static frontend preview is hosted.
+
+4. **Background Processing:** Background processing is in-process and is not durable across application instances.
+
+5. **Rate Limiting:** Rate limiting is process-local.
+
+6. **Access Control:** Team-based access control is not implemented.
+
+7. **Security:** Independent security review has not been completed.
+
+These limitations are documented rather than presented as completed production capabilities.
 
 ---
 
-## 📈 Future Scope
+## 🔮 Future Scope
 
-- Real-time incident updates.
-- Improved anomaly detection using real-world datasets.
-- Scalable background processing.
-- Enhanced security and access control.
+Potential improvements include:
+
+- Real-time incident updates using WebSockets.
+- Evaluation and model tuning using real-world LogHub datasets.
+- Durable background processing using Celery and Redis.
+- Improved anomaly detection and model calibration.
+- Team-based access control.
+- Advanced role-based permissions.
 - Production monitoring and observability.
+- Improved token lifecycle management.
+- Stronger document and file security.
+- Public full-stack deployment.
+- Performance optimization for large log datasets.
 
 ---
 
 ## 📚 Documentation
 
-| Document | Description |
+Additional technical documentation is available in the repository.
+
+| Documentation | Description |
 |---|---|
-| [System Architecture](docs/SYSTEM_ARCHITECTURE.md) | Application architecture |
-| [API Documentation](docs/API_DOCUMENTATION.md) | REST API reference |
-| [Database Schema](docs/DATABASE_SCHEMA.md) | Database structure |
-| [ML Methodology](docs/ML_METHODOLOGY.md) | Machine learning methodology |
-| [RAG Architecture](docs/RAG_ARCHITECTURE.md) | Document retrieval architecture |
-| [Security](SECURITY.md) | Security controls and limitations |
-| [Known Limitations](docs/KNOWN_LIMITATIONS.md) | Current project limitations |
-| [Final Audit Report](docs/FINAL_AUDIT_REPORT.md) | Project verification and audit |
+| [System Architecture](docs/SYSTEM_ARCHITECTURE.md) | Application architecture and component interactions |
+| [API Documentation](docs/API_DOCUMENTATION.md) | REST API endpoints and usage |
+| [Database Schema](docs/DATABASE_SCHEMA.md) | Database tables and relationships |
+| [ML Methodology](docs/ML_METHODOLOGY.md) | Feature engineering, algorithms, and evaluation |
+| [RAG Architecture](docs/RAG_ARCHITECTURE.md) | Document processing, retrieval, and citations |
+| [Testing Strategy](docs/TESTING_STRATEGY.md) | Testing layers and verification |
+| [Security](SECURITY.md) | Security controls and known limitations |
+| [Known Limitations](docs/KNOWN_LIMITATIONS.md) | Outstanding technical limitations |
+| [Final Audit Report](docs/FINAL_AUDIT_REPORT.md) | Project verification and audit findings |
 
 ---
 
-## 🎥 Project Demo
+## 🎥 Project Demonstration
 
-| Resource | Status |
+| Resource | Availability |
 |---|---|
-| Live Application | Coming Soon |
-| Video Walkthrough | Coming Soon |
-| Application Screenshots | To Be Added |
+| Static Portfolio Preview | [Open GitHub Pages](https://manishyadav-aiml.github.io/IntelliOps-AI/) |
+| Full-Stack Application | Local execution |
+| Backend API | Local execution |
+| Interactive API Documentation | Local execution |
+| Video Walkthrough | To Be Added |
+
+**Portfolio Preview:**
+
+[https://manishyadav-aiml.github.io/IntelliOps-AI/](https://manishyadav-aiml.github.io/IntelliOps-AI/)
+
+The portfolio preview demonstrates the frontend interface using illustrative data. It does not represent a live full-stack deployment.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.
+This project is released under the **MIT License**.
 
 See the [LICENSE](LICENSE) file for details.
 
@@ -688,21 +987,28 @@ See the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
-**Manish Kumar Yadav**
+<div align="center">
 
-Final-Year B.Tech Student (8th Semester)
+### Manish Kumar Yadav
+
+Final-Year B.Tech Student  
 Computer Science Engineering — Artificial Intelligence and Machine Learning
 
-**GitHub:** [manishyadav-aiml](https://github.com/manishyadav-aiml)
+[![GitHub](https://img.shields.io/badge/GitHub-Manish%20Kumar%20Yadav-181717?logo=github)](https://github.com/manishyadav-aiml)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Manish%20Kumar%20Yadav-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manishkumaryadav946)
 
-**LinkedIn:** [Manish Kumar Yadav](https://www.linkedin.com/in/manishkumaryadav946)
+📧 **Email:** yadavmanishkumar1566@gmail.com
 
-**Email:** [yadavmanishkumar1566@gmail.com](mailto:yadavmanishkumar1566@gmail.com)
+</div>
 
 ---
 
 <div align="center">
 
-**IntelliOps AI — Making Incident Investigation More Explainable, Structured, and Efficient.**
+### 🛰️ IntelliOps AI
+
+**Making incident investigation more explainable, structured, and efficient.**
+
+Built with Python, Machine Learning, FastAPI, React, and Generative AI.
 
 </div>
